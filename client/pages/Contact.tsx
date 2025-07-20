@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import ContactUs from '../components/ContactUs';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
