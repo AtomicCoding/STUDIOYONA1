@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ContactUs from '../components/ContactUs';
 
 export default function Index() {
   return (
