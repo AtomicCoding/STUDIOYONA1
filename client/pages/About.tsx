@@ -6,9 +6,9 @@ export default function About() {
       <title>About - Studio Yona</title>
       
       <div className="min-h-screen">
-        {/* Header */}
+                {/* Header */}
         <header className="relative z-[1000] h-[90px] md:h-[90px] font-gotham-medium">
-          <div className="max-w-[1200px] mx-auto px-4">
+          <div className="w-full px-4">
             <div className="min-h-[22px] pt-5 pb-[19px]">
               {/* Logo */}
               <div className="inline-block relative">
