@@ -163,33 +163,32 @@ export default function About() {
                   <div className={`overflow-hidden transition-all duration-300 ${
                     openSection === 'monograph' ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
                   }`}>
-                    <div className="mb-5 mt-5">
+                                        <div className="mb-5 mt-5">
                       <span>
-                        Architects Sarah Chen and Marcus Rivera are innovators of
-                        contemporary architecture who express modern principles in a
-                        manner perfectly suited to twenty-first-century living. In
-                        addition to creating groundbreaking new structures, the firm has
-                        designed spectacular residential and commercial projects, making Studio Yona
-                        one of the most exciting emerging practices in modern architecture.
+                        Studio Yona's inaugural monograph showcases the firm's distinctive
+                        approach to contemporary architecture that harmonizes modern innovation
+                        with environmental consciousness. Founded in 2019, Studio Yona has quickly
+                        established itself as a leader in sustainable residential and commercial
+                        design throughout California and beyond.
                       </span>
                       <br />
                       <br />
                       <span>
-                        The firm's portfolio features sophisticated material palettes,
-                        innovative use of natural light, sustainable design solutions, and
-                        clean geometries that reveal their contemporary vision. The spaces
-                        they design are filled with carefully curated elements and custom details
-                        to feel both timeless and cutting-edge. Architectural Review noted that
-                        "Studio Yona represents the future of thoughtful, sustainable design,
-                        creating spaces for the next generation."
+                        This comprehensive volume features 25 completed projects that demonstrate
+                        Studio Yona's mastery of light, space, and material. From minimalist
+                        beach houses to cutting-edge office complexes, each project reflects
+                        the studio's commitment to creating spaces that enhance human experience
+                        while respecting natural landscapes. The monograph includes detailed
+                        drawings, process sketches, and stunning photography by renowned
+                        architectural photographer Iwan Baan.
                       </span>
                     </div>
                     <div className="text-[13px] leading-[18px] mb-5">
-                      <span>March 2024</span>
+                      <span>October 2024</span>
                       <br />
-                      <span>Monacelli Press</span>
+                      <span>Thames & Hudson</span>
                       <br />
-                      <span>288 pages</span>
+                      <span>320 pages</span>
                     </div>
                     <div className="mb-5 mt-5">
                       <figure>
