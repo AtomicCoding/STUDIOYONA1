@@ -57,12 +57,7 @@ export default function Contact() {
                 </div>
               </div>
               
-              {/* Banner */}
-              <div className="float-right w-full text-right mt-[10px] md:mt-[15px] relative">
-                <span className="text-black font-gotham-medium text-xs md:text-[14.4px]">
-                  ARCHITECTURE & DESIGN STUDIO
-                </span>
-              </div>
+              
             </div>
           </div>
         </header>
