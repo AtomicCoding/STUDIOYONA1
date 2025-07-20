@@ -13,9 +13,9 @@ export default {
       },
     },
         extend: {
-      fontFamily: {
-        'gotham': ['GothamMedium', 'Helvetica', 'Arial', 'sans-serif'],
-        'gotham-medium': ['GothamMedium', 'Helvetica', 'Arial', 'sans-serif'],
+            fontFamily: {
+        'gotham': ['GothamMedium', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        'gotham-medium': ['GothamMedium', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
