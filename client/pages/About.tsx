@@ -62,10 +62,10 @@ export default function About() {
           <hr className="bg-[rgb(187,187,187)] border-0 h-px w-full overflow-hidden" />
         </header>
         
-        {/* Content */}
+                {/* Content */}
         <div className="w-full mx-auto pb-[150px]">
-          <div className="max-w-[1200px] mx-auto px-4">
-            <div className="w-full min-w-[600px]">
+          <div className="w-full px-4">
+            <div className="w-full">
               
               {/* Hero Image */}
               <div className="w-full mb-[60px]">
