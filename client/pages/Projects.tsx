@@ -199,7 +199,10 @@ export default function Projects() {
                 ))}
               </div>
             </div>
-          </div>
+                    </div>
+
+          {/* Contact Us Section */}
+          <ContactUs />
         </div>
       </div>
     </>
