@@ -10,7 +10,7 @@ export default function Index() {
         <header className="relative z-[1000] h-[90px] md:h-[90px] font-gotham-medium">
           <div className="max-w-[1200px] mx-auto px-4">
             <div className="min-h-[22px] pt-5 pb-[19px]">
-                            {/* Logo */}
+                                          {/* Logo */}
               <div className="inline-block relative">
                 <Link
                   to="/"
@@ -21,6 +21,9 @@ export default function Index() {
                     STUDIO YONA
                   </h2>
                 </Link>
+                <span className="text-black font-gotham-medium text-xs md:text-[14.4px] block mt-1">
+                  ARCHITECTURE & DESIGN STUDIO
+                </span>
               </div>
 
               {/* Navigation */}
@@ -52,13 +55,6 @@ export default function Index() {
                     CONTACT
                   </Link>
                 </div>
-              </div>
-
-              {/* Banner */}
-              <div className="float-right w-full text-right mt-[10px] md:mt-[15px] relative">
-                <span className="text-black font-gotham-medium text-xs md:text-[14.4px]">
-                  ARCHITECTURE & DESIGN STUDIO
-                </span>
               </div>
             </div>
           </div>
