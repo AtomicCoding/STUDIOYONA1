@@ -168,11 +168,11 @@ export default function About() {
                       Magazine).
                     </span>
                   </div>
-                  <div className="mb-5 mt-5">
+                                    <div className="mb-5 mt-5">
                     <figure>
                       <img
-                        src="https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg"
-                        alt="Studio Yona Interior"
+                        src="https://www.woodsdangaran.com/th/w1200_q70_iabd2_4rv5rmbk56es2ethbb.jpg"
+                        alt="Studio Yona Architecture Detail"
                         className="w-full h-auto object-cover mb-5 mt-5"
                       />
                     </figure>
