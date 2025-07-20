@@ -163,23 +163,23 @@ export default function About() {
                   <div className={`overflow-hidden transition-all duration-300 ${
                     openSection === 'monograph' ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
                   }`}>
-                                        <div className="mb-5 mt-5">
+                    <div className="mb-5 mt-5">
                       <span>
-                        Studio Yona's inaugural monograph showcases the firm's distinctive
-                        approach to contemporary architecture that harmonizes modern innovation
-                        with environmental consciousness. Founded in 2019, Studio Yona has quickly
-                        established itself as a leader in sustainable residential and commercial
+                        Studio Yona's inaugural monograph showcases the firm's distinctive 
+                        approach to contemporary architecture that harmonizes modern innovation 
+                        with environmental consciousness. Founded in 2019, Studio Yona has quickly 
+                        established itself as a leader in sustainable residential and commercial 
                         design throughout California and beyond.
                       </span>
                       <br />
                       <br />
                       <span>
-                        This comprehensive volume features 25 completed projects that demonstrate
-                        Studio Yona's mastery of light, space, and material. From minimalist
-                        beach houses to cutting-edge office complexes, each project reflects
-                        the studio's commitment to creating spaces that enhance human experience
-                        while respecting natural landscapes. The monograph includes detailed
-                        drawings, process sketches, and stunning photography by renowned
+                        This comprehensive volume features 25 completed projects that demonstrate 
+                        Studio Yona's mastery of light, space, and material. From minimalist 
+                        beach houses to cutting-edge office complexes, each project reflects 
+                        the studio's commitment to creating spaces that enhance human experience 
+                        while respecting natural landscapes. The monograph includes detailed 
+                        drawings, process sketches, and stunning photography by renowned 
                         architectural photographer Iwan Baan.
                       </span>
                     </div>
@@ -233,7 +233,7 @@ export default function About() {
                       <div className="float-left w-[85%]">
                         <div className="mb-5">
                           <h4 className="text-black font-gotham-medium">
-                            Architectural Record
+                            Dezeen
                           </h4>
                           <a 
                             target="_blank" 
@@ -241,16 +241,16 @@ export default function About() {
                             className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
                           >
                             <p className="text-[13px] leading-[18px]">
-                              Design Vanguard 2024: Studio Yona
+                              Studio Yona's Meridian Heights wins 2024 AIA Housing Award
                             </p>
                           </a>
                           <p className="text-[13px] leading-[18px]">
-                            Dec 2024
+                            Nov 2024
                           </p>
                         </div>
                         <div className="mb-5">
                           <h4 className="text-black font-gotham-medium">
-                            Interior Design Magazine
+                            Wallpaper*
                           </h4>
                           <a 
                             target="_blank" 
@@ -258,11 +258,28 @@ export default function About() {
                             className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
                           >
                             <p className="text-[13px] leading-[18px]">
-                              Rising Stars 2024: The Future of Design
+                              Next Generation: Studio Yona's Sustainable Vision
                             </p>
                           </a>
                           <p className="text-[13px] leading-[18px]">
-                            Oct 2024
+                            Sep 2024
+                          </p>
+                        </div>
+                        <div className="mb-5">
+                          <h4 className="text-black font-gotham-medium">
+                            Architectural Digest
+                          </h4>
+                          <a 
+                            target="_blank" 
+                            href="#"
+                            className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
+                          >
+                            <p className="text-[13px] leading-[18px]">
+                              California Dreaming: Studio Yona's Coastal Projects
+                            </p>
+                          </a>
+                          <p className="text-[13px] leading-[18px]">
+                            Aug 2024
                           </p>
                         </div>
                       </div>
@@ -277,7 +294,7 @@ export default function About() {
                       <div className="float-left w-[85%]">
                         <div className="mb-5">
                           <h4 className="text-black font-gotham-medium">
-                            Architectural League of New York
+                            ArchDaily
                           </h4>
                           <a 
                             target="_blank" 
@@ -285,11 +302,28 @@ export default function About() {
                             className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
                           >
                             <p className="text-[13px] leading-[18px]">
-                              Emerging Voices 2023
+                              Young Practices to Watch: Studio Yona's Rise
                             </p>
                           </a>
                           <p className="text-[13px] leading-[18px]">
-                            Mar 2023
+                            Dec 2023
+                          </p>
+                        </div>
+                        <div className="mb-5">
+                          <h4 className="text-black font-gotham-medium">
+                            Dwell
+                          </h4>
+                          <a 
+                            target="_blank" 
+                            href="#"
+                            className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
+                          >
+                            <p className="text-[13px] leading-[18px]">
+                              Sustainable Design Awards: Studio Yona Featured
+                            </p>
+                          </a>
+                          <p className="text-[13px] leading-[18px]">
+                            May 2023
                           </p>
                         </div>
                       </div>
@@ -329,6 +363,17 @@ export default function About() {
                       <div className="float-left w-[85%]">
                         <div className="mb-5">
                           <h4 className="text-black font-gotham-medium">
+                            AIA California
+                          </h4>
+                          <p className="text-[13px] leading-[18px]">
+                            Honor Award for Residential Architecture
+                          </p>
+                          <p className="text-[13px] leading-[18px]">
+                            Oct 2024
+                          </p>
+                        </div>
+                        <div className="mb-5">
+                          <h4 className="text-black font-gotham-medium">
                             Architectural Record
                           </h4>
                           <p className="text-[13px] leading-[18px]">
@@ -340,13 +385,13 @@ export default function About() {
                         </div>
                         <div className="mb-5">
                           <h4 className="text-black font-gotham-medium">
-                            AIA National
+                            World Architecture Festival
                           </h4>
                           <p className="text-[13px] leading-[18px]">
-                            Young Architects Award
+                            Future Project of the Year Finalist
                           </p>
                           <p className="text-[13px] leading-[18px]">
-                            Jun 2024
+                            Nov 2024
                           </p>
                         </div>
                       </div>
@@ -367,7 +412,18 @@ export default function About() {
                             Rising Star Award
                           </p>
                           <p className="text-[13px] leading-[18px]">
-                            Nov 2023
+                            Jun 2023
+                          </p>
+                        </div>
+                        <div className="mb-5">
+                          <h4 className="text-black font-gotham-medium">
+                            American Architecture Prize
+                          </h4>
+                          <p className="text-[13px] leading-[18px]">
+                            Gold Winner - Residential Architecture
+                          </p>
+                          <p className="text-[13px] leading-[18px]">
+                            Aug 2023
                           </p>
                         </div>
                       </div>
@@ -429,6 +485,18 @@ export default function About() {
                             <span>Architecture</span>
                           </p>
                         </div>
+                        <div className="mb-5">
+                          <h4 className="text-black font-gotham-medium">
+                            Ocean View Retreat
+                          </h4>
+                          <p className="text-[13px] leading-[18px]">
+                            <span>Malibu, CA</span>
+                            <br />
+                            <span>3,600 SF</span>
+                            <br />
+                            <span>Architecture, Interior Design, Landscape</span>
+                          </p>
+                        </div>
                       </div>
                       <div className="clear-both"></div>
                     </div>
@@ -449,6 +517,18 @@ export default function About() {
                             <span>3,600 SF</span>
                             <br />
                             <span>Architecture, Interior Design</span>
+                          </p>
+                        </div>
+                        <div className="mb-5">
+                          <h4 className="text-black font-gotham-medium">
+                            Granite Haven
+                          </h4>
+                          <p className="text-[13px] leading-[18px]">
+                            <span>Big Sur, CA</span>
+                            <br />
+                            <span>2,800 SF</span>
+                            <br />
+                            <span>Architecture</span>
                           </p>
                         </div>
                       </div>
