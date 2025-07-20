@@ -232,10 +232,7 @@ export default function Contact() {
                 </p>
                             </div>
 
-              {/* Contact Us Section */}
-              <ContactUs />
-
-            </div>
+                          </div>
           </div>
         </div>
       </div>
