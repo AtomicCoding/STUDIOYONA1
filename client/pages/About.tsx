@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import ContactUs from '../components/ContactUs';
 
 export default function About() {
   const [openSection, setOpenSection] = useState<string | null>(null);
@@ -87,41 +88,25 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Adam Yona Section - Moved to Top */}
+              {/* Adam Yona Section - Always Expanded */}
               <div className="mb-[60px]">
                 <div className="relative">
-                  <div 
-                    className="flex justify-between items-center cursor-pointer"
-                    onClick={() => toggleSection('adam')}
-                  >
-                    <h2 className="text-xl font-gotham-medium text-black mb-0">
-                      Adam Yona
-                    </h2>
-                    <img 
-                      src="https://www.woodsdangaran.com/imgs/icon_down.png"
-                      alt="expand"
-                      className={`h-5 transition-transform duration-300 ${
-                        openSection === 'adam' ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </div>
+                  <h2 className="text-xl font-gotham-medium text-black mb-5">
+                    Adam Yona
+                  </h2>
                   
-                  <div className={`overflow-hidden transition-all duration-300 ${
-                    openSection === 'adam' ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
-                  }`}>
-                    <div className="mb-5 mt-5">
-                      <h3 className="text-lg font-gotham-medium text-black mb-3">
-                        Founder | Principal
-                      </h3>
-                      <span>
-                        Adam Yona, founder and principal of Studio Yona, is a Los Angeles native, who brings a distinctive design philosophy to every project. Before delving into his architectural studies at USC, Adam cultivated a profound appreciation for building through hands-on experience around construction sites. His architectural exploration extended across Asia—Japan, China, Vietnam, Singapore, and South Korea—shaping a global perspective.
-                      </span>
-                      <br />
-                      <br />
-                      <span>
-                        Fueled by a passion for luxury home and automotive design, Adam's design philosophy at Studio Yona is rooted in creating spaces that seamlessly blend creativity and precision. Inspired by the dynamic architecture of Los Angeles, Adam welcomes you to join this international architectural adventure, where each space crafted by Studio Yona tells a distinctive and culturally influenced story.
-                      </span>
-                    </div>
+                  <div className="mb-5">
+                    <h3 className="text-lg font-gotham-medium text-black mb-3">
+                      Founder | Principal
+                    </h3>
+                    <span>
+                      Adam Yona, founder and principal of Studio Yona, is a Los Angeles native, who brings a distinctive design philosophy to every project. Before delving into his architectural studies at USC, Adam cultivated a profound appreciation for building through hands-on experience around construction sites. His architectural exploration extended across Asia—Japan, China, Vietnam, Singapore, and South Korea—shaping a global perspective.
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                      Fueled by a passion for luxury home and automotive design, Adam's design philosophy at Studio Yona is rooted in creating spaces that seamlessly blend creativity and precision. Inspired by the dynamic architecture of Los Angeles, Adam welcomes you to join this international architectural adventure, where each space crafted by Studio Yona tells a distinctive and culturally influenced story.
+                    </span>
                   </div>
                 </div>
               </div>
@@ -516,33 +501,7 @@ export default function About() {
               </div>
 
               {/* Contact Us Section */}
-              <div className="border-t-2 border-black pt-8 mb-[60px]">
-                <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-lg">
-                  <div className="flex flex-col md:flex-row items-center justify-between">
-                    <div className="md:w-2/3 mb-6 md:mb-0">
-                      <h2 className="text-2xl font-gotham-medium text-black mb-4">
-                        Ready to Create Something Extraordinary?
-                      </h2>
-                      <p className="text-lg text-gray-700 leading-relaxed">
-                        Let's discuss your vision and bring your architectural dreams to life. 
-                        Studio Yona is here to transform spaces with innovative design and precision craftsmanship.
-                      </p>
-                    </div>
-                    <div className="md:w-1/3 text-center">
-                      <Link 
-                        to="/contact"
-                        className="inline-block bg-black text-white font-gotham-medium px-8 py-4 rounded-sm hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                      >
-                        GET IN TOUCH
-                      </Link>
-                      <div className="mt-4 text-sm text-gray-600">
-                        <p>+1 323.555.0123</p>
-                        <p>hello@studioyona.com</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ContactUs />
 
             </div>
           </div>
