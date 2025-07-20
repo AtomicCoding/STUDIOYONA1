@@ -230,7 +230,10 @@ export default function Contact() {
                 <p className="leading-6">
                   For press inquiries, please contact press@studioyona.com
                 </p>
-              </div>
+                            </div>
+
+              {/* Contact Us Section */}
+              <ContactUs />
 
             </div>
           </div>
