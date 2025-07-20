@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 export default function Index() {
   return (
-    <>
-      <title>Woods + Dangaran</title>
+        <>
+      <title>Studio Yona</title>
 
       <div className="min-h-screen relative">
                 {/* Header */}
