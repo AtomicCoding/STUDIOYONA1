@@ -3,109 +3,109 @@ import { Link } from 'react-router-dom';
 const projects = [
   {
     id: 'the-grove',
-    title: 'The Grove',
+    title: 'Meridian Heights',
     location: 'Palos Verdes, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/95/resize_q70_w1200_thumb_7knj91x3ttyft6to.jpg'
   },
   {
     id: 'gallery-view',
-    title: 'Gallery View',
+    title: 'Solstice Pavilion',
     location: 'Los Angeles, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/63/resize_q70_w1200_thumb_bur7zsv8ifz8nuhm.jpg'
   },
   {
     id: 'desert-palisades',
-    title: 'Desert Palisades',
+    title: 'Crimson Dunes',
     location: 'Palm Springs, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/36/resize_q70_w1200_thumb_c1dhhpc1_3zuu3ou.jpg'
   },
   {
     id: 'moccasin-flats',
-    title: 'Moccasin Flats',
+    title: 'Aurora Residence',
     location: 'Hurricane, UT',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/91/resize_q70_w1200_thumb_5ke5i0r5beuunxwv.jpg'
   },
   {
     id: 'canyon-retreat',
-    title: 'Canyon Retreat',
+    title: 'Titanium House',
     location: 'Pacific Palisades, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/93/resize_q70_w1200_thumb_4ua6hm6nnib9l7qc.jpg'
   },
   {
     id: 'long-valley',
-    title: 'Long Valley',
+    title: 'Serenity Grove',
     location: 'Santa Ynez, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/86/resize_q70_w1200_thumb_t3fl93t09nwx2qkw.jpg'
   },
   {
     id: 'moore-house',
-    title: 'Moore House',
+    title: 'Phoenix Loft',
     location: 'Los Angeles, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/64/resize_q70_w1200_thumb_h3m__fvxx40yelaw.jpg'
   },
   {
     id: 'summit-club',
-    title: 'Summit Club',
+    title: 'Obsidian Tower',
     location: 'Las Vegas, NV',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/71/resize_q70_w1200_thumb_8e26jg0ppr4tkoel.jpg'
   },
   {
     id: 'rim-rock-estate',
-    title: 'Rim Rock Estate',
+    title: 'Velvet Canyon',
     location: 'Las Vegas, NV',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/78/resize_q70_w1200_thumb_vddwp2ydy84l65w2.jpg'
   },
   {
     id: 'mar-vista',
-    title: 'Mar Vista',
+    title: 'Sapphire Point',
     location: 'Mar Vista, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/34/resize_q70_w1200_thumb_5nhae4anrp958ffc.jpg'
   },
   {
     id: 'westgate-estate',
-    title: 'Westgate Estate',
+    title: 'Timber Veil',
     location: 'Central Oregon',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/69/resize_q70_w1200_thumb_0fw1brzd4__3sdbp.jpg'
   },
   {
     id: 'twentieth',
-    title: 'Twentieth',
+    title: 'Lunar Bay',
     location: 'Santa Monica, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/54/resize_q70_w1200_thumb_345416ov9xzag564.jpg'
   },
   {
     id: 'carla-ridge-two',
-    title: 'Carla Ridge II',
+    title: 'Ivory Sanctum',
     location: 'Beverly Hills, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/52/resize_q70_w1200_thumb_loujl0sc6gcjaygp.jpg'
   },
   {
     id: 'carla-ridge',
-    title: 'Carla Ridge',
+    title: 'Prism Estate',
     location: 'Beverly Hills, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/26/resize_q70_w1200_thumb_eu5jvyewfq5mlghk.jpg'
   },
   {
     id: 'clear-oak',
-    title: 'Clear Oak',
+    title: 'Onyx Gardens',
     location: 'Encino, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/19/resize_q70_w1200_thumb_dob9lad5fenxeg40.jpg'
   },
   {
     id: 'case-study',
-    title: 'Case Study',
+    title: 'Echo Chambers',
     location: 'Culver City, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/29/resize_q70_w1200_thumb_w5w_bgtllzh_z6hz.jpg'
   },
   {
     id: 'nightingale',
-    title: 'Nightingale',
+    title: 'Constellation Villa',
     location: 'Los Angeles, CA',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/55/resize_q70_w1200_thumb_1izel720o8mfwl0i.jpg'
   },
   {
     id: 'sumner-estate',
-    title: 'Sumner Estate',
+    title: 'Windrose Manor',
     location: 'Greenwich, CT',
     image: 'https://www.woodsdangaran.com/admin/newfiles/project/70/resize_q70_w1200_thumb_wms09l_x5tk6jyrl.jpg'
   }
