@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+/* Gotham fallback styles */
+@font-face {
+  font-family: 'GothamMedium';
+  src: local('Helvetica Neue Medium'), local('Helvetica Medium'), local('Arial Bold');
+  font-weight: 500;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
