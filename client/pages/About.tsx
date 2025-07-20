@@ -423,8 +423,8 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Awards Section */}
-              <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px] ml-[50%] w-1/2">
+                            {/* Awards Section */}
+              <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px]">
                 <div className="relative max-h-10 overflow-hidden">
                   <h2 className="text-xl font-gotham-medium text-black mb-0">
                     Awards
