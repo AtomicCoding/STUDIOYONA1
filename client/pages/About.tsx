@@ -141,63 +141,40 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Monograph Section */}
+              {/* Adam Yona Section */}
               <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px]">
                 <div className="relative">
                   <div 
                     className="flex justify-between items-center cursor-pointer"
-                    onClick={() => toggleSection('monograph')}
+                    onClick={() => toggleSection('adam')}
                   >
                     <h2 className="text-xl font-gotham-medium text-black mb-0">
-                      Monograph
+                      Adam Yona
                     </h2>
                     <img 
                       src="https://www.woodsdangaran.com/imgs/icon_down.png"
                       alt="expand"
                       className={`h-5 transition-transform duration-300 ${
-                        openSection === 'monograph' ? 'rotate-180' : ''
+                        openSection === 'adam' ? 'rotate-180' : ''
                       }`}
                     />
                   </div>
                   
                   <div className={`overflow-hidden transition-all duration-300 ${
-                    openSection === 'monograph' ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+                    openSection === 'adam' ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
                   }`}>
                     <div className="mb-5 mt-5">
+                      <h3 className="text-lg font-gotham-medium text-black mb-3">
+                        Founder | Principal
+                      </h3>
                       <span>
-                        Studio Yona's inaugural monograph showcases the firm's distinctive 
-                        approach to contemporary architecture that harmonizes modern innovation 
-                        with environmental consciousness. Founded in 2019, Studio Yona has quickly 
-                        established itself as a leader in sustainable residential and commercial 
-                        design throughout California and beyond.
+                        Adam Yona, founder and principal of Studio Yona, is a Los Angeles native, who brings a distinctive design philosophy to every project. Before delving into his architectural studies at USC, Adam cultivated a profound appreciation for building through hands-on experience around construction sites. His architectural exploration extended across Asia—Japan, China, Vietnam, Singapore, and South Korea—shaping a global perspective.
                       </span>
                       <br />
                       <br />
                       <span>
-                        This comprehensive volume features 25 completed projects that demonstrate 
-                        Studio Yona's mastery of light, space, and material. From minimalist 
-                        beach houses to cutting-edge office complexes, each project reflects 
-                        the studio's commitment to creating spaces that enhance human experience 
-                        while respecting natural landscapes. The monograph includes detailed 
-                        drawings, process sketches, and stunning photography by renowned 
-                        architectural photographer Iwan Baan.
+                        Fueled by a passion for luxury home and automotive design, Adam's design philosophy at Studio Yona is rooted in creating spaces that seamlessly blend creativity and precision. Inspired by the dynamic architecture of Los Angeles, Adam welcomes you to join this international architectural adventure, where each space crafted by Studio Yona tells a distinctive and culturally influenced story.
                       </span>
-                    </div>
-                    <div className="text-[13px] leading-[18px] mb-5">
-                      <span>October 2024</span>
-                      <br />
-                      <span>Thames & Hudson</span>
-                      <br />
-                      <span>320 pages</span>
-                    </div>
-                    <div className="mb-5 mt-5">
-                      <figure>
-                        <img 
-                          src="https://www.woodsdangaran.com/th/w1200_q70_iabd2_4rv5rmbk56es2ethbb.jpg"
-                          alt="Studio Yona Monograph"
-                          className="w-full h-auto object-cover mb-5 mt-5"
-                        />
-                      </figure>
                     </div>
                   </div>
                 </div>
