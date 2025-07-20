@@ -78,13 +78,13 @@ export default function Index() {
           </div>
         </header>
 
-        {/* Background Image */}
+                {/* Background Image */}
         <div className="fixed top-0 left-0 w-full h-screen overflow-hidden z-[-999999]">
           <div className="absolute w-full h-full z-[-999999]">
             <img
               src="https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg"
               alt=""
-              className="absolute top-[-141.735px] left-0 w-full h-[1062.47px] object-cover overflow-clip"
+              className="absolute top-0 left-0 w-full h-full object-cover"
             />
           </div>
         </div>
