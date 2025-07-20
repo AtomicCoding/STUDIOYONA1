@@ -17,10 +17,13 @@ export default function Projects() {
                   title="Studio Yona"
                   className="block text-black font-gotham-medium text-lg md:text-xl transition-all duration-300 ease-linear hover:opacity-70"
                 >
-                  <h2 className="text-lg md:text-xl font-gotham-medium text-black text-left">
+                                    <h2 className="text-lg md:text-xl font-gotham-medium text-black text-left">
                     STUDIO YONA
                   </h2>
                 </Link>
+                <span className="text-black font-gotham-medium text-xs md:text-[14.4px] block mt-1">
+                  ARCHITECTURE & DESIGN STUDIO
+                </span>
               </div>
               
               {/* Navigation */}
