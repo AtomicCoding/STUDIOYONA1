@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,6 +8,11 @@ export default function Contact() {
     subject: '',
     message: ''
   });
+
+  // Scroll to top when component mounts (when navigated to contact page)
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
