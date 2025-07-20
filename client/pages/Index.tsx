@@ -1,17 +1,17 @@
-import { Link } from 'react-router-dom';
-import ContactUs from '../components/ContactUs';
+import { Link } from "react-router-dom";
+import ContactUs from "../components/ContactUs";
 
 export default function Index() {
   return (
-        <>
+    <>
       <title>Studio Yona</title>
 
       <div className="min-h-screen relative">
-                {/* Header */}
+        {/* Header */}
         <header className="relative z-[1000] h-[90px] md:h-[90px] font-gotham-medium">
           <div className="max-w-[1200px] mx-auto px-4">
             <div className="min-h-[22px] pt-5 pb-[19px]">
-                                          {/* Logo */}
+              {/* Logo */}
               <div className="inline-block relative">
                 <Link
                   to="/"
@@ -61,7 +61,7 @@ export default function Index() {
           </div>
         </header>
 
-                {/* Background Image */}
+        {/* Background Image */}
         <div className="fixed top-0 left-0 w-full h-screen overflow-hidden z-[-999999]">
           <div className="absolute w-full h-full z-[-999999]">
             <img
@@ -72,7 +72,7 @@ export default function Index() {
           </div>
         </div>
 
-                                        {/* Simple Get In Touch Button */}
+        {/* Simple Get In Touch Button */}
         <div className="absolute bottom-8 right-8 z-20">
           <Link
             to="/contact"

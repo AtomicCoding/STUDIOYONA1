@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function ContactUs() {
   return (
@@ -10,12 +10,13 @@ export default function ContactUs() {
               Ready to Create Something Extraordinary?
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Let's discuss your vision and bring your architectural dreams to life. 
-              Studio Yona is here to transform spaces with innovative design and precision craftsmanship.
+              Let's discuss your vision and bring your architectural dreams to
+              life. Studio Yona is here to transform spaces with innovative
+              design and precision craftsmanship.
             </p>
           </div>
           <div className="md:w-1/3 text-center">
-            <Link 
+            <Link
               to="/contact"
               className="inline-block bg-black text-white font-gotham-medium px-8 py-4 rounded-sm hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >

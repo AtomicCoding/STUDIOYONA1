@@ -12,10 +12,22 @@ export default {
         "2xl": "1400px",
       },
     },
-        extend: {
-            fontFamily: {
-        'gotham': ['GothamMedium', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-        'gotham-medium': ['GothamMedium', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+    extend: {
+      fontFamily: {
+        gotham: [
+          "GothamMedium",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+        "gotham-medium": [
+          "GothamMedium",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
       },
       colors: {
         border: "hsl(var(--border))",
