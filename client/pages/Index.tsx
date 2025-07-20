@@ -72,6 +72,13 @@ export default function Index() {
           </div>
         </div>
 
+                {/* Contact Us Section */}
+        <div className="relative z-10 bg-white mt-[calc(100vh-200px)] px-4">
+          <div className="w-full">
+            <ContactUs />
+          </div>
+        </div>
+
         {/* Bottom spacer */}
         <div className="clear-both h-[99px] mx-auto mt-[-100px] relative w-full">
           <div className="hidden"></div>
