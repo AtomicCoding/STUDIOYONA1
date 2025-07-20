@@ -80,8 +80,8 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Studio Description */}
-              <div className="mb-[60px] ml-[50%] w-1/2">
+                            {/* Studio Description */}
+              <div className="mb-[60px]">
                 <div className="relative">
                   <h2 className="text-xl font-gotham-medium text-black mb-5">
                     Studio Yona
