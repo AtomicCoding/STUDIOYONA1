@@ -6,57 +6,57 @@ export default function Projects() {
       id: 'malibu-residence',
       title: 'Malibu Residence',
       location: 'Malibu, CA',
-      image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg',
-      year: '2024'
+      year: '2024',
+      image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg'
     },
     {
       id: 'donna-residence-2',
       title: 'Donna Residence 2',
       location: 'Los Angeles, CA',
-      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg',
-      year: '2024'
+      year: '2024',
+      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg'
     },
     {
       id: 'lake-sherwood-residence',
       title: 'Lake Sherwood Residence',
       location: 'Lake Sherwood, CA',
-      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg',
-      year: '2023'
+      year: '2023',
+      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg'
     },
     {
       id: 'bentley-condo',
       title: 'Bentley Condo',
       location: 'West Hollywood, CA',
-      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg',
-      year: '2023'
+      year: '2023',
+      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg'
     },
     {
       id: 'tennessee-airbnb',
       title: 'Tennessee Airbnb',
       location: 'Tennessee Mountains',
-      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg',
-      year: '2023'
+      year: '2023',
+      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg'
     },
     {
       id: 'cantara-residence',
       title: 'Cantara Residence',
       location: 'Studio City, CA',
-      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg',
-      year: '2023'
+      year: '2023',
+      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg'
     },
     {
       id: 'fletcher',
       title: 'Fletcher',
       location: 'Silver Lake, CA',
-      image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg',
-      year: '2022'
+      year: '2022',
+      image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg'
     },
     {
       id: 'ingomar',
       title: 'Ingomar',
       location: 'Tarzana, CA',
-      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg',
-      year: '2022'
+      year: '2022',
+      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg'
     }
   ];
 
@@ -64,25 +64,25 @@ export default function Projects() {
     <>
       <title>Projects - Studio Yona</title>
       
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-zinc-900">
         {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200/50">
-          <div className="max-w-7xl mx-auto px-6 py-4">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-900/90 backdrop-blur-sm border-b border-zinc-800/50">
+          <div className="max-w-7xl mx-auto px-6 py-5">
             <div className="flex justify-between items-center">
               {/* Logo */}
-              <Link to="/" className="font-light text-sm tracking-[0.2em] text-black hover:opacity-70 transition-opacity">
+              <Link to="/" className="font-light text-sm tracking-[0.3em] text-white hover:text-zinc-300 transition-colors">
                 STUDIO YONA
               </Link>
               
               {/* Navigation Links */}
-              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light">
-                <Link to="/projects" className="text-black">
+              <div className="flex space-x-10 text-xs tracking-[0.2em] font-light">
+                <Link to="/projects" className="text-white">
                   PROJECTS
                 </Link>
-                <Link to="/about" className="text-black hover:opacity-70 transition-opacity">
+                <Link to="/about" className="text-zinc-300 hover:text-white transition-colors">
                   ABOUT
                 </Link>
-                <Link to="/contact" className="text-black hover:opacity-70 transition-opacity">
+                <Link to="/contact" className="text-zinc-300 hover:text-white transition-colors">
                   CONTACT
                 </Link>
               </div>
@@ -91,50 +91,42 @@ export default function Projects() {
         </nav>
 
         {/* Main Content */}
-        <div className="pt-20 pb-24">
+        <div className="pt-20 pb-24 bg-zinc-800">
           <div className="max-w-7xl mx-auto px-6">
             {/* Page Header */}
-            <div className="text-center mb-20">
-              <h1 className="text-5xl md:text-7xl font-thin tracking-tight text-black mb-6">
+            <div className="text-center mb-20 pt-12">
+              <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-white mb-8 font-serif">
                 Projects
               </h1>
-              <p className="text-xl font-light text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl font-light text-zinc-300 max-w-3xl mx-auto leading-relaxed font-serif">
                 A curated selection of bespoke residential designs crafted 
                 for discerning clients across California and beyond.
               </p>
             </div>
 
-            {/* Projects Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            {/* Projects Grid - 2 columns */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
               {projects.map((project, index) => (
                 <Link 
                   key={project.id}
                   to={`/projects/${project.id}`}
-                  className="group"
+                  className="group relative overflow-hidden aspect-[4/3] bg-zinc-900"
                 >
-                  <div className="relative">
-                    {/* Project Image */}
-                    <div className="relative overflow-hidden aspect-[4/3] mb-6">
-                      <img 
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
-                    </div>
-                    
-                    {/* Project Info */}
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-start">
-                        <h2 className="text-2xl font-light tracking-wide text-black group-hover:opacity-70 transition-opacity">
-                          {project.title}
-                        </h2>
-                        <span className="text-sm font-light text-gray-500 tracking-wide">
-                          {project.year}
-                        </span>
-                      </div>
-                      <p className="text-base font-light text-gray-600 tracking-wide">
-                        {project.location}
+                  {/* Project Image */}
+                  <img 
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+                  />
+                  
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-500">
+                    <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <h2 className="text-2xl md:text-3xl font-light tracking-wide text-center mb-3 font-serif">
+                        {project.title}
+                      </h2>
+                      <p className="text-sm tracking-[0.15em] uppercase text-zinc-300">
+                        {project.location} · {project.year}
                       </p>
                     </div>
                   </div>
@@ -145,39 +137,34 @@ export default function Projects() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-white border-t border-gray-200 py-12">
+        <footer className="bg-black border-t border-zinc-800 py-12">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              {/* Footer Navigation */}
-              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light mb-8 md:mb-0">
-                <Link to="/" className="text-gray-600 hover:text-black transition-colors">
-                  HOME
-                </Link>
-                <Link to="/projects" className="text-gray-600 hover:text-black transition-colors">
-                  PROJECTS
-                </Link>
-                <Link to="/about" className="text-gray-600 hover:text-black transition-colors">
-                  ABOUT
-                </Link>
-                <Link to="/contact" className="text-gray-600 hover:text-black transition-colors">
-                  CONTACT
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+              {/* Left: Logo */}
+              <div>
+                <Link to="/" className="font-light text-sm tracking-[0.3em] text-zinc-400 hover:text-white transition-colors">
+                  STUDIO YONA
                 </Link>
               </div>
               
-              {/* Social Links */}
-              <div className="flex space-x-6 mb-8 md:mb-0">
-                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
-                  INSTAGRAM
-                </a>
-                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
-                  LINKEDIN
-                </a>
+              {/* Center: Navigation */}
+              <div className="flex justify-center space-x-8 text-xs tracking-[0.15em] font-light">
+                <Link to="/" className="text-zinc-400 hover:text-white transition-colors">HOME</Link>
+                <Link to="/projects" className="text-zinc-400 hover:text-white transition-colors">PROJECTS</Link>
+                <Link to="/about" className="text-zinc-400 hover:text-white transition-colors">ABOUT</Link>
+                <Link to="/contact" className="text-zinc-400 hover:text-white transition-colors">CONTACT</Link>
+              </div>
+              
+              {/* Right: Social */}
+              <div className="flex justify-end space-x-6 text-xs tracking-[0.15em] font-light">
+                <a href="#" className="text-zinc-400 hover:text-white transition-colors">INSTAGRAM</a>
+                <a href="#" className="text-zinc-400 hover:text-white transition-colors">LINKEDIN</a>
               </div>
             </div>
             
             {/* Copyright */}
-            <div className="text-center pt-8 border-t border-gray-200">
-              <p className="text-xs text-gray-500 font-light tracking-wide">
+            <div className="text-center pt-8 mt-8 border-t border-zinc-800">
+              <p className="text-xs text-zinc-500 font-light tracking-wide">
                 © Studio Yona. All rights reserved.
               </p>
             </div>
