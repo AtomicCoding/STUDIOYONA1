@@ -5,36 +5,25 @@ export default function Index() {
     <>
       <title>Studio Yona</title>
       
-      <div className="min-h-screen relative overflow-hidden">
-        {/* Fullscreen Hero Video/Image */}
-        <div className="fixed inset-0 z-0">
-          <img
-            src="https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          {/* Subtle overlay for text readability */}
-          <div className="absolute inset-0 bg-black/10"></div>
-        </div>
-
+      <div className="min-h-screen bg-zinc-900">
         {/* Sticky Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200/50">
-          <div className="max-w-7xl mx-auto px-6 py-4">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-900/90 backdrop-blur-sm border-b border-zinc-800/50">
+          <div className="max-w-7xl mx-auto px-6 py-5">
             <div className="flex justify-between items-center">
               {/* Logo */}
-              <Link to="/" className="font-light text-sm tracking-[0.2em] text-black hover:opacity-70 transition-opacity">
+              <Link to="/" className="font-light text-sm tracking-[0.3em] text-white hover:text-zinc-300 transition-colors">
                 STUDIO YONA
               </Link>
               
               {/* Navigation Links */}
-              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light">
-                <Link to="/projects" className="text-black hover:opacity-70 transition-opacity">
+              <div className="flex space-x-10 text-xs tracking-[0.2em] font-light">
+                <Link to="/projects" className="text-zinc-300 hover:text-white transition-colors">
                   PROJECTS
                 </Link>
-                <Link to="/about" className="text-black hover:opacity-70 transition-opacity">
+                <Link to="/about" className="text-zinc-300 hover:text-white transition-colors">
                   ABOUT
                 </Link>
-                <Link to="/contact" className="text-black hover:opacity-70 transition-opacity">
+                <Link to="/contact" className="text-zinc-300 hover:text-white transition-colors">
                   CONTACT
                 </Link>
               </div>
@@ -42,135 +31,114 @@ export default function Index() {
           </div>
         </nav>
 
-        {/* Hero Content */}
-        <div className="relative z-10 min-h-screen flex flex-col justify-center items-center text-center">
-          <div className="max-w-4xl mx-auto px-6">
-            <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-white mb-4">
+        {/* Hero Section - Fullscreen */}
+        <section className="relative h-screen overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src="https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40"></div>
+          </div>
+          
+          {/* Hero Content */}
+          <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
+            <h1 className="text-7xl md:text-9xl font-thin tracking-tight text-white mb-6 font-serif">
               STUDIO YONA
             </h1>
-            <p className="text-xl md:text-2xl font-light tracking-wide text-white/90 mb-12">
+            <p className="text-2xl md:text-3xl font-light tracking-wide text-white/90 font-serif">
               Bespoke Residential Design Studio
             </p>
           </div>
-        </div>
+          
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60">
+            <div className="animate-bounce">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </div>
+          </div>
+        </section>
 
-        {/* Mission Statement Section */}
-        <section className="relative z-10 bg-white py-24">
+        {/* Intro Statement */}
+        <section className="py-24 bg-zinc-800">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="text-2xl md:text-3xl font-light leading-relaxed text-gray-800 max-w-3xl mx-auto">
-              Studio Yona is a Los Angeles-based design studio crafting immersive environments 
-              inspired by global experience and local artistry.
+            <p className="text-3xl md:text-4xl font-light leading-relaxed text-zinc-100 font-serif">
+              Studio Yona is a Los Angeles-based design practice crafting immersive environments 
+              inspired by global exploration and California minimalism.
             </p>
           </div>
         </section>
 
-        {/* Featured Work Gallery */}
-        <section className="relative z-10 bg-white py-24">
+        {/* Featured Work */}
+        <section className="py-24 bg-zinc-900">
           <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-4xl font-thin tracking-tight text-center text-black mb-16">
+            <h2 className="text-5xl md:text-6xl font-thin tracking-tight text-center text-white mb-20 font-serif">
               Featured Work
             </h2>
             
-            {/* 3x2 Project Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* 2x2 Project Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
               {/* Malibu Residence */}
-              <Link to="/projects/malibu-residence" className="group">
-                <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
-                  <img 
-                    src="https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg"
-                    alt="Malibu Residence"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
-                    <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 className="text-lg font-light tracking-wide">Malibu Residence</h3>
-                      <p className="text-sm text-white/80">Malibu, CA</p>
-                    </div>
+              <Link to="/projects/malibu-residence" className="group relative overflow-hidden aspect-[4/3]">
+                <img 
+                  src="https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg"
+                  alt="Malibu Residence"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500">
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 className="text-2xl font-light tracking-wide mb-2 font-serif">Malibu Residence</h3>
+                    <p className="text-sm tracking-[0.15em] uppercase">Malibu, CA</p>
                   </div>
                 </div>
               </Link>
 
               {/* Donna Residence 2 */}
-              <Link to="/projects/donna-residence-2" className="group">
-                <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
-                  <img 
-                    src="https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg"
-                    alt="Donna Residence 2"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
-                    <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 className="text-lg font-light tracking-wide">Donna Residence 2</h3>
-                      <p className="text-sm text-white/80">Los Angeles, CA</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Lake Sherwood Residence */}
-              <Link to="/projects/lake-sherwood-residence" className="group">
-                <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
-                  <img 
-                    src="https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg"
-                    alt="Lake Sherwood Residence"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
-                    <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 className="text-lg font-light tracking-wide">Lake Sherwood Residence</h3>
-                      <p className="text-sm text-white/80">Lake Sherwood, CA</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Bentley Condo */}
-              <Link to="/projects/bentley-condo" className="group">
-                <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
-                  <img 
-                    src="https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg"
-                    alt="Bentley Condo"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
-                    <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 className="text-lg font-light tracking-wide">Bentley Condo</h3>
-                      <p className="text-sm text-white/80">West Hollywood, CA</p>
-                    </div>
+              <Link to="/projects/donna-residence-2" className="group relative overflow-hidden aspect-[4/3]">
+                <img 
+                  src="https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg"
+                  alt="Donna Residence 2"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500">
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 className="text-2xl font-light tracking-wide mb-2 font-serif">Donna Residence 2</h3>
+                    <p className="text-sm tracking-[0.15em] uppercase">Los Angeles, CA</p>
                   </div>
                 </div>
               </Link>
 
               {/* Tennessee Airbnb */}
-              <Link to="/projects/tennessee-airbnb" className="group">
-                <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
-                  <img 
-                    src="https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg"
-                    alt="Tennessee Airbnb"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
-                    <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 className="text-lg font-light tracking-wide">Tennessee Airbnb</h3>
-                      <p className="text-sm text-white/80">Tennessee Mountains</p>
-                    </div>
+              <Link to="/projects/tennessee-airbnb" className="group relative overflow-hidden aspect-[4/3]">
+                <img 
+                  src="https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg"
+                  alt="Tennessee Airbnb"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500">
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 className="text-2xl font-light tracking-wide mb-2 font-serif">Tennessee Airbnb</h3>
+                    <p className="text-sm tracking-[0.15em] uppercase">Tennessee Mountains</p>
                   </div>
                 </div>
               </Link>
 
-              {/* Cantara Residence */}
-              <Link to="/projects/cantara-residence" className="group">
-                <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
-                  <img 
-                    src="https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg"
-                    alt="Cantara Residence"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
-                    <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 className="text-lg font-light tracking-wide">Cantara Residence</h3>
-                      <p className="text-sm text-white/80">Studio City, CA</p>
-                    </div>
+              {/* Lake Sherwood Residence */}
+              <Link to="/projects/lake-sherwood-residence" className="group relative overflow-hidden aspect-[4/3]">
+                <img 
+                  src="https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg"
+                  alt="Lake Sherwood Residence"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500">
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 className="text-2xl font-light tracking-wide mb-2 font-serif">Lake Sherwood Residence</h3>
+                    <p className="text-sm tracking-[0.15em] uppercase">Lake Sherwood, CA</p>
                   </div>
                 </div>
               </Link>
@@ -179,7 +147,7 @@ export default function Index() {
         </section>
 
         {/* 3D Visualization Section */}
-        <section className="relative z-10 bg-gray-50 py-24">
+        <section className="py-24 bg-zinc-800">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               {/* Left: Image */}
@@ -187,37 +155,49 @@ export default function Index() {
                 <img 
                   src="https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg"
                   alt="3D Visualization Process"
-                  className="w-full h-[600px] object-cover"
+                  className="w-full h-[500px] object-cover"
                 />
+                <div className="absolute inset-0 bg-black/20"></div>
               </div>
               
               {/* Right: Content */}
-              <div className="lg:pl-12">
-                <h2 className="text-4xl font-thin tracking-tight text-black mb-8">
+              <div className="lg:pl-12 text-white">
+                <h2 className="text-4xl md:text-5xl font-thin tracking-tight mb-8 font-serif">
                   Design, Visualized
                 </h2>
-                <p className="text-xl font-light leading-relaxed text-gray-700 mb-8">
-                  Studio Yona transforms early ideas into detailed spatial previews using 
+                <p className="text-xl font-light leading-relaxed mb-8 text-zinc-200">
+                  Studio Yona transforms early design ideas into detailed spatial previews using 
                   cutting-edge 3D and VR tools. Every decision is seen before it's built.
                 </p>
-                <p className="text-lg font-light leading-relaxed text-gray-600">
-                  Through immersive visualization, we invite our clients into their future 
-                  spaces, refining every detail until the vision becomes reality.
+                <p className="text-lg font-light leading-relaxed text-zinc-300">
+                  This immersive visualization process helps clients feel confident, informed, 
+                  and inspired throughout their design journey.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Final CTA Section */}
-        <section className="relative z-10 bg-black py-24">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-4xl md:text-5xl font-thin tracking-tight text-white mb-12">
-              Let's design something extraordinary together.
-            </h2>
+        {/* Collaboration + CTA Section */}
+        <section className="py-24 bg-zinc-900 relative">
+          {/* Background with subtle overlay */}
+          <div className="absolute inset-0">
+            <img 
+              src="https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg"
+              alt=""
+              className="w-full h-full object-cover opacity-20"
+            />
+            <div className="absolute inset-0 bg-zinc-900/80"></div>
+          </div>
+          
+          <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <blockquote className="text-3xl md:text-4xl font-light leading-relaxed text-white mb-12 font-serif italic">
+              "We don't just create spaces — we guide people through the design journey with intention and precision."
+            </blockquote>
+            
             <Link 
               to="/contact"
-              className="inline-block px-12 py-4 border border-white text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black transition-all duration-500"
+              className="inline-block px-12 py-4 bg-black border border-zinc-600 text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-500 rounded-sm"
             >
               GET IN TOUCH
             </Link>
@@ -225,39 +205,34 @@ export default function Index() {
         </section>
 
         {/* Footer */}
-        <footer className="relative z-10 bg-white border-t border-gray-200 py-12">
+        <footer className="bg-black border-t border-zinc-800 py-12">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              {/* Footer Navigation */}
-              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light mb-8 md:mb-0">
-                <Link to="/" className="text-gray-600 hover:text-black transition-colors">
-                  HOME
-                </Link>
-                <Link to="/projects" className="text-gray-600 hover:text-black transition-colors">
-                  PROJECTS
-                </Link>
-                <Link to="/about" className="text-gray-600 hover:text-black transition-colors">
-                  ABOUT
-                </Link>
-                <Link to="/contact" className="text-gray-600 hover:text-black transition-colors">
-                  CONTACT
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+              {/* Left: Logo */}
+              <div>
+                <Link to="/" className="font-light text-sm tracking-[0.3em] text-zinc-400 hover:text-white transition-colors">
+                  STUDIO YONA
                 </Link>
               </div>
               
-              {/* Social Links */}
-              <div className="flex space-x-6 mb-8 md:mb-0">
-                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
-                  INSTAGRAM
-                </a>
-                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
-                  LINKEDIN
-                </a>
+              {/* Center: Navigation */}
+              <div className="flex justify-center space-x-8 text-xs tracking-[0.15em] font-light">
+                <Link to="/" className="text-zinc-400 hover:text-white transition-colors">HOME</Link>
+                <Link to="/projects" className="text-zinc-400 hover:text-white transition-colors">PROJECTS</Link>
+                <Link to="/about" className="text-zinc-400 hover:text-white transition-colors">ABOUT</Link>
+                <Link to="/contact" className="text-zinc-400 hover:text-white transition-colors">CONTACT</Link>
+              </div>
+              
+              {/* Right: Social */}
+              <div className="flex justify-end space-x-6 text-xs tracking-[0.15em] font-light">
+                <a href="#" className="text-zinc-400 hover:text-white transition-colors">INSTAGRAM</a>
+                <a href="#" className="text-zinc-400 hover:text-white transition-colors">LINKEDIN</a>
               </div>
             </div>
             
             {/* Copyright */}
-            <div className="text-center pt-8 border-t border-gray-200">
-              <p className="text-xs text-gray-500 font-light tracking-wide">
+            <div className="text-center pt-8 mt-8 border-t border-zinc-800">
+              <p className="text-xs text-zinc-500 font-light tracking-wide">
                 © Studio Yona. All rights reserved.
               </p>
             </div>
