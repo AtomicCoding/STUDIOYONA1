@@ -37,12 +37,12 @@ export default function About() {
           </div>
         </nav>
 
-        {/* Header Section */}
+        {/* Header Section - Fourth Image */}
         <section className="relative h-[80vh] overflow-hidden">
-          {/* Background Image - Studio atmosphere */}
+          {/* Background Image - Fourth Image */}
           <div className="absolute inset-0">
-            <img 
-              src="https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg"
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F83a0382e5dd348ca84726deafd32c0a7?format=webp&width=800"
               alt="Studio Workspace"
               className="w-full h-full object-cover"
             />
@@ -57,9 +57,19 @@ export default function About() {
           </div>
         </section>
 
-        {/* Studio Philosophy Section */}
-        <section className="py-24 bg-zinc-800">
-          <div className="max-w-5xl mx-auto px-6">
+        {/* Studio Philosophy Section - Fifth Image Background */}
+        <section className="py-24 relative">
+          {/* Background Image - Fifth Image */}
+          <div className="absolute inset-0">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff0faabc754854365adcd741fef1fd737?format=webp&width=800"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-zinc-800/85"></div>
+          </div>
+
+          <div className="relative z-10 max-w-5xl mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-thin tracking-tight text-white mb-16 text-center font-serif">
               Studio Philosophy
             </h2>
@@ -90,10 +100,10 @@ export default function About() {
         <section className="py-24 bg-zinc-900">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              {/* Left: Image */}
+              {/* Left: Image - Third Image */}
               <div className="relative">
-                <img 
-                  src="https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg"
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7ed5165c63e24518ba4ee62edc378811?format=webp&width=800"
                   alt="Adam Yona"
                   className="w-full h-[600px] object-cover"
                 />
@@ -141,9 +151,19 @@ export default function About() {
           </div>
         </section>
 
-        {/* Recognition Section */}
-        <section className="py-24 bg-zinc-800">
-          <div className="max-w-5xl mx-auto px-6">
+        {/* Recognition Section - Seventh Image Background */}
+        <section className="py-24 relative">
+          {/* Background Image - Seventh Image */}
+          <div className="absolute inset-0">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8398405680bc48859cca4f79adb1f60e?format=webp&width=800"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-zinc-800/85"></div>
+          </div>
+
+          <div className="relative z-10 max-w-5xl mx-auto px-6">
             <h2 className="text-4xl font-thin tracking-tight text-white mb-16 text-center font-serif">
               Recognition
             </h2>
@@ -176,16 +196,16 @@ export default function About() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-24 bg-zinc-900 relative">
-          {/* Background with subtle overlay */}
+        {/* CTA Section - Sixth Image Background */}
+        <section className="py-24 relative">
+          {/* Background Image - Sixth Image */}
           <div className="absolute inset-0">
-            <img 
-              src="https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg"
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2f9fd6066f6a4352aff25084e0cc48cb?format=webp&width=800"
               alt=""
-              className="w-full h-full object-cover opacity-20"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-zinc-900/80"></div>
+            <div className="absolute inset-0 bg-zinc-900/75"></div>
           </div>
           
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">

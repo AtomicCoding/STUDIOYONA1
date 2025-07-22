@@ -84,9 +84,19 @@ export default function Index() {
           </div>
         </section>
 
-        {/* Featured Work - White Background */}
-        <section className="py-24 bg-white">
-          <div className="max-w-7xl mx-auto px-6">
+        {/* Featured Work - With First Image Background */}
+        <section className="py-24 relative">
+          {/* Background Image - First Image */}
+          <div className="absolute inset-0">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe11596530ee5469ba004010cca139775?format=webp&width=800"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-white/85"></div>
+          </div>
+
+          <div className="relative z-10 max-w-7xl mx-auto px-6">
             <h2 className="text-5xl md:text-6xl font-thin tracking-tight text-center text-black mb-20 font-serif">
               Featured Work
             </h2>
