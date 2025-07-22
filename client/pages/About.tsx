@@ -1,512 +1,244 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import ContactUs from "../components/ContactUs";
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function About() {
-  const [openSection, setOpenSection] = useState<string | null>(null);
-
-  const toggleSection = (section: string) => {
-    setOpenSection(openSection === section ? null : section);
-  };
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <>
       <title>About - Studio Yona</title>
-
-      <div className="min-h-screen">
-        {/* Header */}
-        <header className="relative z-[1000] h-[90px] md:h-[90px] font-gotham-medium">
-          <div className="w-full px-4">
-            <div className="min-h-[22px] pt-5 pb-[19px]">
+      
+      <div className="min-h-screen bg-white">
+        {/* Navigation */}
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200/50">
+          <div className="max-w-7xl mx-auto px-6 py-4">
+            <div className="flex justify-between items-center">
               {/* Logo */}
-              <div className="inline-block relative">
-                <Link
-                  to="/"
-                  title="Studio Yona"
-                  className="block text-black font-gotham-medium text-lg md:text-xl transition-all duration-300 ease-linear hover:opacity-70"
-                >
-                  <h2 className="text-lg md:text-xl font-gotham-medium text-black text-left">
-                    STUDIO YONA
-                  </h2>
+              <Link to="/" className="font-light text-sm tracking-[0.2em] text-black hover:opacity-70 transition-opacity">
+                STUDIO YONA
+              </Link>
+              
+              {/* Navigation Links */}
+              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light">
+                <Link to="/projects" className="text-black hover:opacity-70 transition-opacity">
+                  PROJECTS
                 </Link>
-                <span className="text-black font-gotham-medium text-xs md:text-[14.4px] block mt-1">
-                  ARCHITECTURE & DESIGN STUDIO
-                </span>
-              </div>
-
-              {/* Navigation */}
-              <div className="float-right grid grid-cols-3 gap-4 md:gap-8 w-2/3 md:w-1/2 relative top-[9px] text-xs md:text-sm">
-                <div className="text-left">
-                  <Link
-                    to="/projects"
-                    title="Projects"
-                    className="text-gray-600 font-gotham-medium text-xs md:text-sm transition-all duration-300 ease-linear hover:opacity-70"
-                  >
-                    PROJECTS
-                  </Link>
-                </div>
-                <div className="text-center">
-                  <Link
-                    to="/about"
-                    title="About"
-                    className="text-black font-gotham-medium text-xs md:text-sm transition-all duration-300 ease-linear cursor-default"
-                  >
-                    ABOUT
-                  </Link>
-                </div>
-                <div className="text-right">
-                  <Link
-                    to="/contact"
-                    title="Contact"
-                    className="text-gray-600 font-gotham-medium text-xs md:text-sm transition-all duration-300 ease-linear hover:opacity-70"
-                  >
-                    CONTACT
-                  </Link>
-                </div>
+                <Link to="/about" className="text-black">
+                  ABOUT
+                </Link>
+                <Link to="/contact" className="text-black hover:opacity-70 transition-opacity">
+                  CONTACT
+                </Link>
               </div>
             </div>
           </div>
-          {/* Horizontal line */}
-          <hr className="bg-[rgb(187,187,187)] border-0 h-px w-full overflow-hidden" />
-        </header>
+        </nav>
 
-        {/* Content */}
-        <div className="w-full mx-auto pb-[150px]">
-          <div className="w-full px-4">
-            <div className="w-full">
-              {/* Hero Image */}
-              <div className="w-full mb-[60px]">
-                <div className="relative">
-                  <figure>
-                    <img
-                      src="https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg"
-                      alt="Studio Yona Architecture"
-                      className="w-full h-auto object-cover"
-                    />
-                  </figure>
-                </div>
+        {/* Main Content */}
+        <div className="pt-20">
+          {/* Visual Header */}
+          <div className="relative h-[70vh] overflow-hidden">
+            <img 
+              src="https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg"
+              alt="Studio Yona Workspace"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-white">
+                About
+              </h1>
+            </div>
+          </div>
+
+          {/* Studio Philosophy Section */}
+          <section className="py-24 bg-white">
+            <div className="max-w-4xl mx-auto px-6">
+              <h2 className="text-4xl md:text-5xl font-thin tracking-tight text-black mb-12 text-center">
+                Studio Philosophy
+              </h2>
+              
+              <div className="prose prose-xl max-w-none text-gray-700 font-light leading-relaxed space-y-8">
+                <p className="text-2xl md:text-3xl font-light leading-relaxed text-center mb-16">
+                  Studio Yona is a Los Angeles-based design practice focused on custom residential 
+                  work that balances clarity, creativity, and context.
+                </p>
+                
+                <p className="text-xl leading-relaxed">
+                  We believe homes should be immersive environments — shaped by dialogue, precision, 
+                  and global perspective. Our approach honors the unique needs of each client while 
+                  creating spaces that transcend the ordinary.
+                </p>
+                
+                <p className="text-xl leading-relaxed">
+                  Every project begins with listening. We immerse ourselves in understanding how our 
+                  clients live, dream, and envision their ideal environment. This foundation of trust 
+                  and collaboration allows us to craft spaces that are deeply personal yet timelessly elegant.
+                </p>
+                
+                <p className="text-xl leading-relaxed">
+                  From initial concept to final detail, we pursue design excellence through careful 
+                  material selection, thoughtful spatial planning, and an unwavering commitment to 
+                  craftsmanship. Our work reflects a global sensibility rooted in the distinctive 
+                  character of Southern California living.
+                </p>
               </div>
+            </div>
+          </section>
 
-              {/* Adam Yona Section - Always Expanded */}
-              <div className="mb-[60px]">
+          {/* Divider */}
+          <div className="h-px bg-gray-200 max-w-4xl mx-auto"></div>
+
+          {/* About Adam Yona Section */}
+          <section className="py-24 bg-white">
+            <div className="max-w-7xl mx-auto px-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                {/* Left: Image */}
                 <div className="relative">
-                  <h2 className="text-xl font-gotham-medium text-black mb-5">
+                  <img 
+                    src="https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg"
+                    alt="Adam Yona"
+                    className="w-full h-[600px] object-cover"
+                  />
+                </div>
+                
+                {/* Right: Content */}
+                <div className="lg:pl-12">
+                  <h2 className="text-4xl md:text-5xl font-thin tracking-tight text-black mb-8">
                     Adam Yona
                   </h2>
-
-                  <div className="mb-5">
-                    <h3 className="text-lg font-gotham-medium text-black mb-3">
-                      Founder | Principal
-                    </h3>
-                    <span>
-                      Adam Yona, founder and principal of Studio Yona, is a Los
-                      Angeles native, who brings a distinctive design philosophy
-                      to every project. Before delving into his architectural
-                      studies at USC, Adam cultivated a profound appreciation
-                      for building through hands-on experience around
-                      construction sites. His architectural exploration extended
-                      across Asia—Japan, China, Vietnam, Singapore, and South
-                      Korea—shaping a global perspective.
-                    </span>
-                    <br />
-                    <br />
-                    <span>
-                      Fueled by a passion for luxury home and automotive design,
-                      Adam's design philosophy at Studio Yona is rooted in
-                      creating spaces that seamlessly blend creativity and
-                      precision. Inspired by the dynamic architecture of Los
-                      Angeles, Adam welcomes you to join this international
-                      architectural adventure, where each space crafted by
-                      Studio Yona tells a distinctive and culturally influenced
-                      story.
-                    </span>
+                  
+                  <h3 className="text-xl font-light tracking-wide text-gray-600 mb-8 uppercase">
+                    Founder & Principal Designer
+                  </h3>
+                  
+                  <div className="space-y-6 text-lg font-light leading-relaxed text-gray-700">
+                    <p>
+                      Adam Yona is the founder and principal designer of Studio Yona. Raised in 
+                      Los Angeles and shaped by years of hands-on site experience, Adam brings a 
+                      refined design perspective rooted in global exploration across Asia and the 
+                      United States.
+                    </p>
+                    
+                    <p>
+                      Before establishing his practice, Adam cultivated a profound appreciation for 
+                      the building process through direct engagement with construction sites and 
+                      craftspeople. This foundation informs his holistic approach to design, where 
+                      conceptual vision meets practical execution.
+                    </p>
+                    
+                    <p>
+                      His work blends contemporary sensibility with timeless form, drawing inspiration 
+                      from diverse cultural experiences across Japan, China, Vietnam, Singapore, and 
+                      South Korea. These influences manifest in his commitment to spatial harmony, 
+                      material authenticity, and the seamless integration of interior and exterior environments.
+                    </p>
+                    
+                    <p>
+                      Passionate about luxury residential and automotive design, Adam leads each project 
+                      with unwavering attention to detail, compositional balance, and meaningful client 
+                      collaboration. His vision extends beyond mere aesthetics to create environments 
+                      that enhance daily life and inspire lasting connection.
+                    </p>
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
 
-              {/* Studio Description */}
-              <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px]">
-                <div className="relative">
-                  <h2 className="text-xl font-gotham-medium text-black mb-5">
-                    Studio Yona
-                  </h2>
-                  <div className="mb-5 leading-6">
-                    <span>
-                      We create contemporary spaces through thoughtful dialogue
-                      and innovative exploration. We value deep collaborative
-                      partnerships with our clients and together build bespoke
-                      environments that are striking, refined and welcoming at
-                      every level.
-                    </span>
-                    <br />
-                    <br />
-                    <span>
-                      Our work is conceptual, focused on realizing an
-                      extraordinary experience of space and illumination. Our
-                      designs encourage a seamless flow between interior and
-                      exterior environments and thoughtfully connect with
-                      natural landscapes. We use sustainable materials with
-                      integrity and soul. Within rigorous architectural forms we
-                      create powerfully livable, curated interiors.
-                    </span>
-                    <br />
-                    <br />
-                    <span>
-                      Our studio is comprised of architects, interior designers
-                      and visionaries who passionately combine expressive design
-                      with precision and technical expertise. Together with
-                      trusted artists, craftspeople, and builders, we deliver
-                      work that is uncompromising in quality and innovation.
-                    </span>
-                    <br />
-                    <br />
-                    <span>
-                      We are honored to be recognized nationally and
-                      internationally including Architectural Record Design
-                      Vanguard 2024, Emerging Voices 2023 (Architectural League
-                      of New York) and Rising Star 2023 (Interior Design
-                      Magazine).
-                    </span>
+          {/* Recognition Section */}
+          <section className="py-24 bg-gray-50">
+            <div className="max-w-4xl mx-auto px-6 text-center">
+              <h2 className="text-4xl font-thin tracking-tight text-black mb-12">
+                Recognition
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="space-y-4">
+                  <h3 className="text-lg font-light tracking-wide text-black">2024</h3>
+                  <div className="space-y-2">
+                    <p className="text-sm font-light text-gray-600">Design Vanguard Award</p>
+                    <p className="text-xs text-gray-500 tracking-wide">ARCHITECTURAL RECORD</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-light tracking-wide text-black">2023</h3>
+                  <div className="space-y-2">
+                    <p className="text-sm font-light text-gray-600">Rising Star Award</p>
+                    <p className="text-xs text-gray-500 tracking-wide">INTERIOR DESIGN MAGAZINE</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <h3 className="text-lg font-light tracking-wide text-black">2023</h3>
+                  <div className="space-y-2">
+                    <p className="text-sm font-light text-gray-600">Emerging Voices</p>
+                    <p className="text-xs text-gray-500 tracking-wide">ARCHITECTURAL LEAGUE NY</p>
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
 
-              {/* Press Section */}
-              <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px]">
-                <div className="relative">
-                  <div
-                    className="flex justify-between items-center cursor-pointer"
-                    onClick={() => toggleSection("press")}
-                  >
-                    <h2 className="text-xl font-gotham-medium text-black mb-0">
-                      Press
-                    </h2>
-                    <img
-                      src="https://www.woodsdangaran.com/imgs/icon_down.png"
-                      alt="expand"
-                      className={`h-5 transition-transform duration-300 ${
-                        openSection === "press" ? "rotate-180" : ""
-                      }`}
-                    />
-                  </div>
+          {/* CTA Section */}
+          <section className="py-24 bg-black">
+            <div className="max-w-4xl mx-auto px-6 text-center">
+              <h2 className="text-4xl md:text-5xl font-thin tracking-tight text-white mb-12">
+                Let's create something meaningful together.
+              </h2>
+              <Link 
+                to="/contact"
+                className="inline-block px-12 py-4 border border-white text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black transition-all duration-500"
+              >
+                GET IN TOUCH
+              </Link>
+            </div>
+          </section>
+        </div>
 
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      openSection === "press"
-                        ? "max-h-[1000px] opacity-100"
-                        : "max-h-0 opacity-0"
-                    }`}
-                  >
-                    {/* 2024 Press */}
-                    <div className="mt-5">
-                      <h3 className="float-left font-gotham-medium mb-[10px] w-[15%]">
-                        2024
-                      </h3>
-                      <div className="float-left w-[85%]">
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Dezeen
-                          </h4>
-                          <a
-                            target="_blank"
-                            href="#"
-                            className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
-                          >
-                            <p className="text-[13px] leading-[18px]">
-                              Studio Yona's Meridian Heights wins 2024 AIA
-                              Housing Award
-                            </p>
-                          </a>
-                          <p className="text-[13px] leading-[18px]">Nov 2024</p>
-                        </div>
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Wallpaper*
-                          </h4>
-                          <a
-                            target="_blank"
-                            href="#"
-                            className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
-                          >
-                            <p className="text-[13px] leading-[18px]">
-                              Next Generation: Studio Yona's Sustainable Vision
-                            </p>
-                          </a>
-                          <p className="text-[13px] leading-[18px]">Sep 2024</p>
-                        </div>
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Architectural Digest
-                          </h4>
-                          <a
-                            target="_blank"
-                            href="#"
-                            className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
-                          >
-                            <p className="text-[13px] leading-[18px]">
-                              California Dreaming: Studio Yona's Coastal
-                              Projects
-                            </p>
-                          </a>
-                          <p className="text-[13px] leading-[18px]">Aug 2024</p>
-                        </div>
-                      </div>
-                      <div className="clear-both"></div>
-                    </div>
-
-                    {/* 2023 Press */}
-                    <div>
-                      <h3 className="float-left font-gotham-medium mb-[10px] w-[15%]">
-                        2023
-                      </h3>
-                      <div className="float-left w-[85%]">
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            ArchDaily
-                          </h4>
-                          <a
-                            target="_blank"
-                            href="#"
-                            className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
-                          >
-                            <p className="text-[13px] leading-[18px]">
-                              Young Practices to Watch: Studio Yona's Rise
-                            </p>
-                          </a>
-                          <p className="text-[13px] leading-[18px]">Dec 2023</p>
-                        </div>
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Dwell
-                          </h4>
-                          <a
-                            target="_blank"
-                            href="#"
-                            className="text-black cursor-pointer transition-all duration-300 ease-linear hover:opacity-70"
-                          >
-                            <p className="text-[13px] leading-[18px]">
-                              Sustainable Design Awards: Studio Yona Featured
-                            </p>
-                          </a>
-                          <p className="text-[13px] leading-[18px]">May 2023</p>
-                        </div>
-                      </div>
-                      <div className="clear-both"></div>
-                    </div>
-                  </div>
-                </div>
+        {/* Footer */}
+        <footer className="bg-white border-t border-gray-200 py-12">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              {/* Footer Navigation */}
+              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light mb-8 md:mb-0">
+                <Link to="/" className="text-gray-600 hover:text-black transition-colors">
+                  HOME
+                </Link>
+                <Link to="/projects" className="text-gray-600 hover:text-black transition-colors">
+                  PROJECTS
+                </Link>
+                <Link to="/about" className="text-gray-600 hover:text-black transition-colors">
+                  ABOUT
+                </Link>
+                <Link to="/contact" className="text-gray-600 hover:text-black transition-colors">
+                  CONTACT
+                </Link>
               </div>
-
-              {/* Awards Section */}
-              <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px]">
-                <div className="relative">
-                  <div
-                    className="flex justify-between items-center cursor-pointer"
-                    onClick={() => toggleSection("awards")}
-                  >
-                    <h2 className="text-xl font-gotham-medium text-black mb-0">
-                      Awards
-                    </h2>
-                    <img
-                      src="https://www.woodsdangaran.com/imgs/icon_down.png"
-                      alt="expand"
-                      className={`h-5 transition-transform duration-300 ${
-                        openSection === "awards" ? "rotate-180" : ""
-                      }`}
-                    />
-                  </div>
-
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      openSection === "awards"
-                        ? "max-h-[1000px] opacity-100"
-                        : "max-h-0 opacity-0"
-                    }`}
-                  >
-                    {/* 2024 Awards */}
-                    <div className="mt-5">
-                      <h3 className="float-left font-gotham-medium mb-[10px] w-[15%]">
-                        2024
-                      </h3>
-                      <div className="float-left w-[85%]">
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            AIA California
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            Honor Award for Residential Architecture
-                          </p>
-                          <p className="text-[13px] leading-[18px]">Oct 2024</p>
-                        </div>
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Architectural Record
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            Design Vanguard Award
-                          </p>
-                          <p className="text-[13px] leading-[18px]">Dec 2024</p>
-                        </div>
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            World Architecture Festival
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            Future Project of the Year Finalist
-                          </p>
-                          <p className="text-[13px] leading-[18px]">Nov 2024</p>
-                        </div>
-                      </div>
-                      <div className="clear-both"></div>
-                    </div>
-
-                    {/* 2023 Awards */}
-                    <div>
-                      <h3 className="float-left font-gotham-medium mb-[10px] w-[15%]">
-                        2023
-                      </h3>
-                      <div className="float-left w-[85%]">
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Interior Design Magazine
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            Rising Star Award
-                          </p>
-                          <p className="text-[13px] leading-[18px]">Jun 2023</p>
-                        </div>
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            American Architecture Prize
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            Gold Winner - Residential Architecture
-                          </p>
-                          <p className="text-[13px] leading-[18px]">Aug 2023</p>
-                        </div>
-                      </div>
-                      <div className="clear-both"></div>
-                    </div>
-                  </div>
-                </div>
+              
+              {/* Social Links */}
+              <div className="flex space-x-6 mb-8 md:mb-0">
+                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
+                  INSTAGRAM
+                </a>
+                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
+                  LINKEDIN
+                </a>
               </div>
-
-              {/* Project Index */}
-              <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px]">
-                <div className="relative">
-                  <div
-                    className="flex justify-between items-center cursor-pointer"
-                    onClick={() => toggleSection("projects")}
-                  >
-                    <h2 className="text-xl font-gotham-medium text-black mb-0">
-                      Project Index
-                    </h2>
-                    <img
-                      src="https://www.woodsdangaran.com/imgs/icon_down.png"
-                      alt="expand"
-                      className={`h-5 transition-transform duration-300 ${
-                        openSection === "projects" ? "rotate-180" : ""
-                      }`}
-                    />
-                  </div>
-
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      openSection === "projects"
-                        ? "max-h-[1000px] opacity-100"
-                        : "max-h-0 opacity-0"
-                    }`}
-                  >
-                    {/* Current Projects */}
-                    <div className="mt-5">
-                      <h3 className="float-left font-gotham-medium mb-[10px] w-[15%]">
-                        2024
-                      </h3>
-                      <div className="float-left w-[85%]">
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Meridian Heights
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            <span>Palos Verdes, CA</span>
-                            <br />
-                            <span>4,200 SF</span>
-                            <br />
-                            <span>Architecture, Interior Design</span>
-                          </p>
-                        </div>
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Solstice Pavilion
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            <span>Los Angeles, CA</span>
-                            <br />
-                            <span>5,800 SF</span>
-                            <br />
-                            <span>Architecture</span>
-                          </p>
-                        </div>
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Ocean View Retreat
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            <span>Malibu, CA</span>
-                            <br />
-                            <span>3,600 SF</span>
-                            <br />
-                            <span>
-                              Architecture, Interior Design, Landscape
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="clear-both"></div>
-                    </div>
-
-                    {/* Previous Projects */}
-                    <div>
-                      <h3 className="float-left font-gotham-medium mb-[10px] w-[15%]">
-                        2023
-                      </h3>
-                      <div className="float-left w-[85%]">
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Crimson Dunes
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            <span>Palm Springs, CA</span>
-                            <br />
-                            <span>3,600 SF</span>
-                            <br />
-                            <span>Architecture, Interior Design</span>
-                          </p>
-                        </div>
-                        <div className="mb-5">
-                          <h4 className="text-black font-gotham-medium">
-                            Granite Haven
-                          </h4>
-                          <p className="text-[13px] leading-[18px]">
-                            <span>Big Sur, CA</span>
-                            <br />
-                            <span>2,800 SF</span>
-                            <br />
-                            <span>Architecture</span>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="clear-both"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Contact Us Section */}
-              <ContactUs />
+            </div>
+            
+            {/* Copyright */}
+            <div className="text-center pt-8 border-t border-gray-200">
+              <p className="text-xs text-gray-500 font-light tracking-wide">
+                © Studio Yona. All rights reserved.
+              </p>
             </div>
           </div>
-        </div>
+        </footer>
       </div>
     </>
   );
