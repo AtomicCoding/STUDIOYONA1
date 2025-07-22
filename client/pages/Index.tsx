@@ -31,17 +31,18 @@ export default function Index() {
           </div>
         </nav>
 
-        {/* Hero Section - Fullscreen with Fifth Image */}
+        {/* Hero Section - Fullscreen with New Image */}
         <section className="relative h-screen overflow-hidden">
-          {/* Background Image - Fifth Image */}
-          <div className="absolute inset-0">
+          {/* Background Image - New Image */}
+          <div className="absolute inset-0 z-0">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F5cbf6143960a4c7b832c86baf1bad549?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fbf94ab26c7844f828d801d72e56d3d51?format=webp&width=800"
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              style={{ filter: 'brightness(1.05) contrast(1.1)' }}
             />
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40"></div>
+            {/* Minimal overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30"></div>
           </div>
           
           {/* Hero Content */}
@@ -87,13 +88,14 @@ export default function Index() {
         {/* Featured Work - With First Image Background */}
         <section className="py-24 relative">
           {/* Background Image - First Image */}
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 z-0">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe11596530ee5469ba004010cca139775?format=webp&width=800"
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              style={{ filter: 'brightness(1.05) contrast(1.1)' }}
             />
-            <div className="absolute inset-0 bg-white/85"></div>
+            <div className="absolute inset-0 bg-white/75"></div>
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -102,62 +104,66 @@ export default function Index() {
             </h2>
             
             {/* 2x2 Project Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Malibu Residence */}
-              <Link to="/projects/malibu-residence" className="group relative overflow-hidden aspect-[4/3]">
-                <img 
-                  src="https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg"
-                  alt="Malibu Residence"
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+              <Link to="/projects/malibu-residence" className="group relative overflow-hidden aspect-[4/3] shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fbf94ab26c7844f828d801d72e56d3d51?format=webp&width=800"
+                  alt="Malibu Residence Dining Room Interior"
+                  className="w-full h-full object-cover object-center transition-all duration-300 group-hover:scale-102"
+                  style={{ filter: 'brightness(1.05) contrast(1.1)' }}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500">
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h3 className="text-2xl font-light tracking-wide mb-2 font-serif">Malibu Residence</h3>
+                    <h3 className="text-2xl font-bold tracking-wide mb-2 font-serif">Malibu Residence</h3>
                     <p className="text-sm tracking-[0.15em] uppercase">Malibu, CA</p>
                   </div>
                 </div>
               </Link>
 
               {/* Donna Residence 2 */}
-              <Link to="/projects/donna-residence-2" className="group relative overflow-hidden aspect-[4/3]">
-                <img 
+              <Link to="/projects/donna-residence-2" className="group relative overflow-hidden aspect-[4/3] shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
                   src="https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg"
                   alt="Donna Residence 2"
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+                  className="w-full h-full object-cover object-center transition-all duration-300 group-hover:scale-102"
+                  style={{ filter: 'brightness(1.05) contrast(1.1)' }}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500">
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h3 className="text-2xl font-light tracking-wide mb-2 font-serif">Donna Residence 2</h3>
+                    <h3 className="text-2xl font-bold tracking-wide mb-2 font-serif">Donna Residence 2</h3>
                     <p className="text-sm tracking-[0.15em] uppercase">Los Angeles, CA</p>
                   </div>
                 </div>
               </Link>
 
               {/* Tennessee Airbnb */}
-              <Link to="/projects/tennessee-airbnb" className="group relative overflow-hidden aspect-[4/3]">
-                <img 
+              <Link to="/projects/tennessee-airbnb" className="group relative overflow-hidden aspect-[4/3] shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
                   src="https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg"
                   alt="Tennessee Airbnb"
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+                  className="w-full h-full object-cover object-center transition-all duration-300 group-hover:scale-102"
+                  style={{ filter: 'brightness(1.05) contrast(1.1)' }}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500">
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h3 className="text-2xl font-light tracking-wide mb-2 font-serif">Tennessee Airbnb</h3>
+                    <h3 className="text-2xl font-bold tracking-wide mb-2 font-serif">Tennessee Airbnb</h3>
                     <p className="text-sm tracking-[0.15em] uppercase">Tennessee Mountains</p>
                   </div>
                 </div>
               </Link>
 
               {/* Lake Sherwood Residence */}
-              <Link to="/projects/lake-sherwood-residence" className="group relative overflow-hidden aspect-[4/3]">
-                <img 
+              <Link to="/projects/lake-sherwood-residence" className="group relative overflow-hidden aspect-[4/3] shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
                   src="https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg"
                   alt="Lake Sherwood Residence"
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+                  className="w-full h-full object-cover object-center transition-all duration-300 group-hover:scale-102"
+                  style={{ filter: 'brightness(1.05) contrast(1.1)' }}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500">
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h3 className="text-2xl font-light tracking-wide mb-2 font-serif">Lake Sherwood Residence</h3>
+                    <h3 className="text-2xl font-bold tracking-wide mb-2 font-serif">Lake Sherwood Residence</h3>
                     <p className="text-sm tracking-[0.15em] uppercase">Lake Sherwood, CA</p>
                   </div>
                 </div>
@@ -169,23 +175,25 @@ export default function Index() {
         {/* 3D Visualization Section with Second Image Background */}
         <section className="py-24 relative">
           {/* Background Image - Second Image */}
-          <div className="absolute inset-0">
-            <img 
+          <div className="absolute inset-0 z-0">
+            <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fd9d08034649645899eb7641a84790249?format=webp&width=800"
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              style={{ filter: 'brightness(1.05) contrast(1.1)' }}
             />
-            <div className="absolute inset-0 bg-black/60"></div>
+            <div className="absolute inset-0 bg-black/50"></div>
           </div>
           
           <div className="relative z-10 max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               {/* Left: Image */}
               <div className="relative">
-                <img 
+                <img
                   src="https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg"
                   alt="3D Visualization Process"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[500px] object-cover object-center"
+                  style={{ filter: 'brightness(1.05) contrast(1.1)' }}
                 />
                 <div className="absolute inset-0 bg-black/20"></div>
               </div>
@@ -211,13 +219,14 @@ export default function Index() {
         {/* Collaboration + CTA Section with Third Image Background */}
         <section className="py-24 relative">
           {/* Background Image - Third Image */}
-          <div className="absolute inset-0">
-            <img 
+          <div className="absolute inset-0 z-0">
+            <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe82a9849f5c446ab9706faf690282ae8?format=webp&width=800"
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              style={{ filter: 'brightness(1.05) contrast(1.1)' }}
             />
-            <div className="absolute inset-0 bg-black/70"></div>
+            <div className="absolute inset-0 bg-black/50"></div>
           </div>
           
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
@@ -263,7 +272,7 @@ export default function Index() {
             {/* Copyright */}
             <div className="text-center pt-8 mt-8 border-t border-zinc-800">
               <p className="text-xs text-zinc-500 font-light tracking-wide">
-                © Studio Yona. All rights reserved.
+                �� Studio Yona. All rights reserved.
               </p>
             </div>
           </div>

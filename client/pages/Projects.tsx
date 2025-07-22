@@ -66,13 +66,14 @@ export default function Projects() {
       
       <div className="min-h-screen relative">
         {/* Background Image - Second Image */}
-        <div className="fixed inset-0">
+        <div className="fixed inset-0 z-0">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F834b90160d2445338477337a330243a7?format=webp&width=800"
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
+            style={{ filter: 'brightness(1.05) contrast(1.1)' }}
           />
-          <div className="absolute inset-0 bg-white/90"></div>
+          <div className="absolute inset-0 bg-white/70"></div>
         </div>
 
         {/* Navigation */}
@@ -115,24 +116,26 @@ export default function Projects() {
             </div>
 
             {/* Projects Grid - 2 columns */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {projects.map((project, index) => (
-                <Link 
+                <Link
                   key={project.id}
                   to={`/projects/${project.id}`}
-                  className="group relative overflow-hidden aspect-[4/3] bg-gray-100"
+                  className="group relative overflow-hidden aspect-[4/3] shadow-lg hover:shadow-xl transition-all duration-300 mb-6"
+                  style={{ boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)' }}
                 >
                   {/* Project Image */}
-                  <img 
+                  <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:opacity-70"
+                    className="w-full h-full object-cover object-center transition-all duration-300 group-hover:scale-102"
+                    style={{ filter: 'brightness(1.05) contrast(1.1)' }}
                   />
-                  
+
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-500">
                     <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h2 className="text-2xl md:text-3xl font-light tracking-wide text-center mb-3 font-serif">
+                      <h2 className="text-2xl md:text-3xl font-bold tracking-wide text-center mb-3 font-serif">
                         {project.title}
                       </h2>
                       <p className="text-sm tracking-[0.15em] uppercase text-zinc-300">
