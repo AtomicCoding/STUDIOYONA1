@@ -49,6 +49,8 @@ export default function About() {
               loading="lazy"
             />
             <div className="absolute inset-0 bg-black/50"></div>
+            {/* Top and bottom gradient fade for seamless transitions */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
           </div>
           
           {/* Header Content */}
@@ -71,6 +73,8 @@ export default function About() {
               loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+            {/* Top and bottom gradient fade for seamless transitions */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.12) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.12) 100%)' }}></div>
           </div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -169,6 +173,8 @@ export default function About() {
               loading="lazy"
             />
             <div className="absolute inset-0 bg-black/25"></div>
+            {/* Top and bottom gradient fade for seamless transitions */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
           </div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -216,6 +222,8 @@ export default function About() {
               loading="lazy"
             />
             <div className="absolute inset-0 bg-black/60"></div>
+            {/* Top and bottom gradient fade for seamless transitions */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
           </div>
           
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">

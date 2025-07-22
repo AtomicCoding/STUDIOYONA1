@@ -44,6 +44,8 @@ export default function Index() {
             />
             {/* Minimal overlay for text readability */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/40"></div>
+            {/* Top and bottom gradient fade for seamless transitions */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
           </div>
           
           {/* Hero Content - Top Right Positioned */}
@@ -77,11 +79,13 @@ export default function Index() {
               loading="lazy"
             />
             <div className="absolute inset-0 bg-black/50"></div>
+            {/* Top and bottom gradient fade for seamless transitions */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
           </div>
           
           <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
             <p className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-              Studio Yona is a Los Angeles-based design practice crafting immersive environments
+              Studio Yona is a Los Angeles-based design practice crafting immersive environments 
               inspired by global exploration and California minimalism.
             </p>
           </div>
@@ -99,6 +103,8 @@ export default function Index() {
               loading="lazy"
             />
             <div className="absolute inset-0 bg-white/8"></div>
+            {/* Top and bottom gradient fade for seamless transitions */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.12) 0%, transparent 20%, transparent 80%, rgba(255,255,255,0.12) 100%)' }}></div>
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -191,8 +197,10 @@ export default function Index() {
               loading="lazy"
             />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.15) 50%, transparent 100%)' }}></div>
+            {/* Top and bottom gradient fade for seamless transitions */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
           </div>
-
+          
           <div className="relative z-10 max-w-7xl mx-auto px-6">
             <div className="max-w-2xl">
               {/* Left: Content Only - No Gray Box */}
@@ -201,7 +209,7 @@ export default function Index() {
                   Design, Visualized
                 </h2>
                 <p className="text-lg md:text-xl font-light leading-relaxed font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-                  Studio Yona transforms early design ideas into detailed spatial previews using
+                  Studio Yona transforms early design ideas into detailed spatial previews using 
                   cutting-edge 3D and VR tools. Every decision is seen before it's built.
                 </p>
               </div>
@@ -221,6 +229,8 @@ export default function Index() {
               loading="lazy"
             />
             <div className="absolute inset-0 bg-black/50"></div>
+            {/* Top and bottom gradient fade for seamless transitions */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
           </div>
           
           <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
