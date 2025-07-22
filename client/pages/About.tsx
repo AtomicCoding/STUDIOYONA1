@@ -1,10 +1,18 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function About() {
-  // Scroll to top when component mounts
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Scroll to top when component mounts and handle scroll effects
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 200);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -62,7 +70,7 @@ export default function About() {
         </section>
 
         {/* Studio Philosophy Section - Fifth Image Background */}
-        <section className="py-24 relative">
+        <section className={`py-24 relative transition-all duration-1000 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-8'}`}>
           {/* Background Image - Fifth Image */}
           <div className="absolute inset-0">
             <img
@@ -105,7 +113,7 @@ export default function About() {
         </section>
 
         {/* Adam Yona Section */}
-        <section className="py-24 bg-zinc-900">
+        <section className={`py-24 bg-zinc-900 transition-all duration-1000 delay-200 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-8'}`}>
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               {/* Left: Image - Third Image */}
@@ -162,7 +170,7 @@ export default function About() {
         </section>
 
         {/* Recognition Section - Seventh Image Background */}
-        <section className="py-24 relative">
+        <section className={`py-24 relative transition-all duration-1000 delay-400 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-8'}`}>
           {/* Background Image - Seventh Image */}
           <div className="absolute inset-0">
             <img
@@ -211,7 +219,7 @@ export default function About() {
         </section>
 
         {/* CTA Section - Sixth Image Background */}
-        <section className="py-24 relative">
+        <section className={`py-24 relative transition-all duration-1000 delay-600 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-8'}`}>
           {/* Background Image - Sixth Image */}
           <div className="absolute inset-0">
             <img
