@@ -64,7 +64,17 @@ export default function Projects() {
     <>
       <title>Projects - Studio Yona</title>
       
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen relative">
+        {/* Background Image - Second Image */}
+        <div className="fixed inset-0">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F834b90160d2445338477337a330243a7?format=webp&width=800"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-white/90"></div>
+        </div>
+
         {/* Navigation */}
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200/50">
           <div className="max-w-7xl mx-auto px-6 py-5">
@@ -91,7 +101,7 @@ export default function Projects() {
         </nav>
 
         {/* Main Content */}
-        <div className="pt-20 pb-24 bg-white">
+        <div className="relative z-10 pt-20 pb-24">
           <div className="max-w-7xl mx-auto px-6">
             {/* Page Header */}
             <div className="text-center mb-20 pt-12">
