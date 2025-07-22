@@ -1,255 +1,260 @@
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
   });
 
-  // Scroll to top when component mounts (when navigated to contact page)
+  // Scroll to top when component mounts
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
+    setFormData(prev => ({
       ...prev,
-      [name]: value,
+      [name]: value
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log("Form submitted:", formData);
+    console.log('Form submitted:', formData);
   };
 
   return (
     <>
       <title>Contact - Studio Yona</title>
-
-      <div className="min-h-screen">
-        {/* Header */}
-        <header className="relative z-[1000] h-[90px] md:h-[90px] font-gotham-medium">
-          <div className="w-full px-4">
-            <div className="min-h-[22px] pt-5 pb-[19px]">
+      
+      <div className="min-h-screen bg-white">
+        {/* Navigation */}
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200/50">
+          <div className="max-w-7xl mx-auto px-6 py-4">
+            <div className="flex justify-between items-center">
               {/* Logo */}
-              <div className="inline-block relative">
-                <Link
-                  to="/"
-                  title="Studio Yona"
-                  className="block text-black font-gotham-medium text-lg md:text-xl transition-all duration-300 ease-linear hover:opacity-70"
-                >
-                  <h2 className="text-lg md:text-xl font-gotham-medium text-black text-left">
-                    STUDIO YONA
-                  </h2>
+              <Link to="/" className="font-light text-sm tracking-[0.2em] text-black hover:opacity-70 transition-opacity">
+                STUDIO YONA
+              </Link>
+              
+              {/* Navigation Links */}
+              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light">
+                <Link to="/projects" className="text-black hover:opacity-70 transition-opacity">
+                  PROJECTS
                 </Link>
-                <span className="text-black font-gotham-medium text-xs md:text-[14.4px] block mt-1">
-                  ARCHITECTURE & DESIGN STUDIO
-                </span>
-              </div>
-
-              {/* Navigation */}
-              <div className="float-right grid grid-cols-3 gap-4 md:gap-8 w-2/3 md:w-1/2 relative top-[9px] text-xs md:text-sm">
-                <div className="text-left">
-                  <Link
-                    to="/projects"
-                    title="Projects"
-                    className="text-gray-600 font-gotham-medium text-xs md:text-sm transition-all duration-300 ease-linear hover:opacity-70"
-                  >
-                    PROJECTS
-                  </Link>
-                </div>
-                <div className="text-center">
-                  <Link
-                    to="/about"
-                    title="About"
-                    className="text-gray-600 font-gotham-medium text-xs md:text-sm transition-all duration-300 ease-linear hover:opacity-70"
-                  >
-                    ABOUT
-                  </Link>
-                </div>
-                <div className="text-right">
-                  <Link
-                    to="/contact"
-                    title="Contact"
-                    className="text-black font-gotham-medium text-xs md:text-sm transition-all duration-300 ease-linear cursor-default"
-                  >
-                    CONTACT
-                  </Link>
-                </div>
+                <Link to="/about" className="text-black hover:opacity-70 transition-opacity">
+                  ABOUT
+                </Link>
+                <Link to="/contact" className="text-black">
+                  CONTACT
+                </Link>
               </div>
             </div>
           </div>
-          {/* Horizontal line */}
-          <hr className="bg-[rgb(187,187,187)] border-0 h-px w-full overflow-hidden" />
-        </header>
+        </nav>
 
-        {/* Content */}
-        <div className="w-full mx-auto pb-[150px]">
-          <div className="w-full px-4">
-            <div className="w-full">
-              {/* General Inquiries Form */}
-              <div className="mb-[60px]">
-                <div className="relative">
-                  <h2 className="text-xl font-gotham-medium text-black mb-5">
-                    General Inquiries
+        {/* Main Content */}
+        <div className="pt-20 pb-24">
+          <div className="max-w-7xl mx-auto px-6">
+            {/* Page Header */}
+            <div className="text-center mb-20">
+              <h1 className="text-5xl md:text-7xl font-thin tracking-tight text-black mb-8">
+                Contact
+              </h1>
+            </div>
+
+            {/* Content Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+              {/* Left: Contact Copy */}
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-3xl font-thin tracking-tight text-black mb-6">
+                    We'd love to hear from you.
                   </h2>
+                  <p className="text-xl font-light leading-relaxed text-gray-700 mb-8">
+                    Let's bring your vision to life with purposeful design.
+                  </p>
+                  <p className="text-lg font-light leading-relaxed text-gray-600">
+                    Every great project begins with a conversation. Whether you're envisioning 
+                    a complete home transformation or seeking design consultation, we're here 
+                    to listen, collaborate, and create something extraordinary together.
+                  </p>
+                </div>
 
-                  <form onSubmit={handleSubmit}>
-                    <fieldset className="min-w-min">
-                      {/* Name Field */}
-                      <div className="clear-both mb-[5px] overflow-auto w-full flex">
-                        <div className="pr-[5px] align-top w-[135px] leading-6">
-                          <label
-                            htmlFor="name"
-                            className="cursor-default inline leading-6"
-                          >
-                            Name*
-                          </label>
-                        </div>
-                        <div className="leading-6 w-full">
-                          <input
-                            name="name"
-                            id="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            required
-                            className="w-full border border-[rgb(187,187,187)] bg-white text-black p-[10px] box-border inline-block cursor-text overflow-clip leading-normal outline-black"
-                          />
-                        </div>
-                      </div>
+                {/* Contact Information */}
+                <div className="pt-12 border-t border-gray-200">
+                  <h3 className="text-lg font-light tracking-wide text-black mb-6 uppercase">
+                    Studio Information
+                  </h3>
+                  
+                  <div className="space-y-6">
+                    <div>
+                      <p className="text-base font-light text-gray-700 leading-relaxed">
+                        Studio Yona<br />
+                        Beverly Hills, CA 90210
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <p className="text-base font-light text-gray-700">
+                        <a href="tel:+18186685776" className="hover:text-black transition-colors">
+                          (818) 668-5776
+                        </a>
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <p className="text-base font-light text-gray-700">
+                        <a href="mailto:adam@yona.studio" className="hover:text-black transition-colors">
+                          adam@yona.studio
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-                      {/* Email Field */}
-                      <div className="clear-both mb-[5px] overflow-auto w-full flex">
-                        <div className="pr-[5px] align-top w-[135px] leading-6">
-                          <label
-                            htmlFor="email"
-                            className="cursor-default inline leading-6"
-                          >
-                            Email*
-                          </label>
-                        </div>
-                        <div className="leading-6 w-full">
-                          <input
-                            name="email"
-                            id="email"
-                            type="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            required
-                            className="w-full border border-[rgb(187,187,187)] bg-white text-black p-[10px] box-border inline-block cursor-text overflow-clip leading-normal outline-black"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Subject Field */}
-                      <div className="clear-both mb-[5px] overflow-auto w-full flex">
-                        <div className="pr-[5px] align-top w-[135px] leading-6">
-                          <label
-                            htmlFor="subject"
-                            className="cursor-default inline leading-6"
-                          >
-                            Subject
-                          </label>
-                        </div>
-                        <div className="leading-6 w-full">
-                          <input
-                            name="subject"
-                            id="subject"
-                            value={formData.subject}
-                            onChange={handleInputChange}
-                            className="w-full border border-[rgb(187,187,187)] bg-white text-black p-[10px] box-border inline-block cursor-text overflow-clip leading-normal outline-black"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Message Field */}
-                      <div className="clear-both mb-[5px] overflow-auto w-full flex">
-                        <div className="pr-[5px] align-top w-[135px] leading-6">
-                          <label
-                            htmlFor="message"
-                            className="cursor-default inline leading-6"
-                          >
-                            Message*
-                          </label>
-                        </div>
-                        <div className="leading-6 w-full">
-                          <textarea
-                            name="message"
-                            id="message"
-                            value={formData.message}
-                            onChange={handleInputChange}
-                            required
-                            className="w-full h-[150px] border border-[rgb(187,187,187)] bg-white text-black p-[10px] box-border inline-block cursor-text resize-both whitespace-pre-wrap leading-normal outline-black"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Submit Button */}
-                      <div className="clear-both mb-[5px] overflow-auto w-full flex">
-                        <div className="pr-[5px] align-top w-[135px] leading-6" />
-                        <div className="leading-6 w-full">
-                          <br className="inline leading-6" />
-                          <input
-                            type="submit"
-                            value="Submit"
-                            className="inline-block cursor-pointer bg-white border border-[rgb(187,187,187)] text-black font-gotham-medium text-[15px] py-[5px] text-center uppercase select-none whitespace-pre w-[100px] leading-normal outline-black hover:opacity-70 transition-all duration-300"
-                          />
-                        </div>
-                      </div>
-                    </fieldset>
-                  </form>
+                {/* Social Links */}
+                <div className="pt-8">
+                  <div className="flex space-x-8">
+                    <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm tracking-[0.15em] font-light">
+                      INSTAGRAM
+                    </a>
+                    <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm tracking-[0.15em] font-light">
+                      LINKEDIN
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              {/* Mailing Address and Phone */}
-              <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px]">
-                <h2 className="text-xl font-gotham-medium text-black mb-5">
-                  Mailing Address and Phone
-                </h2>
-                <p className="leading-6">
-                  <span>Studio Yona</span>
-                  <br className="inline leading-6" />
-                  <span>1234 Sunset Boulevard</span>
-                  <br className="inline leading-6" />
-                  <span>Los Angeles, CA 90026</span>
-                  <br className="inline leading-6" />
-                  <br className="inline leading-6" />
-                  <span>+1 323.555.0123</span>
-                </p>
-              </div>
+              {/* Right: Contact Form */}
+              <div className="lg:pl-12">
+                <form onSubmit={handleSubmit} className="space-y-8">
+                  {/* Name Field */}
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                      Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full border-0 border-b border-gray-300 bg-transparent py-3 text-base font-light text-black placeholder-gray-400 focus:border-black focus:outline-none transition-colors"
+                      placeholder="Your name"
+                    />
+                  </div>
 
-              {/* Employment */}
-              <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px]">
-                <h2 className="text-xl font-gotham-medium text-black mb-5">
-                  Employment
-                </h2>
-                <p className="leading-6">
-                  For employment opportunities, please send materials in PDF
-                  format to jobs@studioyona.com or a hard copy to the address
-                  above. Please note that hard copies will not be returned.
-                </p>
-              </div>
+                  {/* Email Field */}
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full border-0 border-b border-gray-300 bg-transparent py-3 text-base font-light text-black placeholder-gray-400 focus:border-black focus:outline-none transition-colors"
+                      placeholder="your@email.com"
+                    />
+                  </div>
 
-              {/* Press */}
-              <div className="border-t border-[rgb(187,187,187)] pt-5 mb-[60px]">
-                <h2 className="text-xl font-gotham-medium text-black mb-5">
-                  Press
-                </h2>
-                <p className="leading-6">
-                  For press inquiries, please contact press@studioyona.com
-                </p>
+                  {/* Subject Field */}
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      name="subject"
+                      id="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
+                      className="w-full border-0 border-b border-gray-300 bg-transparent py-3 text-base font-light text-black placeholder-gray-400 focus:border-black focus:outline-none transition-colors"
+                      placeholder="Project inquiry"
+                    />
+                  </div>
+
+                  {/* Message Field */}
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                      Message *
+                    </label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows={6}
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full border-0 border-b border-gray-300 bg-transparent py-3 text-base font-light text-black placeholder-gray-400 focus:border-black focus:outline-none transition-colors resize-none"
+                      placeholder="Tell us about your project..."
+                    />
+                  </div>
+
+                  {/* Submit Button */}
+                  <div className="pt-8">
+                    <button
+                      type="submit"
+                      className="px-12 py-4 border border-black text-black font-light tracking-[0.15em] text-sm hover:bg-black hover:text-white transition-all duration-500"
+                    >
+                      SEND MESSAGE
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Footer */}
+        <footer className="bg-white border-t border-gray-200 py-12">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              {/* Footer Navigation */}
+              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light mb-8 md:mb-0">
+                <Link to="/" className="text-gray-600 hover:text-black transition-colors">
+                  HOME
+                </Link>
+                <Link to="/projects" className="text-gray-600 hover:text-black transition-colors">
+                  PROJECTS
+                </Link>
+                <Link to="/about" className="text-gray-600 hover:text-black transition-colors">
+                  ABOUT
+                </Link>
+                <Link to="/contact" className="text-gray-600 hover:text-black transition-colors">
+                  CONTACT
+                </Link>
+              </div>
+              
+              {/* Social Links */}
+              <div className="flex space-x-6 mb-8 md:mb-0">
+                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
+                  INSTAGRAM
+                </a>
+                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
+                  LINKEDIN
+                </a>
+              </div>
+            </div>
+            
+            {/* Copyright */}
+            <div className="text-center pt-8 border-t border-gray-200">
+              <p className="text-xs text-gray-500 font-light tracking-wide">
+                © Studio Yona. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
