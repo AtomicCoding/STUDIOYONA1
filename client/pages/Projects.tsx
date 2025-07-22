@@ -64,25 +64,25 @@ export default function Projects() {
     <>
       <title>Projects - Studio Yona</title>
       
-      <div className="min-h-screen bg-zinc-900">
+      <div className="min-h-screen bg-white">
         {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-900/90 backdrop-blur-sm border-b border-zinc-800/50">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200/50">
           <div className="max-w-7xl mx-auto px-6 py-5">
             <div className="flex justify-between items-center">
               {/* Logo */}
-              <Link to="/" className="font-light text-sm tracking-[0.3em] text-white hover:text-zinc-300 transition-colors">
+              <Link to="/" className="font-light text-sm tracking-[0.3em] text-black hover:text-gray-600 transition-colors">
                 STUDIO YONA
               </Link>
               
               {/* Navigation Links */}
               <div className="flex space-x-10 text-xs tracking-[0.2em] font-light">
-                <Link to="/projects" className="text-white">
+                <Link to="/projects" className="text-black">
                   PROJECTS
                 </Link>
-                <Link to="/about" className="text-zinc-300 hover:text-white transition-colors">
+                <Link to="/about" className="text-gray-600 hover:text-black transition-colors">
                   ABOUT
                 </Link>
-                <Link to="/contact" className="text-zinc-300 hover:text-white transition-colors">
+                <Link to="/contact" className="text-gray-600 hover:text-black transition-colors">
                   CONTACT
                 </Link>
               </div>
@@ -91,14 +91,14 @@ export default function Projects() {
         </nav>
 
         {/* Main Content */}
-        <div className="pt-20 pb-24 bg-zinc-800">
+        <div className="pt-20 pb-24 bg-white">
           <div className="max-w-7xl mx-auto px-6">
             {/* Page Header */}
             <div className="text-center mb-20 pt-12">
-              <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-white mb-8 font-serif">
+              <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-black mb-8 font-serif">
                 Projects
               </h1>
-              <p className="text-xl font-light text-zinc-300 max-w-3xl mx-auto leading-relaxed font-serif">
+              <p className="text-xl font-light text-gray-700 max-w-3xl mx-auto leading-relaxed font-serif">
                 A curated selection of bespoke residential designs crafted 
                 for discerning clients across California and beyond.
               </p>
@@ -110,7 +110,7 @@ export default function Projects() {
                 <Link 
                   key={project.id}
                   to={`/projects/${project.id}`}
-                  className="group relative overflow-hidden aspect-[4/3] bg-zinc-900"
+                  className="group relative overflow-hidden aspect-[4/3] bg-gray-100"
                 >
                   {/* Project Image */}
                   <img 
