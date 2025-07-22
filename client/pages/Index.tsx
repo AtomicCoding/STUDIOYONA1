@@ -31,12 +31,12 @@ export default function Index() {
           </div>
         </nav>
 
-        {/* Hero Section - Fullscreen */}
+        {/* Hero Section - Fullscreen with Fifth Image */}
         <section className="relative h-screen overflow-hidden">
-          {/* Background Image */}
+          {/* Background Image - Fifth Image */}
           <div className="absolute inset-0">
             <img
-              src="https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F5cbf6143960a4c7b832c86baf1bad549?format=webp&width=800"
               alt=""
               className="w-full h-full object-cover"
             />
@@ -64,20 +64,30 @@ export default function Index() {
           </div>
         </section>
 
-        {/* Intro Statement */}
-        <section className="py-24 bg-zinc-800">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="text-3xl md:text-4xl font-light leading-relaxed text-zinc-100 font-serif">
+        {/* Intro Statement with First Image Background */}
+        <section className="py-24 relative">
+          {/* Background Image - First Image */}
+          <div className="absolute inset-0">
+            <img 
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb50a92f53f2b45f8804342761c78ddae?format=webp&width=800"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/60"></div>
+          </div>
+          
+          <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <p className="text-3xl md:text-4xl font-light leading-relaxed text-white font-serif">
               Studio Yona is a Los Angeles-based design practice crafting immersive environments 
               inspired by global exploration and California minimalism.
             </p>
           </div>
         </section>
 
-        {/* Featured Work */}
-        <section className="py-24 bg-zinc-900">
+        {/* Featured Work - White Background */}
+        <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-5xl md:text-6xl font-thin tracking-tight text-center text-white mb-20 font-serif">
+            <h2 className="text-5xl md:text-6xl font-thin tracking-tight text-center text-black mb-20 font-serif">
               Featured Work
             </h2>
             
@@ -146,9 +156,19 @@ export default function Index() {
           </div>
         </section>
 
-        {/* 3D Visualization Section */}
-        <section className="py-24 bg-zinc-800">
-          <div className="max-w-7xl mx-auto px-6">
+        {/* 3D Visualization Section with Second Image Background */}
+        <section className="py-24 relative">
+          {/* Background Image - Second Image */}
+          <div className="absolute inset-0">
+            <img 
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fd9d08034649645899eb7641a84790249?format=webp&width=800"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/60"></div>
+          </div>
+          
+          <div className="relative z-10 max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               {/* Left: Image */}
               <div className="relative">
@@ -178,16 +198,16 @@ export default function Index() {
           </div>
         </section>
 
-        {/* Collaboration + CTA Section */}
-        <section className="py-24 bg-zinc-900 relative">
-          {/* Background with subtle overlay */}
+        {/* Collaboration + CTA Section with Third Image Background */}
+        <section className="py-24 relative">
+          {/* Background Image - Third Image */}
           <div className="absolute inset-0">
             <img 
-              src="https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe82a9849f5c446ab9706faf690282ae8?format=webp&width=800"
               alt=""
-              className="w-full h-full object-cover opacity-20"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-zinc-900/80"></div>
+            <div className="absolute inset-0 bg-black/70"></div>
           </div>
           
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
@@ -197,7 +217,7 @@ export default function Index() {
             
             <Link 
               to="/contact"
-              className="inline-block px-12 py-4 bg-black border border-zinc-600 text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-500 rounded-sm"
+              className="inline-block px-12 py-4 bg-black/60 border border-white/50 text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-500 rounded-sm backdrop-blur-sm"
             >
               GET IN TOUCH
             </Link>
