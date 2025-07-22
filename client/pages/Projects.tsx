@@ -17,13 +17,6 @@ export default function Projects() {
       image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg'
     },
     {
-      id: 'ingomar',
-      title: 'Ingomar',
-      location: 'Tarzana, CA',
-      year: '2022',
-      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg'
-    },
-    {
       id: 'fletcher',
       title: 'Fletcher',
       location: 'Silver Lake, CA',
@@ -35,6 +28,13 @@ export default function Projects() {
       title: 'Lake Sherwood Residence',
       location: 'Lake Sherwood, CA',
       year: '2023',
+      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg'
+    },
+    {
+      id: 'ingomar',
+      title: 'Ingomar',
+      location: 'Tarzana, CA',
+      year: '2022',
       image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg'
     },
     {
@@ -60,7 +60,7 @@ export default function Projects() {
             style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-white/8"></div>
+          <div className="absolute inset-0 bg-white/5"></div>
         </div>
 
         {/* Navigation */}
@@ -96,8 +96,8 @@ export default function Projects() {
               <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-black mb-8 font-serif">
                 Projects
               </h1>
-              <p className="text-xl font-light text-gray-700 max-w-3xl mx-auto leading-relaxed font-serif">
-                A curated selection of bespoke residential designs crafted 
+              <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto leading-relaxed font-serif" style={{ color: '#EDEDED', textShadow: '0 2px 4px rgba(0,0,0,0.3)', lineHeight: '1.7' }}>
+                A curated selection of bespoke residential designs crafted
                 for discerning clients across California and beyond.
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function Projects() {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover object-center transition-all duration-500"
-                    style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+                    style={{ filter: 'contrast(125%) brightness(110%) saturate(130%)' }}
                     loading="lazy"
                   />
 

@@ -74,23 +74,23 @@ export default function About() {
           </div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-6">
-            <h2 className="text-4xl md:text-5xl font-thin tracking-tight text-white mb-16 text-center font-serif">
+            <h2 className="text-4xl md:text-5xl font-thin tracking-tight mb-16 text-center font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
               Studio Philosophy
             </h2>
             
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-light leading-relaxed text-zinc-200 mb-16 font-serif">
+              <p className="text-2xl md:text-3xl font-light leading-relaxed mb-16 font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
                 Studio Yona is a Los Angeles-based design practice focused on custom residential 
                 work that balances clarity, creativity, and context.
               </p>
               
-              <p className="text-xl font-light leading-relaxed text-zinc-300 mb-8">
+              <p className="text-xl font-light leading-relaxed mb-8" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
                 Our spaces are immersive, intentional, and rooted in the unique stories of the people 
                 who live in them. We believe architecture should feel like a natural extension of its 
                 inhabitants' lives and dreams.
               </p>
               
-              <p className="text-xl font-light leading-relaxed text-zinc-300">
+              <p className="text-xl font-light leading-relaxed" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
                 Each project begins with deep listening and careful observation. We immerse ourselves 
                 in understanding how our clients move through space, how they entertain, how they find 
                 peace. This foundation allows us to create environments that are not just beautiful, 
@@ -126,7 +126,7 @@ export default function About() {
                   Founder & Principal Designer
                 </h3>
                 
-                <div className="space-y-8 text-lg font-light leading-relaxed text-zinc-300">
+                <div className="space-y-8 text-lg font-light leading-relaxed" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
                   <p>
                     Adam Yona is the founder and principal designer of Studio Yona. Raised in 
                     Los Angeles and shaped by hands-on site experience, Adam brings a global 
@@ -168,7 +168,7 @@ export default function About() {
               style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-black/25"></div>
           </div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -178,26 +178,26 @@ export default function About() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
               <div className="space-y-4">
-                <h3 className="text-2xl font-light tracking-wide text-white font-serif">2024</h3>
-                <div className="space-y-3">
-                  <p className="text-base font-light text-zinc-300">Design Vanguard Award</p>
-                  <p className="text-sm text-zinc-400 tracking-[0.1em] uppercase">Architectural Record</p>
+                <h3 className="text-2xl font-light tracking-wide font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>2024</h3>
+                <div className="bg-black/20 p-4 rounded-sm backdrop-blur-sm space-y-3">
+                  <p className="text-base font-light" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Design Vanguard Award</p>
+                  <p className="text-sm tracking-[0.1em] uppercase" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Architectural Record</p>
                 </div>
               </div>
-              
+
               <div className="space-y-4">
-                <h3 className="text-2xl font-light tracking-wide text-white font-serif">2023</h3>
-                <div className="space-y-3">
-                  <p className="text-base font-light text-zinc-300">Rising Star Award</p>
-                  <p className="text-sm text-zinc-400 tracking-[0.1em] uppercase">Interior Design Magazine</p>
+                <h3 className="text-2xl font-light tracking-wide font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>2023</h3>
+                <div className="bg-black/20 p-4 rounded-sm backdrop-blur-sm space-y-3">
+                  <p className="text-base font-light" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Rising Star Award</p>
+                  <p className="text-sm tracking-[0.1em] uppercase" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Interior Design Magazine</p>
                 </div>
               </div>
-              
+
               <div className="space-y-4">
-                <h3 className="text-2xl font-light tracking-wide text-white font-serif">2023</h3>
-                <div className="space-y-3">
-                  <p className="text-base font-light text-zinc-300">Emerging Voices</p>
-                  <p className="text-sm text-zinc-400 tracking-[0.1em] uppercase">Architectural League NY</p>
+                <h3 className="text-2xl font-light tracking-wide font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>2023</h3>
+                <div className="bg-black/20 p-4 rounded-sm backdrop-blur-sm space-y-3">
+                  <p className="text-base font-light" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Emerging Voices</p>
+                  <p className="text-sm tracking-[0.1em] uppercase" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Architectural League NY</p>
                 </div>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function About() {
           </div>
           
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-4xl md:text-5xl font-thin tracking-tight text-white mb-12 font-serif">
+            <h2 className="text-4xl md:text-5xl font-thin tracking-tight mb-12 font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
               Let's create something meaningful together.
             </h2>
             <Link 

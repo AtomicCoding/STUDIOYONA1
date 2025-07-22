@@ -46,14 +46,13 @@ export default function Index() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/40"></div>
           </div>
           
-          {/* Hero Content */}
-          <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-thin tracking-tight text-white mb-6 font-serif">
-              STUDIO YONA
-            </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl font-light tracking-wide text-white/90 font-serif">
-              Bespoke Residential Design Studio
-            </p>
+          {/* Hero Content - Top Right Positioned */}
+          <div className="relative z-10 h-full flex items-start justify-end pt-32 pr-8 md:pr-16 lg:pr-24">
+            <div className="bg-black/20 backdrop-blur-sm px-8 py-6 rounded-sm">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-thin tracking-tight text-stone-100 font-serif" style={{ textShadow: '0 4px 8px rgba(0,0,0,0.3)' }}>
+                STUDIO YONA
+              </h1>
+            </div>
           </div>
           
           {/* Scroll Indicator */}
@@ -81,8 +80,8 @@ export default function Index() {
           </div>
           
           <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-            <p className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed text-white font-serif">
-              Studio Yona is a Los Angeles-based design practice crafting immersive environments 
+            <p className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+              Studio Yona is a Los Angeles-based design practice crafting immersive environments
               inspired by global exploration and California minimalism.
             </p>
           </div>
@@ -103,7 +102,7 @@ export default function Index() {
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-6">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-thin tracking-tight text-center text-black mb-24 font-serif">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-thin tracking-tight text-center mb-24 font-serif" style={{ color: '#F5F5F5', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
               Featured Work
             </h2>
             
@@ -180,46 +179,30 @@ export default function Index() {
           </div>
         </section>
 
-        {/* 3D Visualization Section - Enhanced Vibrancy */}
+        {/* Design Visualized Section - Clean Background Only */}
         <section className="py-32 relative">
-          {/* Background Image */}
+          {/* Background Image - Full Width */}
           <div className="absolute inset-0 z-0">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fd9d08034649645899eb7641a84790249?format=webp&width=1920"
               alt=""
               className="w-full h-full object-cover object-center"
-              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+              style={{ filter: 'contrast(125%) brightness(110%) saturate(130%)' }}
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.15) 50%, transparent 100%)' }}></div>
           </div>
-          
+
           <div className="relative z-10 max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              {/* Left: Image */}
-              <div className="relative">
-                <img
-                  src="https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg"
-                  alt="3D Visualization Process"
-                  className="w-full h-[500px] object-cover object-center"
-                  style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-black/20"></div>
-              </div>
-              
-              {/* Right: Content */}
-              <div className="lg:pl-12 text-white">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-thin tracking-tight mb-8 font-serif">
+            <div className="max-w-2xl">
+              {/* Left: Content Only - No Gray Box */}
+              <div className="bg-black/35 backdrop-blur-sm p-8 rounded-sm">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-thin tracking-tight mb-8 font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
                   Design, Visualized
                 </h2>
-                <p className="text-lg md:text-xl font-light leading-relaxed mb-8 text-zinc-200">
-                  Studio Yona transforms early design ideas into detailed spatial previews using 
+                <p className="text-lg md:text-xl font-light leading-relaxed font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+                  Studio Yona transforms early design ideas into detailed spatial previews using
                   cutting-edge 3D and VR tools. Every decision is seen before it's built.
-                </p>
-                <p className="text-base md:text-lg font-light leading-relaxed text-zinc-300">
-                  This immersive visualization process helps clients feel confident, informed, 
-                  and inspired throughout their design journey.
                 </p>
               </div>
             </div>
@@ -241,7 +224,7 @@ export default function Index() {
           </div>
           
           <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-            <blockquote className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed text-white mb-12 font-serif italic">
+            <blockquote className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed mb-12 font-serif italic" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
               "We don't just create spaces — we guide people through the design journey with intention and precision."
             </blockquote>
             
