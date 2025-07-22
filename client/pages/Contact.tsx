@@ -59,15 +59,15 @@ export default function Contact() {
         </nav>
 
         {/* Main Content */}
-        <div className="pt-20 pb-24 bg-zinc-800 relative">
-          {/* Background Image with Overlay */}
+        <div className="pt-20 pb-24 relative">
+          {/* Background Image - Fourth Image */}
           <div className="absolute inset-0">
             <img 
-              src="https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa5050a739dc240f19ab64fbb0cdf6658?format=webp&width=800"
               alt=""
-              className="w-full h-full object-cover opacity-30"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-zinc-800/80"></div>
+            <div className="absolute inset-0 bg-black/70"></div>
           </div>
           
           <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -218,7 +218,7 @@ export default function Contact() {
                   <div className="pt-8">
                     <button
                       type="submit"
-                      className="px-12 py-4 bg-black border border-zinc-600 text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-500 rounded-sm"
+                      className="px-12 py-4 bg-black/60 border border-white/50 text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-500 rounded-sm backdrop-blur-sm"
                     >
                       SEND MESSAGE
                     </button>
