@@ -42,9 +42,11 @@ export default function About() {
           {/* Background Image - Fourth Image */}
           <div className="absolute inset-0">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F83a0382e5dd348ca84726deafd32c0a7?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F83a0382e5dd348ca84726deafd32c0a7?format=webp&width=1920"
               alt="Studio Workspace"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black/50"></div>
           </div>
@@ -62,11 +64,13 @@ export default function About() {
           {/* Background Image - Fifth Image */}
           <div className="absolute inset-0">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff0faabc754854365adcd741fef1fd737?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff0faabc754854365adcd741fef1fd737?format=webp&width=1920"
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+              loading="lazy"
             />
-            <div className="absolute inset-0 bg-zinc-800/85"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
           </div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -103,9 +107,11 @@ export default function About() {
               {/* Left: Image - Third Image */}
               <div className="relative">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7ed5165c63e24518ba4ee62edc378811?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7ed5165c63e24518ba4ee62edc378811?format=webp&width=1200"
                   alt="Adam Yona"
-                  className="w-full h-[600px] object-cover"
+                  className="w-full h-[600px] object-cover object-center"
+                  style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/20"></div>
               </div>
@@ -156,11 +162,13 @@ export default function About() {
           {/* Background Image - Seventh Image */}
           <div className="absolute inset-0">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8398405680bc48859cca4f79adb1f60e?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8398405680bc48859cca4f79adb1f60e?format=webp&width=1920"
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+              loading="lazy"
             />
-            <div className="absolute inset-0 bg-zinc-800/85"></div>
+            <div className="absolute inset-0 bg-black/40"></div>
           </div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -201,11 +209,13 @@ export default function About() {
           {/* Background Image - Sixth Image */}
           <div className="absolute inset-0">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2f9fd6066f6a4352aff25084e0cc48cb?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2f9fd6066f6a4352aff25084e0cc48cb?format=webp&width=1920"
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+              loading="lazy"
             />
-            <div className="absolute inset-0 bg-zinc-900/75"></div>
+            <div className="absolute inset-0 bg-black/60"></div>
           </div>
           
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">

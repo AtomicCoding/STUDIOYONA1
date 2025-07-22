@@ -7,7 +7,7 @@ export default function Projects() {
       title: 'Malibu Residence',
       location: 'Malibu, CA',
       year: '2024',
-      image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg'
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fbf94ab26c7844f828d801d72e56d3d51?format=webp&width=1200'
     },
     {
       id: 'donna-residence-2',
@@ -17,46 +17,32 @@ export default function Projects() {
       image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg'
     },
     {
-      id: 'lake-sherwood-residence',
-      title: 'Lake Sherwood Residence',
-      location: 'Lake Sherwood, CA',
-      year: '2023',
+      id: 'ingomar',
+      title: 'Ingomar',
+      location: 'Tarzana, CA',
+      year: '2022',
       image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg'
-    },
-    {
-      id: 'bentley-condo',
-      title: 'Bentley Condo',
-      location: 'West Hollywood, CA',
-      year: '2023',
-      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg'
-    },
-    {
-      id: 'tennessee-airbnb',
-      title: 'Tennessee Airbnb',
-      location: 'Tennessee Mountains',
-      year: '2023',
-      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg'
-    },
-    {
-      id: 'cantara-residence',
-      title: 'Cantara Residence',
-      location: 'Studio City, CA',
-      year: '2023',
-      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg'
     },
     {
       id: 'fletcher',
       title: 'Fletcher',
       location: 'Silver Lake, CA',
       year: '2022',
+      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg'
+    },
+    {
+      id: 'lake-sherwood-residence',
+      title: 'Lake Sherwood Residence',
+      location: 'Lake Sherwood, CA',
+      year: '2023',
       image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg'
     },
     {
-      id: 'ingomar',
-      title: 'Ingomar',
-      location: 'Tarzana, CA',
-      year: '2022',
-      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg'
+      id: 'cantara-residence',
+      title: 'Cantara Residence',
+      location: 'Studio City, CA',
+      year: '2023',
+      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg'
     }
   ];
 
@@ -64,20 +50,21 @@ export default function Projects() {
     <>
       <title>Projects - Studio Yona</title>
       
-      <div className="min-h-screen relative">
+      <div className="min-h-screen relative bg-stone-100">
         {/* Background Image - Second Image */}
         <div className="fixed inset-0 z-0">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F834b90160d2445338477337a330243a7?format=webp&width=800"
+            src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F834b90160d2445338477337a330243a7?format=webp&width=1920"
             alt=""
             className="w-full h-full object-cover object-center"
-            style={{ filter: 'brightness(1.05) contrast(1.1)' }}
+            style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+            loading="lazy"
           />
-          <div className="absolute inset-0 bg-white/70"></div>
+          <div className="absolute inset-0 bg-white/8"></div>
         </div>
 
         {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200/50">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-stone-100/95 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-6 py-5">
             <div className="flex justify-between items-center">
               {/* Logo */}
@@ -115,31 +102,31 @@ export default function Projects() {
               </p>
             </div>
 
-            {/* Projects Grid - 2 columns */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Projects Grid - Responsive */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               {projects.map((project, index) => (
                 <Link
                   key={project.id}
                   to={`/projects/${project.id}`}
-                  className="group relative overflow-hidden aspect-[4/3] shadow-lg hover:shadow-xl transition-all duration-300 mb-6"
-                  style={{ boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)' }}
+                  className="group relative overflow-hidden aspect-[3/2] transition-all duration-500 hover:scale-[1.02] mb-8"
                 >
                   {/* Project Image */}
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover object-center transition-all duration-300 group-hover:scale-102"
-                    style={{ filter: 'brightness(1.05) contrast(1.1)' }}
+                    className="w-full h-full object-cover object-center transition-all duration-500"
+                    style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+                    loading="lazy"
                   />
 
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-500">
-                    <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h2 className="text-2xl md:text-3xl font-bold tracking-wide text-center mb-3 font-serif">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <h2 className="text-2xl md:text-3xl font-light tracking-wide mb-1 font-serif">
                         {project.title}
                       </h2>
-                      <p className="text-sm tracking-[0.15em] uppercase text-zinc-300">
-                        {project.location} · {project.year}
+                      <p className="text-sm tracking-[0.15em] uppercase text-white/80">
+                        {project.location} {project.year && `• ${project.year}`}
                       </p>
                     </div>
                   </div>
