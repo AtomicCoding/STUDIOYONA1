@@ -117,3 +117,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .group-hover\:scale-102:hover {
+    transform: scale(1.02);
+  }
+
+  .hover\:scale-102:hover {
+    transform: scale(1.02);
+  }
+}
