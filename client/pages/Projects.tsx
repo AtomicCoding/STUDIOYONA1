@@ -48,7 +48,7 @@ export default function Projects() {
       id: 'ingomar',
       title: 'Ingomar',
       location: 'Tarzana, CA',
-      image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg'
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F9ef4521d25b84eb1bf116b560df731b2?format=webp&width=1200'
     }
   ];
 
@@ -82,12 +82,12 @@ export default function Projects() {
           </div>
         </nav>
 
-        {/* Hero Header Section */}
+        {/* Hero Header Section - Using First Uploaded Image */}
         <section className="relative h-screen overflow-hidden">
-          {/* Background Image */}
+          {/* Background Image - New Uploaded Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fbf94ab26c7844f828d801d72e56d3d51?format=webp&width=1920"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F9ef4521d25b84eb1bf116b560df731b2?format=webp&width=1920"
               alt=""
               className="w-full h-full object-cover object-center"
               style={{ filter: 'contrast(120%) brightness(110%) saturate(130%)' }}
