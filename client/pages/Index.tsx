@@ -125,8 +125,10 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute bottom-8 left-8 text-white">
-                    <h3 className="text-2xl lg:text-3xl font-light tracking-wide mb-2 font-serif">Malibu Residence</h3>
-                    <p className="text-sm tracking-[0.15em] uppercase text-white/80">Malibu, CA • 2024</p>
+                    <div className="bg-black/40 backdrop-blur-md px-6 py-4 rounded-sm border border-white/10">
+                      <h3 className="text-2xl lg:text-3xl font-light tracking-wide mb-2 font-serif">Malibu Residence</h3>
+                      <p className="text-sm tracking-[0.15em] uppercase text-white/80">Malibu, CA • 2024</p>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -142,8 +144,10 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute bottom-8 left-8 text-white">
-                    <h3 className="text-2xl lg:text-3xl font-light tracking-wide mb-2 font-serif">Donna Residence 2</h3>
-                    <p className="text-sm tracking-[0.15em] uppercase text-white/80">Los Angeles, CA • 2024</p>
+                    <div className="bg-black/40 backdrop-blur-md px-6 py-4 rounded-sm border border-white/10">
+                      <h3 className="text-2xl lg:text-3xl font-light tracking-wide mb-2 font-serif">Donna Residence 2</h3>
+                      <p className="text-sm tracking-[0.15em] uppercase text-white/80">Los Angeles, CA • 2024</p>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -159,8 +163,10 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute bottom-8 left-8 text-white">
-                    <h3 className="text-2xl lg:text-3xl font-light tracking-wide mb-2 font-serif">Fletcher</h3>
-                    <p className="text-sm tracking-[0.15em] uppercase text-white/80">Silver Lake, CA • 2022</p>
+                    <div className="bg-black/40 backdrop-blur-md px-6 py-4 rounded-sm border border-white/10">
+                      <h3 className="text-2xl lg:text-3xl font-light tracking-wide mb-2 font-serif">Fletcher</h3>
+                      <p className="text-sm tracking-[0.15em] uppercase text-white/80">Silver Lake, CA • 2022</p>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -176,8 +182,10 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute bottom-8 left-8 text-white">
-                    <h3 className="text-2xl lg:text-3xl font-light tracking-wide mb-2 font-serif">Ingomar</h3>
-                    <p className="text-sm tracking-[0.15em] uppercase text-white/80">Tarzana, CA • 2022</p>
+                    <div className="bg-black/40 backdrop-blur-md px-6 py-4 rounded-sm border border-white/10">
+                      <h3 className="text-2xl lg:text-3xl font-light tracking-wide mb-2 font-serif">Ingomar</h3>
+                      <p className="text-sm tracking-[0.15em] uppercase text-white/80">Tarzana, CA • 2022</p>
+                    </div>
                   </div>
                 </div>
               </Link>
