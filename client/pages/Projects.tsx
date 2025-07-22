@@ -1,227 +1,188 @@
-import { Link } from "react-router-dom";
-import ContactUs from "../components/ContactUs";
-
-const projects = [
-  {
-    id: "the-grove",
-    title: "Meridian Heights",
-    location: "Palos Verdes, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/95/resize_q70_w1200_thumb_7knj91x3ttyft6to.jpg",
-  },
-  {
-    id: "gallery-view",
-    title: "Solstice Pavilion",
-    location: "Los Angeles, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/63/resize_q70_w1200_thumb_bur7zsv8ifz8nuhm.jpg",
-  },
-  {
-    id: "desert-palisades",
-    title: "Crimson Dunes",
-    location: "Palm Springs, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/36/resize_q70_w1200_thumb_c1dhhpc1_3zuu3ou.jpg",
-  },
-  {
-    id: "moccasin-flats",
-    title: "Aurora Residence",
-    location: "Hurricane, UT",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/91/resize_q70_w1200_thumb_5ke5i0r5beuunxwv.jpg",
-  },
-  {
-    id: "canyon-retreat",
-    title: "Titanium House",
-    location: "Pacific Palisades, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/93/resize_q70_w1200_thumb_4ua6hm6nnib9l7qc.jpg",
-  },
-  {
-    id: "long-valley",
-    title: "Serenity Grove",
-    location: "Santa Ynez, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/86/resize_q70_w1200_thumb_t3fl93t09nwx2qkw.jpg",
-  },
-  {
-    id: "moore-house",
-    title: "Phoenix Loft",
-    location: "Los Angeles, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/64/resize_q70_w1200_thumb_h3m__fvxx40yelaw.jpg",
-  },
-  {
-    id: "summit-club",
-    title: "Obsidian Tower",
-    location: "Las Vegas, NV",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/71/resize_q70_w1200_thumb_8e26jg0ppr4tkoel.jpg",
-  },
-  {
-    id: "rim-rock-estate",
-    title: "Velvet Canyon",
-    location: "Las Vegas, NV",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/78/resize_q70_w1200_thumb_vddwp2ydy84l65w2.jpg",
-  },
-  {
-    id: "mar-vista",
-    title: "Sapphire Point",
-    location: "Mar Vista, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/34/resize_q70_w1200_thumb_5nhae4anrp958ffc.jpg",
-  },
-  {
-    id: "westgate-estate",
-    title: "Timber Veil",
-    location: "Central Oregon",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/69/resize_q70_w1200_thumb_0fw1brzd4__3sdbp.jpg",
-  },
-  {
-    id: "twentieth",
-    title: "Lunar Bay",
-    location: "Santa Monica, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/54/resize_q70_w1200_thumb_345416ov9xzag564.jpg",
-  },
-  {
-    id: "carla-ridge-two",
-    title: "Ivory Sanctum",
-    location: "Beverly Hills, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/52/resize_q70_w1200_thumb_loujl0sc6gcjaygp.jpg",
-  },
-  {
-    id: "carla-ridge",
-    title: "Prism Estate",
-    location: "Beverly Hills, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/26/resize_q70_w1200_thumb_eu5jvyewfq5mlghk.jpg",
-  },
-  {
-    id: "clear-oak",
-    title: "Onyx Gardens",
-    location: "Encino, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/19/resize_q70_w1200_thumb_dob9lad5fenxeg40.jpg",
-  },
-  {
-    id: "case-study",
-    title: "Echo Chambers",
-    location: "Culver City, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/29/resize_q70_w1200_thumb_w5w_bgtllzh_z6hz.jpg",
-  },
-  {
-    id: "nightingale",
-    title: "Constellation Villa",
-    location: "Los Angeles, CA",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/55/resize_q70_w1200_thumb_1izel720o8mfwl0i.jpg",
-  },
-  {
-    id: "sumner-estate",
-    title: "Windrose Manor",
-    location: "Greenwich, CT",
-    image:
-      "https://www.woodsdangaran.com/admin/newfiles/project/70/resize_q70_w1200_thumb_wms09l_x5tk6jyrl.jpg",
-  },
-];
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
+  const projects = [
+    {
+      id: 'malibu-residence',
+      title: 'Malibu Residence',
+      location: 'Malibu, CA',
+      image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg',
+      year: '2024'
+    },
+    {
+      id: 'donna-residence-2',
+      title: 'Donna Residence 2',
+      location: 'Los Angeles, CA',
+      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg',
+      year: '2024'
+    },
+    {
+      id: 'lake-sherwood-residence',
+      title: 'Lake Sherwood Residence',
+      location: 'Lake Sherwood, CA',
+      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg',
+      year: '2023'
+    },
+    {
+      id: 'bentley-condo',
+      title: 'Bentley Condo',
+      location: 'West Hollywood, CA',
+      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg',
+      year: '2023'
+    },
+    {
+      id: 'tennessee-airbnb',
+      title: 'Tennessee Airbnb',
+      location: 'Tennessee Mountains',
+      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg',
+      year: '2023'
+    },
+    {
+      id: 'cantara-residence',
+      title: 'Cantara Residence',
+      location: 'Studio City, CA',
+      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg',
+      year: '2023'
+    },
+    {
+      id: 'fletcher',
+      title: 'Fletcher',
+      location: 'Silver Lake, CA',
+      image: 'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg',
+      year: '2022'
+    },
+    {
+      id: 'ingomar',
+      title: 'Ingomar',
+      location: 'Tarzana, CA',
+      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg',
+      year: '2022'
+    }
+  ];
+
   return (
     <>
       <title>Projects - Studio Yona</title>
-
-      <div className="min-h-screen">
-        {/* Header */}
-        <header className="relative z-[1000] h-[90px] md:h-[90px] font-gotham-medium">
-          <div className="max-w-[1200px] mx-auto px-4">
-            <div className="min-h-[22px] pt-5 pb-[19px]">
+      
+      <div className="min-h-screen bg-white">
+        {/* Navigation */}
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200/50">
+          <div className="max-w-7xl mx-auto px-6 py-4">
+            <div className="flex justify-between items-center">
               {/* Logo */}
-              <div className="inline-block relative">
-                <Link
-                  to="/"
-                  title="Studio Yona"
-                  className="block text-black font-gotham-medium text-lg md:text-xl transition-all duration-300 ease-linear hover:opacity-70"
-                >
-                  <h2 className="text-lg md:text-xl font-gotham-medium text-black text-left">
-                    STUDIO YONA
-                  </h2>
+              <Link to="/" className="font-light text-sm tracking-[0.2em] text-black hover:opacity-70 transition-opacity">
+                STUDIO YONA
+              </Link>
+              
+              {/* Navigation Links */}
+              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light">
+                <Link to="/projects" className="text-black">
+                  PROJECTS
                 </Link>
-                <span className="text-black font-gotham-medium text-xs md:text-[14.4px] block mt-1">
-                  ARCHITECTURE & DESIGN STUDIO
-                </span>
-              </div>
-
-              {/* Navigation */}
-              <div className="float-right grid grid-cols-3 gap-4 md:gap-8 w-2/3 md:w-1/2 relative top-[9px] text-xs md:text-sm">
-                <div className="text-left">
-                  <Link
-                    to="/projects"
-                    title="Projects"
-                    className="text-black font-gotham-medium text-xs md:text-sm transition-all duration-300 ease-linear cursor-default"
-                  >
-                    PROJECTS
-                  </Link>
-                </div>
-                <div className="text-center">
-                  <Link
-                    to="/about"
-                    title="About"
-                    className="text-gray-600 font-gotham-medium text-xs md:text-sm transition-all duration-300 ease-linear hover:opacity-70"
-                  >
-                    ABOUT
-                  </Link>
-                </div>
-                <div className="text-right">
-                  <Link
-                    to="/contact"
-                    title="Contact"
-                    className="text-gray-600 font-gotham-medium text-xs md:text-sm transition-all duration-300 ease-linear hover:opacity-70"
-                  >
-                    CONTACT
-                  </Link>
-                </div>
+                <Link to="/about" className="text-black hover:opacity-70 transition-opacity">
+                  ABOUT
+                </Link>
+                <Link to="/contact" className="text-black hover:opacity-70 transition-opacity">
+                  CONTACT
+                </Link>
               </div>
             </div>
           </div>
-          {/* Horizontal line */}
-          <hr className="bg-[rgb(187,187,187)] border-0 h-px w-full overflow-hidden" />
-        </header>
+        </nav>
 
-        {/* Projects Grid */}
-        <div className="w-full mx-auto pb-[150px]">
-          <div className="max-w-[1200px] mx-auto px-4">
-            <div className="w-full min-w-[600px]">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px_20px] pt-[60px]">
-                {projects.map((project) => (
-                  <div key={project.id} className="group cursor-pointer">
-                    <Link to={`/project/${project.id}`} className="block">
-                      <div
-                        className="w-full h-[350px] bg-cover bg-center bg-no-repeat mb-5 overflow-hidden transition-all duration-200 group-hover:scale-[1.02]"
-                        style={{ backgroundImage: `url(${project.image})` }}
+        {/* Main Content */}
+        <div className="pt-20 pb-24">
+          <div className="max-w-7xl mx-auto px-6">
+            {/* Page Header */}
+            <div className="text-center mb-20">
+              <h1 className="text-5xl md:text-7xl font-thin tracking-tight text-black mb-6">
+                Projects
+              </h1>
+              <p className="text-xl font-light text-gray-600 max-w-2xl mx-auto">
+                A curated selection of bespoke residential designs crafted 
+                for discerning clients across California and beyond.
+              </p>
+            </div>
+
+            {/* Projects Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              {projects.map((project, index) => (
+                <Link 
+                  key={project.id}
+                  to={`/projects/${project.id}`}
+                  className="group"
+                >
+                  <div className="relative">
+                    {/* Project Image */}
+                    <div className="relative overflow-hidden aspect-[4/3] mb-6">
+                      <img 
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
-                      <div className="relative">
-                        <h2 className="text-xl font-gotham-medium text-black mb-0 transition-all duration-300 ease-linear group-hover:opacity-70">
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                    </div>
+                    
+                    {/* Project Info */}
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-start">
+                        <h2 className="text-2xl font-light tracking-wide text-black group-hover:opacity-70 transition-opacity">
                           {project.title}
                         </h2>
-                        <p className="text-base leading-6 -mt-[10px] text-gray-700">
-                          {project.location}
-                        </p>
+                        <span className="text-sm font-light text-gray-500 tracking-wide">
+                          {project.year}
+                        </span>
                       </div>
-                    </Link>
+                      <p className="text-base font-light text-gray-600 tracking-wide">
+                        {project.location}
+                      </p>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </Link>
+              ))}
             </div>
           </div>
-
-          {/* Contact Us Section */}
-          <ContactUs />
         </div>
+
+        {/* Footer */}
+        <footer className="bg-white border-t border-gray-200 py-12">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              {/* Footer Navigation */}
+              <div className="flex space-x-8 text-xs tracking-[0.15em] font-light mb-8 md:mb-0">
+                <Link to="/" className="text-gray-600 hover:text-black transition-colors">
+                  HOME
+                </Link>
+                <Link to="/projects" className="text-gray-600 hover:text-black transition-colors">
+                  PROJECTS
+                </Link>
+                <Link to="/about" className="text-gray-600 hover:text-black transition-colors">
+                  ABOUT
+                </Link>
+                <Link to="/contact" className="text-gray-600 hover:text-black transition-colors">
+                  CONTACT
+                </Link>
+              </div>
+              
+              {/* Social Links */}
+              <div className="flex space-x-6 mb-8 md:mb-0">
+                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
+                  INSTAGRAM
+                </a>
+                <a href="#" className="text-gray-600 hover:text-black transition-colors text-xs tracking-[0.15em]">
+                  LINKEDIN
+                </a>
+              </div>
+            </div>
+            
+            {/* Copyright */}
+            <div className="text-center pt-8 border-t border-gray-200">
+              <p className="text-xs text-gray-500 font-light tracking-wide">
+                © Studio Yona. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
