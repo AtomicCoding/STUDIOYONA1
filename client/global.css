@@ -207,4 +207,64 @@
     0% { background-position: 200% 0; }
     100% { background-position: -200% 0; }
   }
+
+  /* Motiva Sans substitute with Work Sans */
+  .font-motiva {
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  /* White Olson Kundig Layout Utilities */
+  .project-detail-spacing {
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+
+  .project-text-image-gap {
+    gap: 64px;
+  }
+
+  .project-inner-padding {
+    padding: 32px;
+  }
+
+  .project-max-width {
+    max-width: 1280px;
+  }
+
+  .project-intro-width {
+    max-width: 880px;
+  }
+
+  /* CTA Button Style */
+  .cta-button {
+    border: 1px solid #000000;
+    background: #FFFFFF;
+    color: #000000;
+    transition: all 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background: #000000;
+    color: #FFFFFF;
+  }
+
+  /* Mobile responsiveness for project layout */
+  @media (max-width: 768px) {
+    .project-detail-spacing {
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
+
+    .project-text-image-gap {
+      gap: 32px;
+    }
+
+    .project-flex-mobile {
+      flex-direction: column !important;
+    }
+
+    .project-text-mobile {
+      font-size: 16px !important;
+    }
+  }
 }
