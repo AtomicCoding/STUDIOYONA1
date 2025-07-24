@@ -55,6 +55,12 @@ export default function Projects() {
       title: 'Desert Contemporary Residence',
       location: 'Palm Springs, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc8a9ada427c446d7990b3d28801e1531?format=webp&width=1200'
+    },
+    {
+      id: 'modular-container-retreat',
+      title: 'Modular Container Retreat',
+      location: 'Big Sur, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe8caa55f02bc40609e1e62e78f6eeac4?format=webp&width=1200'
     }
   ];
 
