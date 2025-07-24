@@ -1,43 +1,29 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 export default function About() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  // Scroll to top when component mounts and handle scroll effects
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 200);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <>
       <title>About - Studio Yona</title>
       
-      <div className="min-h-screen bg-zinc-900">
+      <div className="min-h-screen bg-white" style={{ fontFamily: '"Work Sans", sans-serif' }}>
         {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-900/90 backdrop-blur-sm border-b border-zinc-800/50">
-          <div className="max-w-7xl mx-auto px-6 py-5">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
+          <div className="max-w-7xl mx-auto px-6 py-6">
             <div className="flex justify-between items-center">
               {/* Logo */}
-              <Link to="/" className="font-light text-sm tracking-[0.3em] text-white hover:text-zinc-300 transition-colors">
+              <Link to="/" className="font-medium text-sm tracking-[0.3em] text-black hover:text-gray-600 transition-colors">
                 STUDIO YONA
               </Link>
               
               {/* Navigation Links */}
-              <div className="flex space-x-10 text-xs tracking-[0.2em] font-light">
-                <Link to="/projects" className="text-zinc-300 hover:text-white transition-colors">
+              <div className="flex space-x-12 text-xs tracking-[0.2em] font-medium">
+                <Link to="/projects" className="text-gray-600 hover:text-black transition-colors">
                   PROJECTS
                 </Link>
-                <Link to="/about" className="text-white">
+                <Link to="/about" className="text-black">
                   ABOUT
                 </Link>
-                <Link to="/contact" className="text-zinc-300 hover:text-white transition-colors">
+                <Link to="/contact" className="text-gray-600 hover:text-black transition-colors">
                   CONTACT
                 </Link>
               </div>
@@ -45,239 +31,158 @@ export default function About() {
           </div>
         </nav>
 
-        {/* Header Section - Fourth Image */}
-        <section className="relative h-[80vh] overflow-hidden">
-          {/* Background Image - Fourth Image */}
-          <div className="absolute inset-0">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F83a0382e5dd348ca84726deafd32c0a7?format=webp&width=1920"
-              alt="Studio Workspace"
-              className="w-full h-full object-cover object-center"
-              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-black/50"></div>
-            {/* Top and bottom gradient fade for seamless transitions */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
-          </div>
+        {/* Section 1 - Banner Image with Title Overlay */}
+        <section className="relative h-screen overflow-hidden">
+          <img 
+            src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2b91e6f4172947d8ab7a9049ac9bc684?format=webp&width=1920"
+            alt="Studio Yona About"
+            className="w-full h-full object-cover object-center"
+          />
           
-          {/* Header Content */}
-          <div className="relative z-10 h-full flex items-center justify-center">
-            <h1 className="text-7xl md:text-9xl font-thin tracking-tight text-white font-serif">
-              About
+          {/* Title Overlay - Top Left */}
+          <div className="absolute top-32 left-16 z-10">
+            <h1 className="text-5xl font-bold text-white" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+              About Studio Yona
             </h1>
           </div>
         </section>
 
-        {/* Studio Philosophy Section - Fifth Image Background */}
-        <section className={`py-24 relative transition-all duration-1000 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-8'}`}>
-          {/* Background Image - Fifth Image */}
-          <div className="absolute inset-0">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff0faabc754854365adcd741fef1fd737?format=webp&width=1920"
-              alt=""
-              className="w-full h-full object-cover object-center"
-              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
-            {/* Top and bottom gradient fade for seamless transitions */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.12) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.12) 100%)' }}></div>
-          </div>
-
-          <div className="relative z-10 max-w-5xl mx-auto px-6">
-            <h2 className="text-4xl md:text-5xl font-thin tracking-tight mb-16 text-center font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-              Studio Philosophy
-            </h2>
-            
-            <div className="text-center">
-              <p className="text-2xl md:text-3xl font-light leading-relaxed mb-16 font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-                Studio Yona is a Los Angeles-based design practice focused on custom residential 
-                work that balances clarity, creativity, and context.
-              </p>
-              
-              <p className="text-xl font-light leading-relaxed mb-8" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-                Our spaces are immersive, intentional, and rooted in the unique stories of the people 
-                who live in them. We believe architecture should feel like a natural extension of its 
-                inhabitants' lives and dreams.
-              </p>
-              
-              <p className="text-xl font-light leading-relaxed" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-                Each project begins with deep listening and careful observation. We immerse ourselves 
-                in understanding how our clients move through space, how they entertain, how they find 
-                peace. This foundation allows us to create environments that are not just beautiful, 
-                but deeply functional and personally meaningful.
-              </p>
-            </div>
+        {/* Section 2 - Studio Mission (Centered Text) */}
+        <section className="py-24 bg-white">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <p className="text-xl font-normal leading-relaxed" style={{ 
+              fontFamily: '"Work Sans", sans-serif',
+              maxWidth: '800px',
+              margin: '0 auto'
+            }}>
+              We believe architecture is a reflection of how we live, feel, and interact with our world. Our work is rooted in human experience, cultural curiosity, and refined simplicity.
+            </p>
           </div>
         </section>
 
-        {/* Adam Yona Section */}
-        <section className={`py-24 bg-zinc-900 transition-all duration-1000 delay-200 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-8'}`}>
+        {/* Section 3 - Values Block (Image Left, Text Right) */}
+        <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              {/* Left: Image - Third Image */}
-              <div className="relative">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7ed5165c63e24518ba4ee62edc378811?format=webp&width=1200"
-                  alt="Adam Yona"
-                  className="w-full h-[600px] object-cover object-center"
-                  style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-black/20"></div>
-              </div>
-              
-              {/* Right: Content */}
-              <div className="lg:pl-12 text-white">
-                <h2 className="text-4xl md:text-5xl font-thin tracking-tight mb-8 font-serif">
-                  Adam Yona
-                </h2>
-                
-                <h3 className="text-lg font-light tracking-[0.2em] text-zinc-400 mb-12 uppercase">
-                  Founder & Principal Designer
-                </h3>
-                
-                <div className="space-y-8 text-lg font-light leading-relaxed" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-                  <p>
-                    Adam Yona is the founder and principal designer of Studio Yona. Raised in 
-                    Los Angeles and shaped by hands-on site experience, Adam brings a global 
-                    sensibility and love for modern design to every home.
-                  </p>
-                  
-                  <p>
-                    Before establishing his practice, Adam spent years learning directly from 
-                    craftspeople and builders, developing an intimate understanding of how spaces 
-                    come together. This foundation informs every decision, from initial concept 
-                    to final detail.
-                  </p>
-                  
-                  <p>
-                    His work blends restraint with richness — reflecting cultural influences from 
-                    Japan, China, Singapore, and California. These diverse experiences have taught 
-                    him that the most powerful spaces are those that honor both tradition and innovation.
-                  </p>
-                  
-                  <p>
-                    Adam leads each project with a commitment to spatial poetry, material authenticity, 
-                    and the belief that great design emerges from the intersection of client vision 
-                    and creative exploration.
-                  </p>
+            <div className="flex flex-col lg:flex-row items-center gap-16">
+              {/* Image - 60% */}
+              <div className="w-full lg:w-3/5">
+                <div className="bg-white p-10">
+                  <img 
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffdd4f368186c4d9b93d66e9d782da6f8?format=webp&width=1200"
+                    alt="Studio Yona Process"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
               </div>
+              
+              {/* Text - 40% */}
+              <div className="w-full lg:w-2/5">
+                <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                  From schematic concept to construction, Studio Yona approaches each project with precision, creativity, and technological innovation. Our collaborative process ensures every detail serves both aesthetic vision and functional purpose.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Recognition Section - Seventh Image Background */}
-        <section className={`py-24 relative transition-all duration-1000 delay-400 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-8'}`}>
-          {/* Background Image - Seventh Image */}
-          <div className="absolute inset-0">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8398405680bc48859cca4f79adb1f60e?format=webp&width=1920"
-              alt=""
-              className="w-full h-full object-cover object-center"
-              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-black/25"></div>
-            {/* Top and bottom gradient fade for seamless transitions */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
+        {/* Section 4 - Tools + Approach (Inverted - Text Left, Image Right) */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
+              {/* Image - 60% */}
+              <div className="w-full lg:w-3/5">
+                <div className="bg-white p-10">
+                  <img 
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F99f991dd02d34f72b0bf052abc9a3709?format=webp&width=1200"
+                    alt="Studio Yona Technology"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+              
+              {/* Text - 40% */}
+              <div className="w-full lg:w-2/5">
+                <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                  We use cutting-edge 3D and VR visualization to ensure clients can see every detail before it's built. This technology-forward approach reduces uncertainty and empowers informed decision-making throughout the design process.
+                </p>
+              </div>
+            </div>
           </div>
+        </section>
 
-          <div className="relative z-10 max-w-5xl mx-auto px-6">
-            <h2 className="text-4xl font-thin tracking-tight text-white mb-16 text-center font-serif">
+        {/* Philosophy Section - Additional Content */}
+        <section className="py-24 bg-white">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-8" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+              Design Philosophy
+            </h2>
+            <p className="text-lg font-normal leading-relaxed mb-8" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+              Our practice is guided by the belief that exceptional architecture emerges from the careful balance of form, function, and human experience. We draw inspiration from diverse cultural contexts while remaining rooted in the unique qualities of each site and client vision.
+            </p>
+            <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+              Every project represents an opportunity to explore new possibilities while honoring the timeless principles of good design: proportion, material honesty, and spatial clarity.
+            </p>
+          </div>
+        </section>
+
+        {/* Awards & Recognition Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-16" style={{ fontFamily: '"Work Sans", sans-serif' }}>
               Recognition
             </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-light tracking-wide font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>2024</h3>
-                <div className="bg-black/20 p-4 rounded-sm backdrop-blur-sm space-y-3">
-                  <p className="text-base font-light" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Design Vanguard Award</p>
-                  <p className="text-sm tracking-[0.1em] uppercase" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Architectural Record</p>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div className="p-8">
+                <h3 className="text-xl font-bold mb-4" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                  AIA Los Angeles
+                </h3>
+                <p className="text-gray-600" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                  Design Excellence Award 2024
+                </p>
               </div>
-
-              <div className="space-y-4">
-                <h3 className="text-2xl font-light tracking-wide font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>2023</h3>
-                <div className="bg-black/20 p-4 rounded-sm backdrop-blur-sm space-y-3">
-                  <p className="text-base font-light" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Rising Star Award</p>
-                  <p className="text-sm tracking-[0.1em] uppercase" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Interior Design Magazine</p>
-                </div>
+              <div className="p-8">
+                <h3 className="text-xl font-bold mb-4" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                  Architectural Digest
+                </h3>
+                <p className="text-gray-600" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                  Featured Project 2024
+                </p>
               </div>
-
-              <div className="space-y-4">
-                <h3 className="text-2xl font-light tracking-wide font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>2023</h3>
-                <div className="bg-black/20 p-4 rounded-sm backdrop-blur-sm space-y-3">
-                  <p className="text-base font-light" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Emerging Voices</p>
-                  <p className="text-sm tracking-[0.1em] uppercase" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Architectural League NY</p>
-                </div>
+              <div className="p-8">
+                <h3 className="text-xl font-bold mb-4" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                  California Home + Design
+                </h3>
+                <p className="text-gray-600" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                  Rising Talent Award 2023
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* CTA Section - Sixth Image Background */}
-        <section className={`py-24 relative transition-all duration-1000 delay-600 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-8'}`}>
-          {/* Background Image - Sixth Image */}
-          <div className="absolute inset-0">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2f9fd6066f6a4352aff25084e0cc48cb?format=webp&width=1920"
-              alt=""
-              className="w-full h-full object-cover object-center"
-              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-black/60"></div>
-            {/* Top and bottom gradient fade for seamless transitions */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
-          </div>
-          
-          <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-4xl md:text-5xl font-thin tracking-tight mb-12 font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-              Let's create something meaningful together.
-            </h2>
-            <Link 
-              to="/contact"
-              className="inline-block px-12 py-4 bg-black border border-zinc-600 text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-500 rounded-sm"
-            >
-              GET IN TOUCH
-            </Link>
-          </div>
-        </section>
-
-        {/* Footer */}
-        <footer className="bg-black border-t border-zinc-800 py-12">
+        {/* Section 5 - Footer */}
+        <footer className="bg-white border-t border-gray-200 py-12">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               {/* Left: Logo */}
               <div>
-                <Link to="/" className="font-light text-sm tracking-[0.3em] text-zinc-400 hover:text-white transition-colors">
+                <Link to="/" className="font-medium text-sm tracking-[0.3em] text-black hover:text-gray-600 transition-colors" style={{ fontFamily: '"Work Sans", sans-serif' }}>
                   STUDIO YONA
                 </Link>
               </div>
               
               {/* Center: Navigation */}
-              <div className="flex justify-center space-x-8 text-xs tracking-[0.15em] font-light">
-                <Link to="/" className="text-zinc-400 hover:text-white transition-colors">HOME</Link>
-                <Link to="/projects" className="text-zinc-400 hover:text-white transition-colors">PROJECTS</Link>
-                <Link to="/about" className="text-zinc-400 hover:text-white transition-colors">ABOUT</Link>
-                <Link to="/contact" className="text-zinc-400 hover:text-white transition-colors">CONTACT</Link>
+              <div className="flex justify-center space-x-8 text-sm font-medium" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <Link to="/projects" className="text-black hover:text-gray-600 transition-colors">Projects</Link>
+                <Link to="/about" className="text-black hover:text-gray-600 transition-colors">About</Link>
+                <Link to="/contact" className="text-black hover:text-gray-600 transition-colors">Contact</Link>
               </div>
               
               {/* Right: Social */}
-              <div className="flex justify-end space-x-6 text-xs tracking-[0.15em] font-light">
-                <a href="#" className="text-zinc-400 hover:text-white transition-colors">INSTAGRAM</a>
-                <a href="#" className="text-zinc-400 hover:text-white transition-colors">LINKEDIN</a>
+              <div className="flex justify-end space-x-6 text-sm font-medium" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <a href="#" className="text-black hover:text-gray-600 transition-colors">Instagram</a>
+                <a href="#" className="text-black hover:text-gray-600 transition-colors">LinkedIn</a>
               </div>
-            </div>
-            
-            {/* Copyright */}
-            <div className="text-center pt-8 mt-8 border-t border-zinc-800">
-              <p className="text-xs text-zinc-500 font-light tracking-wide">
-                © Studio Yona. All rights reserved.
-              </p>
             </div>
           </div>
         </footer>
