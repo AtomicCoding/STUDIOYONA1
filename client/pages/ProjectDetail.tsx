@@ -33,6 +33,27 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb537230b4179400cabd2ad02f8f2947e?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe5eebc3cf15748dfb7ef32c49d908e2e?format=webp&width=1200'
       ]
+    },
+    'pacific-modern-residence': {
+      title: 'Pacific Modern Residence',
+      location: 'Manhattan Beach, CA',
+      year: '2024',
+      program: 'Single-Family Residence',
+      size: '4,200 SF',
+      materials: 'Stucco, steel, glass, native plantings',
+      services: 'Architecture, Interior Design, Landscape Design',
+      hero: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1920',
+      description: [
+        'Located in the heart of Los Angeles, Pacific Modern Residence exemplifies contemporary California living through its clean geometric forms and seamless integration with the landscape. This single-story design prioritizes horizontal lines and expansive glazing to create a strong connection between interior and exterior spaces.',
+        'The architectural approach emphasizes simplicity and material honesty, with crisp white stucco walls providing a neutral backdrop for the carefully curated landscape design. Floor-to-ceiling windows flood the interior with natural light while maintaining privacy through thoughtful orientation and strategic plantings.',
+        'Sustainable design principles guide the project, from drought-tolerant native plantings to high-performance building systems. The landscape design features bold strips of hardscape alternating with planted areas, creating a contemporary interpretation of the classic California garden.',
+        'The result is a residence that feels both timeless and thoroughly modern, offering a serene retreat that celebrates the beauty of simplified living and the California indoor-outdoor lifestyle.'
+      ],
+      images: [
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200'
+      ]
     }
   };
 
