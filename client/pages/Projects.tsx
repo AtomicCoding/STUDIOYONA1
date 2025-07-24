@@ -43,6 +43,12 @@ export default function Projects() {
       title: 'Contemporary Curve Residence',
       location: 'Santa Barbara, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200'
+    },
+    {
+      id: 'classical-estate-pavilion',
+      title: 'Classical Estate Pavilion',
+      location: 'Pasadena, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F61a87c373e2b40e19a476563cd2b425d?format=webp&width=1200'
     }
   ];
 
