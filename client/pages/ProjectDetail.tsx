@@ -33,66 +33,6 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb537230b4179400cabd2ad02f8f2947e?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe5eebc3cf15748dfb7ef32c49d908e2e?format=webp&width=1200'
       ]
-    },
-    'malibu-residence': {
-      title: 'Malibu Residence',
-      location: 'Malibu, CA',
-      year: '2024',
-      program: 'Single-Family Residence',
-      size: '4,200 SF',
-      materials: 'Board-formed concrete, reclaimed wood, weathered steel',
-      services: 'Concept Design through Construction Coordination',
-      hero: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg',
-      description: [
-        'Located in the heart of Los Angeles, this residence weaves warmth and modernity into a single, sculpted volume. Perched on the dramatic cliffs of Malibu, the design emerges from our client\'s desire to create a sanctuary that celebrates both intimate family moments and grand entertaining.',
-        'The architectural strategy centers on a series of interconnected pavilions that step down the hillside, each oriented to capture specific views while maintaining privacy. Floor-to-ceiling glass walls dissolve the boundaries between interior and exterior, creating a seamless flow between living spaces and the expansive Pacific beyond.',
-        'Material selection reflects the coastal context: weathered steel and natural stone anchor the structure to its site, while warm wood interiors provide contrast and comfort. Every detail, from the custom millwork to the landscape integration, was designed to enhance the inhabitant\'s connection to this extraordinary location.'
-      ],
-      images: [
-        'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg',
-        'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg',
-        'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg'
-      ]
-    },
-    'donna-residence-2': {
-      title: 'Donna Residence 2',
-      location: 'Los Angeles, CA',
-      year: '2024',
-      program: 'Single-Family Residence',
-      size: '3,800 SF',
-      materials: 'Walnut paneling, natural stone, bronze details',
-      services: 'Full Design Development and Implementation',
-      hero: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg',
-      description: [
-        'Located in the heart of Los Angeles, Donna Residence 2 represents a thoughtful evolution of urban living. This project transformed a modest 1960s structure into a contemporary family home that balances privacy with connection to the surrounding neighborhood.',
-        'The design approach focused on creating a series of interlocking volumes that define distinct zones for living, working, and retreat. A central courtyard serves as the organizing element, bringing natural light deep into the plan while providing a private outdoor sanctuary.',
-        'Material warmth was paramount: rich walnut paneling, natural stone, and bronze details create layers of texture and refinement. The interplay of solid and void, opacity and transparency, generates a sense of discovery as one moves through the space.'
-      ],
-      images: [
-        'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg',
-        'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg',
-        'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg'
-      ]
-    },
-    'lake-sherwood-residence': {
-      title: 'Lake Sherwood Residence',
-      location: 'Lake Sherwood, CA',
-      year: '2023',
-      program: 'Single-Family Residence',
-      size: '5,600 SF',
-      materials: 'Board-formed concrete, blackened steel, local stone',
-      services: 'Master Planning through Construction Administration',
-      hero: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg',
-      description: [
-        'Located in the heart of Los Angeles, this residence explores the relationship between built form and natural setting. The design responds to the site\'s unique topography, creating a home that appears to emerge organically from the rolling hills.',
-        'The architectural parti consists of two primary bars connected by a transparent bridge, allowing the landscape to flow beneath and through the structure. This gesture preserves existing mature oaks while framing views of the lake beyond.',
-        'Interior spaces are conceived as a sequence of light-filled volumes, each with its own character and connection to the outdoors. The material palette emphasizes natural textures: board-formed concrete, blackened steel, and locally sourced stone create a sense of permanence and belonging.'
-      ],
-      images: [
-        'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg',
-        'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg',
-        'https://www.woodsdangaran.com/th/w1200_q70_aarmczda30cz2hh0prbxzehw.jpg'
-      ]
     }
   };
 
