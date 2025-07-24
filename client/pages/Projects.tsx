@@ -30,7 +30,7 @@ export default function Projects() {
       id: 'sculptural-modern-estate',
       title: 'Sculptural Modern Estate',
       location: 'Bel Air, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb66eca013a5a426b81bb00efe4c8a2ae?format=webp&width=1200'
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fdad90f77fff549209726ceaffd0070dc?format=webp&width=1200'
     }
   ];
 
