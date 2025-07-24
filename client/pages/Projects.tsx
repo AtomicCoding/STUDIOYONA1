@@ -31,6 +31,12 @@ export default function Projects() {
       title: 'Sculptural Modern Estate',
       location: 'Bel Air, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fdad90f77fff549209726ceaffd0070dc?format=webp&width=1200'
+    },
+    {
+      id: 'modern-farmhouse-estate',
+      title: 'Modern Farmhouse Estate',
+      location: 'Montecito, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0ab0e4828dab4ed98d07468046290137?format=webp&width=1200'
     }
   ];
 
