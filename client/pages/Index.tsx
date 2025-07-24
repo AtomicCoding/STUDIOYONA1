@@ -69,11 +69,27 @@ export default function Index() {
 
         {/* Intro Statement - Immersive Background */}
         <section className="py-32 bg-black">
-          <div className="max-w-5xl mx-auto px-6 text-center">
-            <p className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-              Studio Yona is a Los Angeles-based design practice crafting immersive environments
-              inspired by global exploration and California minimalism.
-            </p>
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Text Half */}
+              <div className="flex items-center justify-center">
+                <p className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+                  Studio Yona is a Los Angeles-based design practice crafting immersive environments
+                  inspired by global exploration and California minimalism.
+                </p>
+              </div>
+
+              {/* Image Half */}
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb50a92f53f2b45f8804342761c78ddae?format=webp&width=800"
+                  alt="Studio Yona Design Work"
+                  className="w-full h-96 object-cover rounded-sm"
+                  style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
