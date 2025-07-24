@@ -218,6 +218,27 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc267410031f24d40a46db6a22b1b951f?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc9897f0670a84d7cb71578b498ccbc2c?format=webp&width=1200'
       ]
+    },
+    'contemporary-twin-homes': {
+      title: 'Contemporary Twin Homes',
+      location: 'Venice, CA',
+      year: '2024',
+      program: 'Duplex Residence',
+      size: '2,800 SF each unit',
+      materials: 'Stucco, steel siding, glass, concrete',
+      services: 'Architecture, Urban Design, Landscape Design',
+      hero: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1920',
+      description: [
+        'Located in the heart of Los Angeles, Contemporary Twin Homes explores the possibilities of thoughtful urban densification through sophisticated architectural design. These mirror-image residences demonstrate how contemporary living can be both private and community-minded, offering modern families the benefits of homeownership within an increasingly dense urban environment.',
+        'The architectural approach emphasizes clean geometric forms and material honesty, with each unit featuring two stories of carefully planned living space. The design balances privacy with openness through strategic window placement and landscaping, while the shared central courtyard creates opportunities for neighborly interaction. Flat roofs and angular forms give each home a distinctly modern character that complements Venice\'s eclectic architectural landscape.',
+        'Material selection reflects both aesthetic and practical considerations, with durable stucco and steel siding providing low-maintenance exteriors that age gracefully in the coastal environment. The landscaping design uses drought-tolerant plants that create privacy barriers while adding natural softness to the geometric architecture. Each unit includes private outdoor space and dedicated parking, ensuring functional independence.',
+        'This project demonstrates how urban infill housing can achieve both architectural distinction and neighborhood compatibility, offering a sustainable model for housing density that maintains human scale and quality of life. The result is a development that feels both contemporary and timeless, contributing positively to the evolving character of Venice.'
+      ],
+      images: [
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200'
+      ]
     }
   };
 
