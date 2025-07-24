@@ -171,6 +171,26 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1daa5098e1564a80be04dd03288e3c8a?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F34f713e747c74c67965ac5b0eba03f48?format=webp&width=1200'
       ]
+    },
+    'desert-contemporary-residence': {
+      title: 'Desert Contemporary Residence',
+      location: 'Palm Springs, CA',
+      year: '2024',
+      program: 'Single-Family Residence',
+      size: '4,800 SF',
+      materials: 'Natural stone, stucco, steel, glass',
+      services: 'Architecture, Landscape Design, Sustainable Design',
+      hero: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc8a9ada427c446d7990b3d28801e1531?format=webp&width=1920',
+      description: [
+        'Located in the heart of Los Angeles, Desert Contemporary Residence embodies the essence of desert modern living through its masterful integration with the natural landscape. This thoughtfully designed home celebrates the unique beauty of the desert environment while providing sophisticated comfort and contemporary functionality for year-round living.',
+        'The architectural approach emphasizes horizontal lines and low-profile massing that respectfully responds to the expansive desert landscape. Natural stone walls anchor the structure to its site, while clean stucco surfaces provide a contemporary counterpoint. The design carefully balances privacy with openness, creating protected outdoor spaces that capture cooling breezes and frame views of the surrounding mountains.',
+        'Sustainable design principles guide every aspect of the project, from passive solar orientation to drought-tolerant landscaping featuring native desert plants and sculptural rocks. The material palette emphasizes natural textures and earth tones that harmonize with the desert setting, while strategic placement of glass maximizes natural light while minimizing heat gain.',
+        'This residence demonstrates how contemporary architecture can achieve both environmental sensitivity and luxurious comfort, creating a home that feels perfectly at home in its desert setting while providing all the amenities of modern living.'
+      ],
+      images: [
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1cc6530b08004d73b81cae8a3f15554d?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc8a9ada427c446d7990b3d28801e1531?format=webp&width=1200'
+      ]
     }
   };
 
