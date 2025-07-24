@@ -68,24 +68,10 @@ export default function Index() {
         </section>
 
         {/* Intro Statement - Immersive Background */}
-        <section className="py-32 relative">
-          {/* Background Image */}
-          <div className="absolute inset-0 z-0">
-            <img 
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb50a92f53f2b45f8804342761c78ddae?format=webp&width=1920"
-              alt=""
-              className="w-full h-full object-cover object-center"
-              style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-black/50"></div>
-            {/* Top and bottom gradient fade for seamless transitions */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.15) 100%)' }}></div>
-          </div>
-          
-          <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <section className="py-32 bg-black">
+          <div className="max-w-5xl mx-auto px-6 text-center">
             <p className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed font-serif" style={{ color: '#F2F2F2', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-              Studio Yona is a Los Angeles-based design practice crafting immersive environments 
+              Studio Yona is a Los Angeles-based design practice crafting immersive environments
               inspired by global exploration and California minimalism.
             </p>
           </div>
