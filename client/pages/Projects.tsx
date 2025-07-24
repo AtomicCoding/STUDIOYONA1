@@ -61,6 +61,12 @@ export default function Projects() {
       title: 'Modular Container Retreat',
       location: 'Big Sur, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe8caa55f02bc40609e1e62e78f6eeac4?format=webp&width=1200'
+    },
+    {
+      id: 'contemporary-twin-homes',
+      title: 'Contemporary Twin Homes',
+      location: 'Venice, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200'
     }
   ];
 
