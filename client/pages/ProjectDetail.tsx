@@ -107,6 +107,27 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F3cbbf7e82aa94b1b8c991a3e6a5c9f25?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fac4fcf335e344bb09fcf4f0ddf4977cc?format=webp&width=1200'
       ]
+    },
+    'modern-farmhouse-estate': {
+      title: 'Modern Farmhouse Estate',
+      location: 'Montecito, CA',
+      year: '2024',
+      program: 'Single-Family Residence',
+      size: '7,200 SF',
+      materials: 'Board and batten siding, natural stone, steel, glass',
+      services: 'Architecture, Landscape Design, Pool Design',
+      hero: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0ab0e4828dab4ed98d07468046290137?format=webp&width=1920',
+      description: [
+        'Located in the heart of Los Angeles, Modern Farmhouse Estate reimagines the classic American farmhouse through a contemporary lens. This sophisticated residence seamlessly blends traditional farmhouse charm with cutting-edge design principles, creating a home that feels both timeless and thoroughly modern. The dramatic pool area serves as the centerpiece of outdoor living, while carefully orchestrated landscaping creates privacy and natural beauty.',
+        'The architectural approach emphasizes clean lines and honest materials, with board and batten siding in crisp white contrasting beautifully against dark metal accents and natural stone elements. The gabled rooflines and timber framing nod to farmhouse tradition while floor-to-ceiling windows and open-plan living spaces embrace contemporary lifestyle needs.',
+        'Landscape design plays a crucial role in the overall composition, with native plantings and mature trees creating a parklike setting. The infinity-edge pool integrates seamlessly with the architecture, while the separate guest pavilion and utility structures complete the compound-style layout. Every detail, from the custom garage doors to the pool deck materials, reflects a commitment to quality and design excellence.',
+        'This project demonstrates how traditional architectural typologies can be evolved for contemporary living while maintaining their essential character and charm. The result is a residence that celebrates both California\'s indoor-outdoor lifestyle and the enduring appeal of American farmhouse design.'
+      ],
+      images: [
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff6dab669a17e41d69957b3ce4e4e4683?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F67ffde0eccc8412c9449a5628e22b74f?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F711b3c945aac48f7989432f84c91137f?format=webp&width=1200'
+      ]
     }
   };
 
