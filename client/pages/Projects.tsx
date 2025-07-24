@@ -19,6 +19,12 @@ export default function Projects() {
       title: 'Vista Ridge Residence',
       location: 'Beverly Hills, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6075aa98e58e4e8ab515b72283788bc6?format=webp&width=1200'
+    },
+    {
+      id: 'pacific-modern-residence',
+      title: 'Pacific Modern Residence',
+      location: 'Manhattan Beach, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200'
     }
   ];
 
