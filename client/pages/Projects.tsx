@@ -49,6 +49,12 @@ export default function Projects() {
       title: 'Classical Estate Pavilion',
       location: 'Pasadena, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F61a87c373e2b40e19a476563cd2b425d?format=webp&width=1200'
+    },
+    {
+      id: 'desert-contemporary-residence',
+      title: 'Desert Contemporary Residence',
+      location: 'Palm Springs, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc8a9ada427c446d7990b3d28801e1531?format=webp&width=1200'
     }
   ];
 
