@@ -149,6 +149,28 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200'
       ]
+    },
+    'classical-estate-pavilion': {
+      title: 'Classical Estate Pavilion',
+      location: 'Pasadena, CA',
+      year: '2024',
+      program: 'Single-Family Residence',
+      size: '9,200 SF',
+      materials: 'Limestone, white oak, steel, natural stone',
+      services: 'Architecture, Landscape Design, Outdoor Living Design',
+      hero: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F61a87c373e2b40e19a476563cd2b425d?format=webp&width=1920',
+      description: [
+        'Located in the heart of Los Angeles, Classical Estate Pavilion represents the sophisticated evolution of traditional estate living through contemporary outdoor design. This extraordinary residence celebrates the art of entertaining with meticulously crafted outdoor pavilions that seamlessly extend the interior living spaces into beautifully landscaped gardens and terraces.',
+        'The architectural approach emphasizes timeless classical proportions while embracing modern functionality and comfort. The outdoor kitchen pavilion features professional-grade appliances housed within elegant architectural frameworks, while the separate entertainment pavilion provides intimate spaces for relaxation and gathering. Each structure is carefully positioned to capture optimal views and create natural circulation patterns throughout the estate.',
+        'Material selection reflects a commitment to both beauty and durability, with natural limestone, rich white oak millwork, and precision steel detailing creating a cohesive design language. The outdoor living spaces feature custom furniture and built-in seating areas that encourage both intimate conversations and larger gatherings, while sophisticated lighting systems extend the usability into evening hours.',
+        'This project demonstrates how classical architectural principles can be adapted for contemporary lifestyle needs, creating outdoor spaces that rival the finest interior rooms in their comfort and sophistication. The result is an estate that truly embodies the California dream of seamless indoor-outdoor living.'
+      ],
+      images: [
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0fabb3b1cb674cc9a5e8dd83f1cd0c17?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe93c29e40fdf442bb3645a07339b1785?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1daa5098e1564a80be04dd03288e3c8a?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F34f713e747c74c67965ac5b0eba03f48?format=webp&width=1200'
+      ]
     }
   };
 
