@@ -191,6 +191,33 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1cc6530b08004d73b81cae8a3f15554d?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc8a9ada427c446d7990b3d28801e1531?format=webp&width=1200'
       ]
+    },
+    'modular-container-retreat': {
+      title: 'Modular Container Retreat',
+      location: 'Big Sur, CA',
+      year: '2024',
+      program: 'Modular Residence',
+      size: '3,200 SF',
+      materials: 'Shipping containers, cedar cladding, steel, glass',
+      services: 'Architecture, Modular Design, Sustainable Systems',
+      hero: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe8caa55f02bc40609e1e62e78f6eeac4?format=webp&width=1920',
+      description: [
+        'Located in the heart of Los Angeles, Modular Container Retreat represents a revolutionary approach to sustainable architecture through the innovative reuse of shipping containers. This groundbreaking project transforms industrial infrastructure into sophisticated living spaces that challenge conventional notions of modular design while creating a unique retreat experience in the dramatic Big Sur landscape.',
+        'The architectural strategy embraces the inherent modularity of shipping containers while elevating them through careful composition and premium materials. Each container is thoughtfully positioned to capture specific views and create protected outdoor spaces, while warm cedar cladding softens the industrial aesthetic and helps the structure integrate with its natural surroundings. The elevated deck system unifies the composition while minimizing site impact.',
+        'Innovative details include custom geometric windows that frame views like living artwork, rooftop gardens that provide insulation and habitat, and flexible interior configurations that can adapt to changing needs. The material palette balances industrial honesty with natural warmth, featuring weathered steel containers, sustainably sourced cedar, and precision steel details that celebrate the project\'s modular logic.',
+        'This project demonstrates how sustainable design principles can drive architectural innovation, creating spaces that are both environmentally responsible and experientially rich. The result is a retreat that feels both futuristic and timeless, offering a new model for how we might live more sustainably while maintaining the highest standards of design and comfort.'
+      ],
+      images: [
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2b91e6f4172947d8ab7a9049ac9bc684?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffdd4f368186c4d9b93d66e9d782da6f8?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F99f991dd02d34f72b0bf052abc9a3709?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F789bc3aee5264b09832a8f2143ae9bfc?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F4c92fe1d66f04d619620c8941cd90e10?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F5b513a75e8844f598112568366729520?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0168b3a36b164fb3855bc3e51cb56bb4?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc267410031f24d40a46db6a22b1b951f?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc9897f0670a84d7cb71578b498ccbc2c?format=webp&width=1200'
+      ]
     }
   };
 
