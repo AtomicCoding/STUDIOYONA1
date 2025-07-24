@@ -128,6 +128,27 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F67ffde0eccc8412c9449a5628e22b74f?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F711b3c945aac48f7989432f84c91137f?format=webp&width=1200'
       ]
+    },
+    'contemporary-curve-residence': {
+      title: 'Contemporary Curve Residence',
+      location: 'Santa Barbara, CA',
+      year: '2024',
+      program: 'Single-Family Residence',
+      size: '5,400 SF',
+      materials: 'Stucco, glass, steel, natural stone',
+      services: 'Architecture, Landscape Design, Interior Design',
+      hero: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1920',
+      description: [
+        'Located in the heart of Los Angeles, Contemporary Curve Residence represents a masterful exploration of modern residential design through the subtle interplay of curved and linear elements. This single-story home embraces a sophisticated approach to contemporary living, where clean architectural lines are softened by organic curves that create visual interest and enhance the human experience of space.',
+        'The design strategy centers on creating seamless indoor-outdoor connections through floor-to-ceiling glazing and carefully planned sight lines. The curved driveway and entry sequence choreograph arrival, while the dramatic corner window bay becomes a focal point that brings abundant natural light into the main living spaces. The material palette emphasizes simplicity and elegance with crisp white stucco contrasting against dark window frames and natural landscaping.',
+        'Landscape design plays an integral role in the overall composition, with native drought-tolerant plantings creating layers of texture and seasonal interest. The palm trees anchor the composition while providing vertical counterpoints to the horizontal emphasis of the architecture. Every detail, from the entry pathway to the garage integration, reflects a commitment to both aesthetic excellence and functional clarity.',
+        'This residence demonstrates how contemporary design can achieve both sophistication and warmth, creating spaces that feel both monumental and intimate. The result is a home that celebrates California\'s year-round outdoor lifestyle while providing a serene retreat from urban intensity.'
+      ],
+      images: [
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200'
+      ]
     }
   };
 
