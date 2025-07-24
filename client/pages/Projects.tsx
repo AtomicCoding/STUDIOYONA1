@@ -19,42 +19,6 @@ export default function Projects() {
       title: 'Vista Ridge Residence',
       location: 'Beverly Hills, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6075aa98e58e4e8ab515b72283788bc6?format=webp&width=1200'
-    },
-    {
-      id: 'malibu-residence',
-      title: 'Malibu Residence',
-      location: 'Malibu, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fbf94ab26c7844f828d801d72e56d3d51?format=webp&width=1200'
-    },
-    {
-      id: 'cantara-residence',
-      title: 'Cantara Residence',
-      location: 'Studio City, CA',
-      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg'
-    },
-    {
-      id: 'donna-residence-2',
-      title: 'Donna Residence 2',
-      location: 'Los Angeles, CA',
-      image: 'https://www.woodsdangaran.com/th/w1200_q70_3f8gp7jx1msxdl6hl7n70dsb.jpg'
-    },
-    {
-      id: 'lake-sherwood-residence',
-      title: 'Lake Sherwood Residence',
-      location: 'Lake Sherwood, CA',
-      image: 'https://www.woodsdangaran.com/th/w1900_h1500_q80_4rn9_ojln2lw7kabyw0hu05f.jpg'
-    },
-    {
-      id: 'fletcher',
-      title: 'Fletcher',
-      location: 'Silver Lake, CA',
-      image: 'https://www.woodsdangaran.com/th/w1600_q70_aarmczda30cz2hh0prbxzehw.jpg'
-    },
-    {
-      id: 'ingomar',
-      title: 'Ingomar',
-      location: 'Tarzana, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F9ef4521d25b84eb1bf116b560df731b2?format=webp&width=1200'
     }
   ];
 
