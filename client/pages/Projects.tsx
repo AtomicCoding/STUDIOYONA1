@@ -37,6 +37,12 @@ export default function Projects() {
       title: 'Modern Farmhouse Estate',
       location: 'Montecito, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0ab0e4828dab4ed98d07468046290137?format=webp&width=1200'
+    },
+    {
+      id: 'contemporary-curve-residence',
+      title: 'Contemporary Curve Residence',
+      location: 'Santa Barbara, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200'
     }
   ];
 
