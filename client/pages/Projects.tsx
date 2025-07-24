@@ -25,6 +25,12 @@ export default function Projects() {
       title: 'Pacific Modern Residence',
       location: 'Manhattan Beach, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200'
+    },
+    {
+      id: 'sculptural-modern-estate',
+      title: 'Sculptural Modern Estate',
+      location: 'Bel Air, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb66eca013a5a426b81bb00efe4c8a2ae?format=webp&width=1200'
     }
   ];
 
