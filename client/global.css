@@ -267,4 +267,89 @@
       font-size: 16px !important;
     }
   }
+
+  /* Project pages & Home project rows */
+  .project-split .image-col {
+    flex-basis: 75%;
+  }
+  .project-split .text-col {
+    flex-basis: 25%;
+    padding: 28px;
+  }
+
+  @media (min-width: 1200px) {
+    .project-split.hero .image-col {
+      flex-basis: 78%;
+      min-height: 70vh;
+    }
+    .project-split .image-col {
+      min-height: 55vh;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .project-split .image-col {
+      flex-basis: 68%;
+      min-height: 50vh;
+    }
+    .project-split .text-col {
+      flex-basis: 32%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .project-split {
+      flex-direction: column;
+    }
+    .project-split .image-col,
+    .project-split .text-col {
+      flex-basis: 100%;
+    }
+    .project-split .image-col {
+      min-height: 40vh;
+    }
+  }
+
+  /* About page */
+  .about-split .image-col {
+    flex-basis: 62%;
+    min-height: 52vh;
+  }
+  .about-split .text-col {
+    flex-basis: 38%;
+    padding: 28px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .about-split .image-col {
+      flex-basis: 60%;
+    }
+    .about-split .text-col {
+      flex-basis: 40%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .about-split {
+      flex-direction: column;
+    }
+    .about-split .image-col,
+    .about-split .text-col {
+      flex-basis: 100%;
+    }
+  }
+
+  /* Utility for images inside these columns */
+  .image-col img,
+  .image-col picture,
+  .image-col .builder-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Container max width */
+  .project-container {
+    max-width: 1500px;
+  }
 }
