@@ -350,28 +350,29 @@ export default function ProjectDetail() {
         ))}
 
         {/* Full-Width Image Section */}
-        <section className="py-24 bg-white">
+        <section className="py-16 bg-white">
           <div className="w-full">
-            <img 
+            <img
               src={project.images[project.images.length - 1]}
               alt={`${project.title} - Full Width`}
-              className="w-full h-auto object-cover"
-              style={{ width: '100vw' }}
+              className="w-full object-cover"
+              style={{ width: '100vw', height: '60vh' }}
+              loading="lazy"
             />
           </div>
         </section>
 
         {/* Image Gallery Grid */}
         <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {project.images.map((image: string, index: number) => (
-                <div key={index} className="w-full">
-                  <img 
+          <div className="project-container mx-auto px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {project.images.slice(0, 6).map((image: string, index: number) => (
+                <div key={index} className="w-full" style={{ height: '50vh' }}>
+                  <img
                     src={image}
                     alt={`${project.title} - Gallery ${index + 1}`}
-                    className="w-full h-80 object-cover"
-                    style={{ width: '400px', maxWidth: '100%' }}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               ))}
