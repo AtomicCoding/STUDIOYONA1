@@ -67,19 +67,19 @@ export default function Index() {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col lg:flex-row items-center gap-16">
-              {/* Image - 60% */}
-              <div className="w-full lg:w-3/5">
-                <div className="bg-white p-10">
-                  <img 
+              {/* Image - 65% */}
+              <div className="w-full lg:w-2/3">
+                <div className="bg-white p-6">
+                  <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6075aa98e58e4e8ab515b72283788bc6?format=webp&width=1200"
                     alt="Vista Ridge Residence"
                     className="w-full h-auto object-cover"
                   />
                 </div>
               </div>
-              
-              {/* Text - 40% */}
-              <div className="w-full lg:w-2/5">
+
+              {/* Text - 35% */}
+              <div className="w-full lg:w-1/3">
                 <h3 className="text-4xl font-bold mb-6" style={{ fontFamily: '"Work Sans", sans-serif' }}>
                   Vista Ridge Residence
                 </h3>
