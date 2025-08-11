@@ -62,21 +62,20 @@ export default function About() {
 
         {/* Section 3 - Values Block (Image Left, Text Right) */}
         <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="flex flex-col lg:flex-row items-center gap-16">
-              {/* Image - 60% */}
-              <div className="w-full lg:w-3/5">
-                <div className="bg-white p-10">
-                  <img 
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffdd4f368186c4d9b93d66e9d782da6f8?format=webp&width=1200"
-                    alt="Studio Yona Process"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
+          <div className="project-container mx-auto px-6">
+            <div className="flex about-split" style={{ gap: '36px' }}>
+              {/* Image Column */}
+              <div className="image-col">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffdd4f368186c4d9b93d66e9d782da6f8?format=webp&width=1200"
+                  alt="Studio Yona Process"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
-              
-              {/* Text - 40% */}
-              <div className="w-full lg:w-2/5">
+
+              {/* Text Column */}
+              <div className="text-col flex flex-col justify-center">
                 <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
                   From schematic concept to construction, Studio Yona approaches each project with precision, creativity, and technological innovation. Our collaborative process ensures every detail serves both aesthetic vision and functional purpose.
                 </p>
@@ -87,21 +86,20 @@ export default function About() {
 
         {/* Section 4 - Tools + Approach (Inverted - Text Left, Image Right) */}
         <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
-              {/* Image - 60% */}
-              <div className="w-full lg:w-3/5">
-                <div className="bg-white p-10">
-                  <img 
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F99f991dd02d34f72b0bf052abc9a3709?format=webp&width=1200"
-                    alt="Studio Yona Technology"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
+          <div className="project-container mx-auto px-6">
+            <div className="flex about-split" style={{ gap: '36px', flexDirection: 'row-reverse' }}>
+              {/* Image Column */}
+              <div className="image-col">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F99f991dd02d34f72b0bf052abc9a3709?format=webp&width=1200"
+                  alt="Studio Yona Technology"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
-              
-              {/* Text - 40% */}
-              <div className="w-full lg:w-2/5">
+
+              {/* Text Column */}
+              <div className="text-col flex flex-col justify-center">
                 <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
                   We use cutting-edge 3D and VR visualization to ensure clients can see every detail before it's built. This technology-forward approach reduces uncertainty and empowers informed decision-making throughout the design process.
                 </p>
