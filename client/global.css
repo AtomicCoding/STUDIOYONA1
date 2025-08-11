@@ -300,6 +300,7 @@
   @media (max-width: 767px) {
     .project-split {
       flex-direction: column;
+      gap: 20px !important;
     }
     .project-split .image-col,
     .project-split .text-col {
