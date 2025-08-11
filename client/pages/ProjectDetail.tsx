@@ -286,13 +286,13 @@ export default function ProjectDetail() {
         </nav>
 
         {/* Hero Image Section */}
-        <section className="relative" style={{ height: '750px', width: '100vw' }}>
-          <img 
+        <section className="relative" style={{ height: '75vh', width: '100vw' }}>
+          <img
             src={project.hero}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           />
-          
+
           {/* Hero Overlay Text */}
           <div className="absolute bottom-12 left-16 text-white">
             <h1 className="text-5xl font-bold mb-2" style={{ fontFamily: '"Work Sans", sans-serif', color: '#FFFFFF' }}>
@@ -305,10 +305,10 @@ export default function ProjectDetail() {
         </section>
 
         {/* Project Intro Paragraph */}
-        <section className="py-24 bg-white">
+        <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-8 text-center">
-            <p className="text-xl font-light leading-relaxed" style={{ 
-              fontFamily: '"Work Sans", sans-serif', 
+            <p className="text-xl font-light leading-relaxed" style={{
+              fontFamily: '"Work Sans", sans-serif',
               color: '#222222',
               lineHeight: '34px',
               maxWidth: '880px',
@@ -321,22 +321,23 @@ export default function ProjectDetail() {
 
         {/* Alternating Image + Text Sections */}
         {project.description.slice(1).map((paragraph: string, index: number) => (
-          <section key={index} className="py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-8">
-              <div className={`flex items-start gap-16 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} max-md:flex-col max-md:gap-8`}>
+          <section key={index} className="py-16 bg-white">
+            <div className="project-container mx-auto px-8">
+              <div className={`flex project-split ${index % 2 === 0 ? '' : 'flex-row-reverse'}`} style={{ gap: '36px' }}>
                 {/* Image Column */}
-                <div className="w-full md:w-3/5">
-                  <img 
+                <div className="image-col">
+                  <img
                     src={project.images[Math.min(index + 1, project.images.length - 1)]}
                     alt={`${project.title} - Image ${index + 2}`}
-                    className="w-full h-auto object-cover"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
-                
+
                 {/* Text Column */}
-                <div className="w-full md:w-2/5 pt-8">
-                  <p className="text-lg font-light leading-8" style={{ 
-                    fontFamily: '"Work Sans", sans-serif', 
+                <div className="text-col flex flex-col justify-center">
+                  <p className="text-lg font-light leading-8" style={{
+                    fontFamily: '"Work Sans", sans-serif',
                     color: '#222222',
                     lineHeight: '32px'
                   }}>
