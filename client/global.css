@@ -333,6 +333,7 @@
   @media (max-width: 767px) {
     .about-split {
       flex-direction: column;
+      gap: 20px !important;
     }
     .about-split .image-col,
     .about-split .text-col {
