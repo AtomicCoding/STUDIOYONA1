@@ -45,7 +45,7 @@ export default function About() {
           
           {/* Title Overlay - Top Left */}
           <div className="absolute top-32 left-16 z-10">
-            <h1 className="text-5xl font-bold text-white" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+            <h1 className="text-5xl font-bold text-white">
               About Studio Yona
             </h1>
           </div>
