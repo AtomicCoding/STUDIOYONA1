@@ -80,7 +80,7 @@ export default function About() {
 
               {/* Text Column */}
               <div className="text-col flex flex-col justify-center">
-                <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <p className="text-lg font-normal leading-relaxed">
                   From schematic concept to construction, Studio Yona approaches each project with precision, creativity, and technological innovation. Our collaborative process ensures every detail serves both aesthetic vision and functional purpose.
                 </p>
               </div>
