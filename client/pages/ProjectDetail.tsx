@@ -340,7 +340,6 @@ export default function ProjectDetail() {
                 {/* Text Column */}
                 <div className="text-col flex flex-col justify-center">
                   <p className="text-lg font-light leading-8" style={{
-                    fontFamily: '"Work Sans", sans-serif',
                     color: '#222222',
                     lineHeight: '32px'
                   }}>
