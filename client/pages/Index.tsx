@@ -126,7 +126,7 @@ export default function Index() {
             <blockquote className="text-3xl lg:text-4xl font-normal italic leading-relaxed mb-8">
               "We don't just create spaces — we guide people through the design journey with intention and precision."
             </blockquote>
-            <p className="text-lg font-normal" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+            <p className="text-lg font-normal">
               – Studio Yona
             </p>
           </div>
