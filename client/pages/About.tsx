@@ -185,7 +185,7 @@ export default function About() {
               </div>
               
               {/* Right: Social */}
-              <div className="flex justify-end space-x-6 text-sm font-medium" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+              <div className="flex justify-end space-x-6 text-sm font-medium">
                 <a href="#" className="text-black hover:text-gray-600 transition-colors">Instagram</a>
                 <a href="#" className="text-black hover:text-gray-600 transition-colors">LinkedIn</a>
               </div>
