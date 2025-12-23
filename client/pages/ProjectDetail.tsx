@@ -259,7 +259,7 @@ export default function ProjectDetail() {
     <>
       <title>{project.title} - Studio Yona</title>
       
-      <div className="min-h-screen bg-white" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+      <div className="min-h-screen bg-white">
         {/* Navigation */}
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-8 py-4">
