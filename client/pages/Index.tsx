@@ -85,7 +85,7 @@ export default function Index() {
                 <h3 className="text-4xl font-bold mb-6">
                   Vista Ridge Residence
                 </h3>
-                <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <p className="text-lg font-normal leading-relaxed">
                   A hillside retreat where natural materials meet contemporary design, emphasizing Studio Yona's minimal yet grounded aesthetic.
                 </p>
               </div>
