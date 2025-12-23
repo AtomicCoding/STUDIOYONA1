@@ -395,7 +395,7 @@ export default function ProjectDetail() {
               
               {/* Center: Copyright */}
               <div className="text-center">
-                <p className="text-sm font-medium" style={{ fontFamily: '"Work Sans", sans-serif', color: '#222222' }}>
+                <p className="text-sm font-medium" style={{ color: '#222222' }}>
                   © Studio Yona. All rights reserved.
                 </p>
               </div>
