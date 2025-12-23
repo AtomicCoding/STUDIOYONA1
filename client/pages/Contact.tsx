@@ -111,22 +111,22 @@ export default function Contact() {
                   
                   <div className="space-y-6 text-zinc-200">
                     <div>
-                      <p className="text-lg font-light leading-relaxed">
+                      <p className="text-base font-light leading-relaxed">
                         Studio Yona<br />
                         Beverly Hills, CA 90210
                       </p>
                     </div>
-                    
+
                     <div>
-                      <p className="text-lg font-light">
+                      <p className="text-base font-light">
                         <a href="tel:+18186685776" className="hover:text-white transition-colors">
                           (818) 668-5776
                         </a>
                       </p>
                     </div>
-                    
+
                     <div>
-                      <p className="text-lg font-light">
+                      <p className="text-base font-light">
                         <a href="mailto:adam@yona.studio" className="hover:text-white transition-colors">
                           adam@yona.studio
                         </a>
