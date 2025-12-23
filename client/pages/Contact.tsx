@@ -54,7 +54,7 @@ export default function Contact() {
                 <Link to="/about" className="text-zinc-300 hover:text-white transition-colors py-2 px-2">
                   ABOUT
                 </Link>
-                <Link to="/contact" className="text-white">
+                <Link to="/contact" className="text-white py-2 px-2">
                   CONTACT
                 </Link>
               </div>
