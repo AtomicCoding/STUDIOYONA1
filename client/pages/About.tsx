@@ -15,12 +15,12 @@ export default function About() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
                   alt="Studio Yona"
-                  className="h-12 w-auto"
+                  className="h-16 w-auto"
                 />
               </Link>
-              
+
               {/* Navigation Links */}
-              <div className="flex space-x-12 text-xs tracking-[0.2em] font-medium">
+              <div className="flex space-x-12 text-sm tracking-[0.2em] font-medium">
                 <Link to="/projects" className="text-gray-600 hover:text-black transition-colors">
                   PROJECTS
                 </Link>
