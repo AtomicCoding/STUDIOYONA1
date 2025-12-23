@@ -120,7 +120,7 @@ export default function About() {
             <p className="text-base font-normal leading-relaxed mb-8">
               Our practice is guided by the belief that exceptional architecture emerges from the careful balance of form, function, and human experience. We draw inspiration from diverse cultural contexts while remaining rooted in the unique qualities of each site and client vision.
             </p>
-            <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+            <p className="text-base font-normal leading-relaxed">
               Every project represents an opportunity to explore new possibilities while honoring the timeless principles of good design: proportion, material honesty, and spatial clarity.
             </p>
           </div>
