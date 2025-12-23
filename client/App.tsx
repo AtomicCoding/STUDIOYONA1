@@ -12,6 +12,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ContactWidget from "./components/ContactWidget";
 
 const queryClient = new QueryClient();
 
