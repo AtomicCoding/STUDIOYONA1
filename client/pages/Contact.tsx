@@ -105,7 +105,7 @@ export default function Contact() {
 
                 {/* Contact Information */}
                 <div className="space-y-8">
-                  <h3 className="text-lg font-light tracking-[0.2em] text-zinc-400 uppercase border-b border-zinc-600 pb-4">
+                  <h3 className="text-base font-light tracking-[0.2em] text-zinc-400 uppercase border-b border-zinc-600 pb-4">
                     Studio Information
                   </h3>
                   
