@@ -91,9 +91,9 @@ export default function Contact() {
                     Let's bring your vision to life with purposeful design.
                   </h2>
                   
-                  <p className="text-xl font-light leading-relaxed text-zinc-200 mb-8">
-                    Every great project begins with a conversation. Whether you're envisioning 
-                    a complete home transformation or seeking design consultation, we're here 
+                  <p className="text-lg font-light leading-relaxed text-zinc-200 mb-8">
+                    Every great project begins with a conversation. Whether you're envisioning
+                    a complete home transformation or seeking design consultation, we're here
                     to listen, collaborate, and create something extraordinary together.
                   </p>
                   
