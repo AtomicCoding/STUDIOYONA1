@@ -312,7 +312,6 @@ export default function ProjectDetail() {
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-8 text-center">
             <p className="text-xl font-light leading-relaxed" style={{
-              fontFamily: '"Work Sans", sans-serif',
               color: '#222222',
               lineHeight: '34px',
               maxWidth: '880px',
