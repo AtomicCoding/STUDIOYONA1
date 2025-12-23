@@ -299,7 +299,7 @@ export default function ProjectDetail() {
 
           {/* Hero Overlay Text */}
           <div className="absolute bottom-12 left-16 text-white">
-            <h1 className="text-5xl font-bold mb-2" style={{ fontFamily: '"Work Sans", sans-serif', color: '#FFFFFF' }}>
+            <h1 className="text-5xl font-bold mb-2 text-white">
               {project.title}
             </h1>
             <p className="text-lg font-normal" style={{ fontFamily: '"Work Sans", sans-serif', color: '#FFFFFF' }}>
