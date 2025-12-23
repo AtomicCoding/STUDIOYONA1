@@ -16,7 +16,6 @@ export default {
       fontFamily: {
         sans: [
           "Erbaum",
-          "Inter",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
