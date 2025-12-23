@@ -65,27 +65,27 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
 
           {/* Navigation Links */}
           <div className="flex gap-6 md:gap-7 text-sm md:text-base tracking-[0.02em] font-light">
-            <Link 
-              to="/" 
-              className={`${activeTextColor} transition-opacity hover:opacity-60 py-2`}
+            <Link
+              to="/"
+              className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2`}
             >
               HOME
             </Link>
-            <Link 
-              to="/projects" 
-              className={`${activeTextColor} font-medium border-b-2 border-current transition-opacity hover:opacity-60 py-2`}
+            <Link
+              to="/projects"
+              className={`${activeTextColor} font-medium border-b border-current ${transitionClass} hover:opacity-70 py-2`}
             >
               WORK
             </Link>
-            <Link 
-              to="/about" 
-              className={`${getTextColor()} ${hoverTextColor} transition-opacity hover:opacity-60 py-2`}
+            <Link
+              to="/about"
+              className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2`}
             >
               STUDIO
             </Link>
-            <Link 
-              to="/contact" 
-              className={`${getTextColor()} ${hoverTextColor} transition-opacity hover:opacity-60 py-2`}
+            <Link
+              to="/contact"
+              className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2`}
             >
               CONTACT
             </Link>
