@@ -117,7 +117,7 @@ export default function About() {
             <h2 className="text-2xl font-bold mb-8">
               Design Philosophy
             </h2>
-            <p className="text-lg font-normal leading-relaxed mb-8" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+            <p className="text-base font-normal leading-relaxed mb-8">
               Our practice is guided by the belief that exceptional architecture emerges from the careful balance of form, function, and human experience. We draw inspiration from diverse cultural contexts while remaining rooted in the unique qualities of each site and client vision.
             </p>
             <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
