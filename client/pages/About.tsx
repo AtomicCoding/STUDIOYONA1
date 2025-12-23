@@ -134,26 +134,26 @@ export default function About() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div className="p-8">
-                <h3 className="text-xl font-bold mb-4" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <h3 className="text-lg font-bold mb-4">
                   AIA Los Angeles
                 </h3>
-                <p className="text-gray-600" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <p className="text-gray-600">
                   Design Excellence Award 2024
                 </p>
               </div>
               <div className="p-8">
-                <h3 className="text-xl font-bold mb-4" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <h3 className="text-lg font-bold mb-4">
                   Architectural Digest
                 </h3>
-                <p className="text-gray-600" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <p className="text-gray-600">
                   Featured Project 2024
                 </p>
               </div>
               <div className="p-8">
-                <h3 className="text-xl font-bold mb-4" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <h3 className="text-lg font-bold mb-4">
                   California Home + Design
                 </h3>
-                <p className="text-gray-600" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <p className="text-gray-600">
                   Rising Talent Award 2023
                 </p>
               </div>
