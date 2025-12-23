@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
+import Header from '../components/Header';
 
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
