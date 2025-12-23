@@ -123,7 +123,7 @@ export default function Index() {
         {/* Section 5 - Quote Section */}
         <section className="py-24 bg-white">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <blockquote className="text-3xl lg:text-4xl font-normal italic leading-relaxed mb-8" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+            <blockquote className="text-3xl lg:text-4xl font-normal italic leading-relaxed mb-8">
               "We don't just create spaces — we guide people through the design journey with intention and precision."
             </blockquote>
             <p className="text-lg font-normal" style={{ fontFamily: '"Work Sans", sans-serif' }}>
