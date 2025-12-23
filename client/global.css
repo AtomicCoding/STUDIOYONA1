@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Erbaum font from Adobe Fonts */
+@font-face {
+  font-family: "Erbaum";
+  src:
+    local("Erbaum"),
+    url("https://use.typekit.net/erbaum.css") format("css");
+}
+
 /* Gotham fallback styles */
 @font-face {
   font-family: "GothamMedium";
