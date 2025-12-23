@@ -40,6 +40,9 @@ export default function ContactWidget() {
 
       {/* Modal Content */}
       <DialogContent className="sm:max-w-md bg-white rounded-lg p-8 max-h-[90vh] overflow-y-auto">
+        {/* Visually Hidden Title for Screen Readers */}
+        <DialogTitle className="sr-only">Contact Studio Yona</DialogTitle>
+
         <div className="space-y-6">
           {/* Header */}
           <div className="text-center">
