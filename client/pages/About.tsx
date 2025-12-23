@@ -172,7 +172,7 @@ export default function About() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
                     alt="Studio Yona"
-                    className="h-10 w-auto"
+                    className="h-12 w-auto"
                   />
                 </Link>
               </div>
