@@ -97,8 +97,8 @@ export default function Contact() {
                     to listen, collaborate, and create something extraordinary together.
                   </p>
                   
-                  <p className="text-lg font-light leading-relaxed text-zinc-300">
-                    We work closely with a select number of clients each year, ensuring that 
+                  <p className="text-base font-light leading-relaxed text-zinc-300">
+                    We work closely with a select number of clients each year, ensuring that
                     every project receives our full attention and creative energy.
                   </p>
                 </div>
