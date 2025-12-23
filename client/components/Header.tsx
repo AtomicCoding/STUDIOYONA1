@@ -52,43 +52,45 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${getHeaderClass()}`}>
-      <div className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex justify-between items-center gap-8">
-          {/* Logo */}
-          <Link to="/" className="hover:opacity-80 transition-opacity flex-shrink-0">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
-              alt="Studio Yona"
-              className={`h-20 md:h-28 w-auto ${invertLogo ? 'invert' : ''}`}
-            />
-          </Link>
+      <div className="w-full flex justify-center px-6">
+        <div className="w-full max-w-[1600px]">
+          <div className="py-4 flex justify-between items-center gap-8">
+            {/* Logo */}
+            <Link to="/" className="hover:opacity-80 transition-opacity flex-shrink-0">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
+                alt="Studio Yona"
+                className={`h-20 md:h-28 w-auto ${invertLogo ? 'invert' : ''}`}
+              />
+            </Link>
 
-          {/* Navigation Links */}
-          <div className="flex gap-6 md:gap-7 text-sm md:text-base tracking-[0.02em] font-light">
-            <Link
-              to="/"
-              className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2`}
-            >
-              HOME
-            </Link>
-            <Link
-              to="/projects"
-              className={`${activeTextColor} font-medium border-b border-current ${transitionClass} hover:opacity-70 py-2`}
-            >
-              WORK
-            </Link>
-            <Link
-              to="/about"
-              className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2`}
-            >
-              STUDIO
-            </Link>
-            <Link
-              to="/contact"
-              className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2`}
-            >
-              CONTACT
-            </Link>
+            {/* Navigation Links */}
+            <div className="flex gap-6 md:gap-7 text-sm md:text-base tracking-[0.02em] font-light">
+              <Link
+                to="/"
+                className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2`}
+              >
+                HOME
+              </Link>
+              <Link
+                to="/projects"
+                className={`${activeTextColor} font-medium border-b border-current ${transitionClass} hover:opacity-70 py-2`}
+              >
+                WORK
+              </Link>
+              <Link
+                to="/about"
+                className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2`}
+              >
+                STUDIO
+              </Link>
+              <Link
+                to="/contact"
+                className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2`}
+              >
+                CONTACT
+              </Link>
+            </div>
           </div>
         </div>
       </div>
