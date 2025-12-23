@@ -40,14 +40,15 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
   // Determine text color based on background
   const getTextColor = () => {
     if (bgColor === 'white') {
-      return 'text-gray-600';
+      return 'text-gray-500';
     } else {
-      return 'text-zinc-300';
+      return 'text-zinc-400';
     }
   };
 
   const activeTextColor = bgColor === 'white' ? 'text-black' : 'text-white';
   const hoverTextColor = bgColor === 'white' ? 'hover:text-black' : 'hover:text-white';
+  const transitionClass = 'transition-colors duration-200';
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${getHeaderClass()}`}>
