@@ -401,7 +401,7 @@ export default function ProjectDetail() {
               </div>
               
               {/* Right: Social */}
-              <div className="flex justify-end space-x-8 text-sm font-medium" style={{ fontFamily: '"Work Sans", sans-serif', color: '#222222' }}>
+              <div className="flex justify-end space-x-8 text-sm font-medium" style={{ color: '#222222' }}>
                 <a href="#" className="hover:text-gray-600 transition-colors">Instagram</a>
                 <a href="#" className="hover:text-gray-600 transition-colors">LinkedIn</a>
               </div>
