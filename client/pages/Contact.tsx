@@ -87,7 +87,7 @@ export default function Contact() {
               {/* Left: Contact Copy & Info */}
               <div className="space-y-12 text-white">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-thin tracking-tight mb-8 font-serif">
+                  <h2 className="text-2xl md:text-3xl font-thin tracking-tight mb-8 font-serif">
                     Let's bring your vision to life with purposeful design.
                   </h2>
                   
