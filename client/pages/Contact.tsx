@@ -32,36 +32,10 @@ export default function Contact() {
   return (
     <>
       <title>Contact - Studio Yona</title>
-      
-      <div className="min-h-screen bg-zinc-900">
-        {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-900/90 backdrop-blur-sm border-b border-zinc-800/50">
-          <div className="max-w-7xl mx-auto px-6 py-4">
-            <div className="flex justify-between items-center gap-8">
-              {/* Logo */}
-              <Link to="/" className="hover:opacity-80 transition-opacity flex-shrink-0">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
-                  alt="Studio Yona"
-                  className="h-20 md:h-28 w-auto invert"
-                />
-              </Link>
 
-              {/* Navigation Links */}
-              <div className="flex space-x-8 md:space-x-16 text-base md:text-xl tracking-[0.2em] font-light">
-                <Link to="/projects" className="text-zinc-300 hover:text-white transition-colors py-2 px-2">
-                  PROJECTS
-                </Link>
-                <Link to="/about" className="text-zinc-300 hover:text-white transition-colors py-2 px-2">
-                  ABOUT
-                </Link>
-                <Link to="/contact" className="text-white py-2 px-2">
-                  CONTACT
-                </Link>
-              </div>
-            </div>
-          </div>
-        </nav>
+      <Header bgColor="dark-gray" invertLogo={true} />
+
+      <div className="min-h-screen bg-zinc-900">
 
         {/* Main Content */}
         <div className="pt-20 pb-24 relative">
