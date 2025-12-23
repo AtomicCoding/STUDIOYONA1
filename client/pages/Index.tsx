@@ -159,8 +159,12 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               {/* Left: Logo */}
               <div>
-                <Link to="/" className="font-medium text-sm tracking-[0.3em] text-black hover:text-gray-600 transition-colors" style={{ fontFamily: '"Work Sans", sans-serif' }}>
-                  STUDIO YONA
+                <Link to="/" className="hover:opacity-80 transition-opacity inline-block">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
+                    alt="Studio Yona"
+                    className="h-10 w-auto"
+                  />
                 </Link>
               </div>
               
