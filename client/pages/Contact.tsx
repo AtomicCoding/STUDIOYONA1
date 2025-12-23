@@ -38,8 +38,12 @@ export default function Contact() {
           <div className="max-w-7xl mx-auto px-6 py-5">
             <div className="flex justify-between items-center">
               {/* Logo */}
-              <Link to="/" className="font-light text-sm tracking-[0.3em] text-white hover:text-zinc-300 transition-colors">
-                STUDIO YONA
+              <Link to="/" className="hover:opacity-80 transition-opacity">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
+                  alt="Studio Yona"
+                  className="h-12 w-auto invert"
+                />
               </Link>
               
               {/* Navigation Links */}
