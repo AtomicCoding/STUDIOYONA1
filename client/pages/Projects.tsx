@@ -123,7 +123,7 @@ export default function Projects() {
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-thin tracking-tight text-white mb-6 font-serif">
                 Projects
               </h1>
-              <p className="text-lg md:text-xl font-light leading-relaxed text-white/90 max-w-2xl font-serif">
+              <p className="text-base md:text-lg font-light leading-relaxed text-white/90 max-w-2xl font-serif">
                 A curated selection of bespoke residential designs crafted for discerning clients across California and beyond.
               </p>
             </div>
