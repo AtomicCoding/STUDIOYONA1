@@ -178,7 +178,7 @@ export default function About() {
               </div>
               
               {/* Center: Navigation */}
-              <div className="flex justify-center space-x-8 text-sm font-medium" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+              <div className="flex justify-center space-x-8 text-sm font-medium">
                 <Link to="/projects" className="text-black hover:text-gray-600 transition-colors">Projects</Link>
                 <Link to="/about" className="text-black hover:text-gray-600 transition-colors">About</Link>
                 <Link to="/contact" className="text-black hover:text-gray-600 transition-colors">Contact</Link>
