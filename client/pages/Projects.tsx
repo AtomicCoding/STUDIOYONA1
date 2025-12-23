@@ -160,7 +160,7 @@ export default function Projects() {
                 {/* Project Info with Blur Background */}
                 <div className="absolute inset-0 flex items-end p-8 md:p-12">
                   <div className="bg-black/40 backdrop-blur-md px-8 py-6 rounded-sm border border-white/10 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                    <h2 className="text-3xl md:text-4xl font-light tracking-wide text-white mb-2 font-serif">
+                    <h2 className="text-2xl md:text-3xl font-light tracking-wide text-white mb-2 font-serif">
                       {project.title}
                     </h2>
                     <p className="text-sm md:text-base tracking-[0.15em] uppercase text-white/80">
