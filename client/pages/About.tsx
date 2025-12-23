@@ -114,7 +114,7 @@ export default function About() {
         {/* Philosophy Section - Additional Content */}
         <section className="py-24 bg-white">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-8" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+            <h2 className="text-2xl font-bold mb-8">
               Design Philosophy
             </h2>
             <p className="text-lg font-normal leading-relaxed mb-8" style={{ fontFamily: '"Work Sans", sans-serif' }}>
