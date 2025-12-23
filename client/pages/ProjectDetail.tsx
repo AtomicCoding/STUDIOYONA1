@@ -387,7 +387,7 @@ export default function ProjectDetail() {
           <div className="max-w-7xl mx-auto px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               {/* Left: Navigation */}
-              <div className="flex space-x-8 text-sm font-medium" style={{ fontFamily: '"Work Sans", sans-serif', color: '#222222' }}>
+              <div className="flex space-x-8 text-sm font-medium" style={{ color: '#222222' }}>
                 <Link to="/projects" className="hover:text-gray-600 transition-colors">Projects</Link>
                 <Link to="/about" className="hover:text-gray-600 transition-colors">About</Link>
                 <Link to="/contact" className="hover:text-gray-600 transition-colors">Contact</Link>
