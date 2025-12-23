@@ -302,7 +302,7 @@ export default function ProjectDetail() {
             <h1 className="text-5xl font-bold mb-2 text-white">
               {project.title}
             </h1>
-            <p className="text-lg font-normal" style={{ fontFamily: '"Work Sans", sans-serif', color: '#FFFFFF' }}>
+            <p className="text-lg font-normal text-white">
               {project.location} · {project.year}
             </p>
           </div>
