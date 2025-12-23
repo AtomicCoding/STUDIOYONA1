@@ -82,7 +82,7 @@ export default function Index() {
 
               {/* Text Column */}
               <div className="text-col flex flex-col justify-center">
-                <h3 className="text-4xl font-bold mb-6" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <h3 className="text-4xl font-bold mb-6">
                   Vista Ridge Residence
                 </h3>
                 <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
