@@ -243,7 +243,7 @@ export default function Contact() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
                     alt="Studio Yona"
-                    className="h-12 w-auto invert"
+                    className="h-14 md:h-16 w-auto invert"
                   />
                 </Link>
               </div>
