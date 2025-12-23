@@ -54,8 +54,7 @@ export default function About() {
         {/* Section 2 - Studio Mission (Centered Text) */}
         <section className="py-24 bg-white">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="text-xl font-normal leading-relaxed" style={{ 
-              fontFamily: '"Work Sans", sans-serif',
+            <p className="text-lg font-normal leading-relaxed" style={{
               maxWidth: '800px',
               margin: '0 auto'
             }}>
