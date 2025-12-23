@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
+import HeroSlideshow from '../components/HeroSlideshow';
 
 export default function Index() {
   return (
@@ -10,23 +11,8 @@ export default function Index() {
 
       <div className="min-h-screen bg-white">
 
-        {/* Section 1 - Hero Image */}
-        <section className="relative h-screen overflow-hidden">
-          <img 
-            src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fbf94ab26c7844f828d801d72e56d3d51?format=webp&width=1920"
-            alt="Studio Yona Architecture"
-            className="w-full h-full object-cover object-center"
-          />
-          
-          {/* Downward Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-            <div className="animate-bounce">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </div>
-          </div>
-        </section>
+        {/* Section 1 - Hero Slideshow */}
+        <HeroSlideshow />
 
         {/* Section 2 - Studio Intro Text */}
         <section className="py-24 bg-white">
