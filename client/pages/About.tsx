@@ -103,7 +103,7 @@ export default function About() {
 
               {/* Text Column */}
               <div className="text-col flex flex-col justify-center">
-                <p className="text-lg font-normal leading-relaxed">
+                <p className="text-base font-normal leading-relaxed">
                   We use cutting-edge 3D and VR visualization to ensure clients can see every detail before it's built. This technology-forward approach reduces uncertainty and empowers informed decision-making throughout the design process.
                 </p>
               </div>
