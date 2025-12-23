@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import Header from '../components/Header';
 
 export default function Projects() {
   const [isScrolled, setIsScrolled] = useState(false);
