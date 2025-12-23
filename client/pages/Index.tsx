@@ -112,7 +112,7 @@ export default function Index() {
                 <h3 className="text-4xl font-bold mb-6">
                   Sculptural Modern Estate
                 </h3>
-                <p className="text-lg font-normal leading-relaxed" style={{ fontFamily: '"Work Sans", sans-serif' }}>
+                <p className="text-lg font-normal leading-relaxed">
                   Where architecture becomes art through fluid, sculptural geometries that create a truly immersive living experience.
                 </p>
               </div>
