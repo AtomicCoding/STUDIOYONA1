@@ -220,7 +220,7 @@ export default function Contact() {
                           value={formData.phone}
                           onChange={handleInputChange}
                           required
-                          className="flex-1 bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
+                          className="flex-1 bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
                           placeholder=""
                         />
                       </div>
@@ -237,7 +237,7 @@ export default function Contact() {
                         id="zip"
                         value={formData.zip}
                         onChange={handleInputChange}
-                        className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
+                        className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
                         placeholder=""
                       />
                     </div>
