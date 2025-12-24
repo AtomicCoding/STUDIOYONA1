@@ -100,8 +100,57 @@ export default function Contact() {
 
             {/* Content Grid - Two Column Layout on Desktop */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
-              {/* Left & Center: Contact Details, Social, & Form (2 columns on desktop) */}
-              <div className="lg:col-span-2 space-y-8 lg:space-y-6">
+              {/* Left: Map (Responsive: desktop always visible, mobile/small heights use toggle) */}
+              <div className="lg:col-span-1 w-full order-2 lg:order-1">
+                {/* Desktop Map - Always Visible on Large Screens */}
+                <div className="hidden lg:block">
+                  <div className="rounded-[14px] overflow-hidden h-96 shadow-sm border border-gray-200" style={{
+                    boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 2px rgba(255, 255, 255, 0.5)'
+                  }}>
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      frameBorder="0"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.556937098913!2d-118.41631!3d34.073644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d7f9e7c7c7%3A0x9c8f7f7c7c7c7c7c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1640000000000"
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      style={{ border: 'none' }}
+                    ></iframe>
+                  </div>
+                </div>
+
+                {/* Mobile & Small Height - Map Toggle */}
+                <div className="lg:hidden">
+                  <button
+                    onClick={() => setShowMap(!showMap)}
+                    className="w-full flex items-center justify-between px-4 py-3 bg-gray-50 border border-gray-300 rounded-sm hover:bg-gray-100 transition-colors text-sm font-light text-gray-700"
+                  >
+                    <span>View map</span>
+                    <ChevronDown className={`w-4 h-4 transition-transform ${showMap ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  {showMap && (
+                    <div className="mt-4 rounded-[14px] overflow-hidden h-80 shadow-sm border border-gray-200" style={{
+                      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 2px rgba(255, 255, 255, 0.5)'
+                    }}>
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.556937098913!2d-118.41631!3d34.073644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d7f9e7c7c7%3A0x9c8f7f7c7c7c7c7c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2dus!4v1640000000000"
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        style={{ border: 'none' }}
+                      ></iframe>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Right: Contact Details, Social, & Form (2 columns on desktop) */}
+              <div className="lg:col-span-2 space-y-8 lg:space-y-6 order-1 lg:order-2">
                 {/* Contact Information */}
                 <div className="space-y-4 text-gray-800">
                   <div>
