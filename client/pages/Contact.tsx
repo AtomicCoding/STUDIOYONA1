@@ -6,9 +6,15 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
-    message: ''
+    phone: '',
+    zip: '',
+    message: '',
+    consent: false
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [country, setCountry] = useState('United States');
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -23,10 +29,55 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      consent: e.target.checked
+    }));
+  };
+
+  const handleCountryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setCountry(e.target.value);
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    
+    if (!formData.consent) {
+      alert('Please agree to the consent statement before submitting.');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/.netlify/functions/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          country: country,
+          zip: formData.zip,
+          message: formData.message,
+          consent: formData.consent,
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        alert('There was an error submitting the form. Please try again.');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('There was an error submitting the form. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -39,7 +90,7 @@ export default function Contact() {
 
         {/* Main Content */}
         <div className="pt-20 pb-24 relative">
-          {/* Background Image - Fourth Image */}
+          {/* Background Image */}
           <div className="absolute inset-0">
             <img 
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa5050a739dc240f19ab64fbb0cdf6658?format=webp&width=800"
@@ -52,61 +103,44 @@ export default function Contact() {
           <div className="relative z-10 max-w-7xl mx-auto px-6">
             {/* Page Header */}
             <div className="text-center mb-20 pt-12">
-              <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-white mb-8 font-serif">
-                Contact
+              <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-white font-serif">
+                Let's connect
               </h1>
             </div>
 
             {/* Content Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-              {/* Left: Contact Copy & Info */}
+              {/* Left: Contact Details & Social */}
               <div className="space-y-12 text-white">
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-thin tracking-tight mb-8 font-serif">
-                    Let's bring your vision to life with purposeful design.
-                  </h2>
-                  
-                  <p className="text-lg font-light leading-relaxed text-zinc-200 mb-8">
-                    Every great project begins with a conversation. Whether you're envisioning
-                    a complete home transformation or seeking design consultation, we're here
-                    to listen, collaborate, and create something extraordinary together.
-                  </p>
-                  
-                  <p className="text-base font-light leading-relaxed text-zinc-300">
-                    We work closely with a select number of clients each year, ensuring that
-                    every project receives our full attention and creative energy.
-                  </p>
-                </div>
-
                 {/* Contact Information */}
-                <div className="space-y-8">
-                  <h3 className="text-base font-light tracking-[0.2em] text-zinc-400 uppercase border-b border-zinc-600 pb-4">
-                    Studio Information
-                  </h3>
-                  
-                  <div className="space-y-6 text-zinc-200">
-                    <div>
-                      <p className="text-base font-light leading-relaxed">
-                        Studio Yona<br />
+                <div className="space-y-6 text-zinc-200">
+                  <div>
+                    <p className="text-base font-light leading-relaxed">
+                      <a 
+                        href="https://www.google.com/maps/search/Beverly+Hills,+CA+90210" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-white transition-colors"
+                      >
                         Beverly Hills, CA 90210
-                      </p>
-                    </div>
+                      </a>
+                    </p>
+                  </div>
 
-                    <div>
-                      <p className="text-base font-light">
-                        <a href="tel:+18186685776" className="hover:text-white transition-colors">
-                          (818) 668-5776
-                        </a>
-                      </p>
-                    </div>
+                  <div>
+                    <p className="text-base font-light">
+                      <a href="tel:+18186685776" className="hover:text-white transition-colors">
+                        (818) 668-5776
+                      </a>
+                    </p>
+                  </div>
 
-                    <div>
-                      <p className="text-base font-light">
-                        <a href="mailto:adam@yona.studio" className="hover:text-white transition-colors">
-                          adam@yona.studio
-                        </a>
-                      </p>
-                    </div>
+                  <div>
+                    <p className="text-base font-light">
+                      <a href="mailto:adam@yona.studio" className="hover:text-white transition-colors">
+                        adam@yona.studio
+                      </a>
+                    </p>
                   </div>
                 </div>
 
@@ -135,84 +169,146 @@ export default function Contact() {
 
               {/* Right: Contact Form */}
               <div className="lg:pl-12">
-                <form onSubmit={handleSubmit} className="space-y-8">
-                  {/* Name Field */}
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
-                      placeholder="Your name"
-                    />
-                  </div>
+                {!isSubmitted ? (
+                  <form onSubmit={handleSubmit} className="space-y-8">
+                    {/* Name Field */}
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
+                        Name *
+                      </label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
+                        placeholder=""
+                      />
+                    </div>
 
-                  {/* Email Field */}
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
-                      placeholder="your@email.com"
-                    />
-                  </div>
+                    {/* Email Field */}
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
+                        Email *
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
+                        placeholder=""
+                      />
+                    </div>
 
-                  {/* Subject Field */}
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
-                      placeholder="Project inquiry"
-                    />
-                  </div>
+                    {/* Phone Field with Country Selector */}
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
+                        Phone *
+                      </label>
+                      <div className="flex gap-3">
+                        <select
+                          value={country}
+                          onChange={handleCountryChange}
+                          className="bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black focus:border-zinc-600 focus:outline-none transition-colors w-32"
+                        >
+                          <option>United States</option>
+                          <option>Canada</option>
+                          <option>Mexico</option>
+                          <option>United Kingdom</option>
+                          <option>Australia</option>
+                          <option>Other</option>
+                        </select>
+                        <input
+                          type="tel"
+                          name="phone"
+                          id="phone"
+                          value={formData.phone}
+                          onChange={handleInputChange}
+                          required
+                          className="flex-1 bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
 
-                  {/* Message Field */}
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
-                      Message *
-                    </label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows={6}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors resize-none"
-                      placeholder="Tell us about your project..."
-                    />
-                  </div>
+                    {/* Zip Field */}
+                    <div>
+                      <label htmlFor="zip" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
+                        Zip
+                      </label>
+                      <input
+                        type="text"
+                        name="zip"
+                        id="zip"
+                        value={formData.zip}
+                        onChange={handleInputChange}
+                        className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
+                        placeholder=""
+                      />
+                    </div>
 
-                  {/* Submit Button */}
-                  <div className="pt-8">
-                    <button
-                      type="submit"
-                      className="px-12 py-4 bg-black/60 border border-white/50 text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-500 rounded-sm backdrop-blur-sm"
-                    >
-                      SEND MESSAGE
-                    </button>
+                    {/* Message Field */}
+                    <div>
+                      <label htmlFor="message" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
+                        Message *
+                      </label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        rows={6}
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors resize-none"
+                        placeholder=""
+                      />
+                    </div>
+
+                    {/* Privacy Notice */}
+                    <div className="text-xs font-light text-zinc-300 leading-relaxed">
+                      We care about your privacy. Please don't submit sensitive information such as social security numbers, credit card or bank information.
+                    </div>
+
+                    {/* Consent Checkbox */}
+                    <div>
+                      <label className="flex items-start gap-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          name="consent"
+                          checked={formData.consent}
+                          onChange={handleCheckboxChange}
+                          required
+                          className="mt-1 w-4 h-4 bg-white border border-zinc-300 rounded-sm cursor-pointer focus:outline-none"
+                        />
+                        <span className="text-xs font-light text-zinc-300 leading-relaxed">
+                          I agree that Studio Yona can email and call me in response to my inquiry, as well as with tips and offers for similar services.
+                        </span>
+                      </label>
+                    </div>
+
+                    {/* Submit Button */}
+                    <div className="pt-8">
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="px-12 py-4 bg-black/60 border border-white/50 text-white font-light tracking-[0.15em] text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-500 rounded-sm backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                      >
+                        {isSubmitting ? 'SUBMITTING...' : 'Submit'}
+                      </button>
+                    </div>
+                  </form>
+                ) : (
+                  <div className="flex items-center justify-center min-h-96">
+                    <p className="text-white text-lg font-light text-center">
+                      Thank you for reaching out. We'll be in touch shortly.
+                    </p>
                   </div>
-                </form>
+                )}
               </div>
             </div>
           </div>
