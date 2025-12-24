@@ -226,22 +226,6 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    {/* Zip Field */}
-                    <div>
-                      <label htmlFor="zip" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
-                        Zip
-                      </label>
-                      <input
-                        type="text"
-                        name="zip"
-                        id="zip"
-                        value={formData.zip}
-                        onChange={handleInputChange}
-                        className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
-                        placeholder=""
-                      />
-                    </div>
-
                     {/* Message Field */}
                     <div>
                       <label htmlFor="message" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
