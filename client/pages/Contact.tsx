@@ -84,7 +84,7 @@ export default function Contact() {
     <>
       <title>Contact - Studio Yona</title>
 
-      <Header bgColor="dark-gray" invertLogo={true} />
+      <Header bgColor="white" invertLogo={false} />
 
       <div className="min-h-screen bg-zinc-900">
 
