@@ -260,7 +260,7 @@ export default function Contact() {
                     </div>
 
                     {/* Privacy Notice */}
-                    <div className="text-xs font-light text-zinc-300 leading-relaxed">
+                    <div className="text-xs font-light text-gray-700 leading-relaxed">
                       We care about your privacy. Please don't submit sensitive information such as social security numbers, credit card or bank information.
                     </div>
 
@@ -273,9 +273,9 @@ export default function Contact() {
                           checked={formData.consent}
                           onChange={handleCheckboxChange}
                           required
-                          className="mt-1 w-4 h-4 bg-white border border-zinc-300 rounded-sm cursor-pointer focus:outline-none"
+                          className="mt-1 w-4 h-4 bg-white border border-gray-400 rounded-sm cursor-pointer focus:outline-none"
                         />
-                        <span className="text-xs font-light text-zinc-300 leading-relaxed">
+                        <span className="text-xs font-light text-gray-700 leading-relaxed">
                           I agree that Studio Yona can email and call me in response to my inquiry, as well as with tips and offers for similar services.
                         </span>
                       </label>
