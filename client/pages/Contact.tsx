@@ -304,6 +304,24 @@ export default function Contact() {
           </div>
         </div>
 
+        {/* Map Section */}
+        <div className="w-full bg-white border-t border-gray-200">
+          <div className="max-w-7xl mx-auto px-6 py-16">
+            <div className="rounded-[14px] overflow-hidden h-96 md:h-[500px] shadow-sm border border-gray-200">
+              <iframe
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.556937098913!2d-118.41631!3d34.073644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d7f9e7c7c7%3A0x9c8f7f7c7c7c7c7c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1640000000000"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                style={{ border: 'none' }}
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
         {/* Footer */}
         <footer className="bg-black border-t border-zinc-800 py-12">
           <div className="max-w-7xl mx-auto px-6">
