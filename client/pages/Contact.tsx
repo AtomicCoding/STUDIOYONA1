@@ -136,22 +136,24 @@ export default function Contact() {
 
                 {/* Social Links */}
                 <div className="pt-8">
-                  <div className="flex space-x-8">
+                  <div className="flex space-x-6">
                     <a
                       href="https://www.instagram.com/studio.yona/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-black transition-colors text-sm tracking-[0.15em] font-light"
+                      className="flex items-center gap-2 text-gray-500 hover:text-gray-900 hover:opacity-100 opacity-75 transition-all text-sm tracking-[0.05em] font-light"
                     >
-                      INSTAGRAM
+                      <Instagram className="w-4 h-4" />
+                      <span>Instagram</span>
                     </a>
                     <a
                       href="https://www.linkedin.com/in/adam-yona-962892156/?trk=people-guest_people_search-card"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-black transition-colors text-sm tracking-[0.15em] font-light"
+                      className="flex items-center gap-2 text-gray-500 hover:text-gray-900 hover:opacity-100 opacity-75 transition-all text-sm tracking-[0.05em] font-light"
                     >
-                      LINKEDIN
+                      <Linkedin className="w-4 h-4" />
+                      <span>LinkedIn</span>
                     </a>
                   </div>
                 </div>
