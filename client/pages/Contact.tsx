@@ -8,7 +8,6 @@ export default function Contact() {
     name: '',
     email: '',
     phone: '',
-    zip: '',
     message: '',
     consent: false
   });
