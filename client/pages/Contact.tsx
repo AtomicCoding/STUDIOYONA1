@@ -173,7 +173,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
+                        className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
                         placeholder=""
                       />
                     </div>
@@ -190,7 +190,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-zinc-500 focus:border-zinc-600 focus:outline-none transition-colors"
+                        className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
                         placeholder=""
                       />
                     </div>
@@ -204,7 +204,7 @@ export default function Contact() {
                         <select
                           value={country}
                           onChange={handleCountryChange}
-                          className="bg-white border border-zinc-300 rounded-sm px-4 py-3 text-base font-light text-black focus:border-zinc-600 focus:outline-none transition-colors w-32"
+                          className="bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black focus:border-gray-400 focus:outline-none transition-colors w-32"
                         >
                           <option>United States</option>
                           <option>Canada</option>
