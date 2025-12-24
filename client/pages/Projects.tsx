@@ -18,37 +18,37 @@ export default function Projects() {
     {
       id: 'vista-ridge-residence',
       title: 'Malibu Residence',
-      location: 'Beverly Hills, CA',
+      location: 'Malibu, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6075aa98e58e4e8ab515b72283788bc6?format=webp&width=1200'
     },
     {
       id: 'pacific-modern-residence',
-      title: 'Pacific Modern Residence',
-      location: 'Manhattan Beach, CA',
+      title: 'Cantara Residence',
+      location: 'Moorpark, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200'
     },
     {
       id: 'sculptural-modern-estate',
-      title: 'Sculptural Modern Estate',
-      location: 'Bel Air, CA',
+      title: 'Westwood condo',
+      location: 'Westwood, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fdad90f77fff549209726ceaffd0070dc?format=webp&width=1200'
     },
     {
       id: 'modern-farmhouse-estate',
-      title: 'Modern Farmhouse Estate',
-      location: 'Montecito, CA',
+      title: 'Old Agoura Residence',
+      location: 'Old Agoura, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0ab0e4828dab4ed98d07468046290137?format=webp&width=1200'
     },
     {
       id: 'contemporary-curve-residence',
-      title: 'Contemporary Curve Residence',
-      location: 'Santa Barbara, CA',
+      title: 'Oak Park Residence',
+      location: 'Oak Park, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200'
     },
     {
       id: 'classical-estate-pavilion',
-      title: 'Classical Estate Pavilion',
-      location: 'Pasadena, CA',
+      title: 'Lake Sherwood Residence',
+      location: 'Lake Sherwood, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F61a87c373e2b40e19a476563cd2b425d?format=webp&width=1200'
     },
     {
