@@ -113,10 +113,20 @@ export default function Contact() {
                 {/* Social Links */}
                 <div className="pt-8">
                   <div className="flex space-x-8">
-                    <a href="#" className="text-zinc-400 hover:text-white transition-colors text-sm tracking-[0.15em] font-light">
+                    <a
+                      href="https://www.instagram.com/studio.yona/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-zinc-400 hover:text-white transition-colors text-sm tracking-[0.15em] font-light"
+                    >
                       INSTAGRAM
                     </a>
-                    <a href="#" className="text-zinc-400 hover:text-white transition-colors text-sm tracking-[0.15em] font-light">
+                    <a
+                      href="https://www.linkedin.com/in/adam-yona-962892156/?trk=people-guest_people_search-card"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-zinc-400 hover:text-white transition-colors text-sm tracking-[0.15em] font-light"
+                    >
                       LINKEDIN
                     </a>
                   </div>
