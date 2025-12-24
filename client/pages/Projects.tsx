@@ -98,13 +98,18 @@ export default function Projects() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-[1.01]"
                     style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
                     loading="lazy"
                   />
 
                   {/* Dark Overlay */}
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all duration-500"></div>
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all duration-500"></div>
+
+                  {/* Subtle Border Opacity Change on Hover */}
+                  <div className="absolute inset-0 border-4 border-white/90 group-hover:border-white/70 transition-all duration-500 rounded-[14px] pointer-events-none" style={{
+                    boxShadow: 'inset 0 1px 2px rgba(255, 255, 255, 0.1), inset 0 -1px 2px rgba(0, 0, 0, 0.3)'
+                  }}></div>
 
                   {/* Project Info with Blur Background */}
                   <div className="absolute inset-0 flex items-end p-8 md:p-12">
