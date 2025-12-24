@@ -90,7 +90,7 @@ export default function Contact() {
 
         {/* Main Content */}
         <div className="pt-20 pb-24 relative">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl 2xl:max-w-[1200px] mx-auto px-6">
             {/* Page Header */}
             <div className="text-center mb-20 pt-12">
               <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-black font-serif">
