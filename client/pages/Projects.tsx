@@ -17,7 +17,7 @@ export default function Projects() {
   const projects = [
     {
       id: 'vista-ridge-residence',
-      title: 'Vista Ridge Residence',
+      title: 'Malibu Residence',
       location: 'Beverly Hills, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6075aa98e58e4e8ab515b72283788bc6?format=webp&width=1200'
     },
