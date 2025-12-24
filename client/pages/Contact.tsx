@@ -86,21 +86,11 @@ export default function Contact() {
 
       <Header bgColor="white" invertLogo={false} />
 
-      <div className="min-h-screen bg-zinc-900">
+      <div className="min-h-screen bg-white">
 
         {/* Main Content */}
         <div className="pt-20 pb-24 relative">
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <img 
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa5050a739dc240f19ab64fbb0cdf6658?format=webp&width=800"
-              alt=""
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/70"></div>
-          </div>
-          
-          <div className="relative z-10 max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-6">
             {/* Page Header */}
             <div className="text-center mb-20 pt-12">
               <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-white font-serif">
