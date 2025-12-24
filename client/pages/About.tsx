@@ -160,8 +160,22 @@ export default function About() {
               
               {/* Right: Social */}
               <div className="flex justify-end space-x-6 text-sm font-medium">
-                <a href="#" className="text-black hover:text-gray-600 transition-colors">Instagram</a>
-                <a href="#" className="text-black hover:text-gray-600 transition-colors">LinkedIn</a>
+                <a
+                  href="https://www.instagram.com/studio.yona/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/adam-yona-962892156?trk=people-guest_people_search-card"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors"
+                >
+                  LinkedIn
+                </a>
               </div>
             </div>
           </div>
