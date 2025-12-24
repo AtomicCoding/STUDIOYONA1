@@ -82,49 +82,50 @@ export default function Projects() {
         <section className="relative pt-20 md:pt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {projects.map((project, index) => (
-              <Link
-                key={project.id}
-                to={`/projects/${project.id}`}
-                className={`group relative overflow-hidden transition-all duration-700 hover:scale-[1.02] ${
-                  isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-4'
-                }`}
-                style={{
-                  height: '70vh',
-                  transitionDelay: `${index * 100}ms`
-                }}
-              >
-                {/* Project Image */}
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
-                  style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
-                  loading="lazy"
-                />
-                
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all duration-500"></div>
-                
-                {/* Project Info with Blur Background */}
-                <div className="absolute inset-0 flex items-end p-8 md:p-12">
-                  <div className="bg-black/40 backdrop-blur-md px-8 py-6 rounded-sm border border-white/10 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                    <h2 className="text-2xl md:text-3xl font-light tracking-wide text-white mb-2 font-serif">
-                      {project.title}
-                    </h2>
-                    <p className="text-sm md:text-base tracking-[0.15em] uppercase text-white/80">
-                      {project.location}
-                    </p>
-                  </div>
-                </div>
-                
-                {/* Fade Effect for Scroll */}
-                <div 
-                  className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 opacity-0 transition-opacity duration-1000"
+              <div key={project.id} className="p-3 md:p-4">
+                <Link
+                  to={`/projects/${project.id}`}
+                  className={`group relative overflow-hidden transition-all duration-700 hover:scale-[1.02] border border-white/40 block ${
+                    isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-4'
+                  }`}
                   style={{
-                    opacity: isScrolled ? 0 : 0.3
+                    height: '70vh',
+                    transitionDelay: `${index * 100}ms`
                   }}
-                ></div>
-              </Link>
+                >
+                  {/* Project Image */}
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                    style={{ filter: 'contrast(115%) brightness(105%) saturate(120%)' }}
+                    loading="lazy"
+                  />
+
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all duration-500"></div>
+
+                  {/* Project Info with Blur Background */}
+                  <div className="absolute inset-0 flex items-end p-8 md:p-12">
+                    <div className="bg-black/40 backdrop-blur-md px-8 py-6 rounded-sm border border-white/10 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                      <h2 className="text-2xl md:text-3xl font-light tracking-wide text-white mb-2 font-serif">
+                        {project.title}
+                      </h2>
+                      <p className="text-sm md:text-base tracking-[0.15em] uppercase text-white/80">
+                        {project.location}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Fade Effect for Scroll */}
+                  <div
+                    className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 opacity-0 transition-opacity duration-1000"
+                    style={{
+                      opacity: isScrolled ? 0 : 0.3
+                    }}
+                  ></div>
+                </Link>
+              </div>
             ))}
           </div>
         </section>
