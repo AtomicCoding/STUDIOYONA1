@@ -104,7 +104,7 @@ export default function Contact() {
               <div className="lg:col-span-1 w-full order-2 lg:order-1">
                 {/* Desktop Map - Always Visible on Large Screens */}
                 <div className="hidden lg:block">
-                  <div className="rounded-[14px] overflow-hidden h-96 shadow-sm border border-gray-200" style={{
+                  <div className="rounded-[14px] overflow-hidden h-[644px] shadow-sm border border-gray-200" style={{
                     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 2px rgba(255, 255, 255, 0.5)'
                   }}>
                     <iframe
