@@ -180,7 +180,7 @@ export default function Contact() {
 
                     {/* Email Field */}
                     <div>
-                      <label htmlFor="email" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
+                      <label htmlFor="email" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
                         Email *
                       </label>
                       <input
