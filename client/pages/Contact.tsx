@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { Instagram, Linkedin } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function Contact() {
