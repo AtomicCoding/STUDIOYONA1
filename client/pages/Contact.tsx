@@ -294,7 +294,7 @@ export default function Contact() {
                   </form>
                 ) : (
                   <div className="flex items-center justify-center min-h-96">
-                    <p className="text-white text-lg font-light text-center">
+                    <p className="text-black text-lg font-light text-center">
                       Thank you for reaching out. We'll be in touch shortly.
                     </p>
                   </div>
