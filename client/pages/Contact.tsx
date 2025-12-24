@@ -163,7 +163,7 @@ export default function Contact() {
                   <form onSubmit={handleSubmit} className="space-y-8">
                     {/* Name Field */}
                     <div>
-                      <label htmlFor="name" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
+                      <label htmlFor="name" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
                         Name *
                       </label>
                       <input
