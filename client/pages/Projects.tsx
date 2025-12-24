@@ -85,12 +85,13 @@ export default function Projects() {
               <div key={project.id} className="p-3 md:p-4">
                 <Link
                   to={`/projects/${project.id}`}
-                  className={`group relative overflow-hidden transition-all duration-700 hover:scale-[1.02] border border-white/40 block ${
+                  className={`group relative overflow-hidden transition-all duration-700 border-4 border-white/90 block rounded-[14px] ${
                     isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-4'
                   }`}
                   style={{
                     height: '70vh',
-                    transitionDelay: `${index * 100}ms`
+                    transitionDelay: `${index * 100}ms`,
+                    boxShadow: 'inset 0 1px 2px rgba(255, 255, 255, 0.1), inset 0 -1px 2px rgba(0, 0, 0, 0.3)'
                   }}
                 >
                   {/* Project Image */}
