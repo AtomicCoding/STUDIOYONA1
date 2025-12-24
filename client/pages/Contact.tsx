@@ -244,7 +244,7 @@ export default function Contact() {
 
                     {/* Message Field */}
                     <div>
-                      <label htmlFor="message" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
+                      <label htmlFor="message" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
                         Message *
                       </label>
                       <textarea
