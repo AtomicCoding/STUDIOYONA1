@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Instagram, Linkedin } from 'lucide-react';
+import { Instagram, Linkedin, ChevronDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function Contact() {
@@ -15,6 +15,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [country, setCountry] = useState('United States');
+  const [showMap, setShowMap] = useState(false);
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -85,26 +86,26 @@ export default function Contact() {
 
       <Header bgColor="white" invertLogo={false} />
 
-      <div className="min-h-screen bg-white">
+      <div className="bg-white">
 
         {/* Main Content */}
-        <div className="pt-20 pb-24 relative">
-          <div className="max-w-7xl 2xl:max-w-[1200px] mx-auto px-6">
+        <div className="pt-12 pb-16 lg:pt-16 lg:pb-8 relative min-h-screen lg:min-h-[unset] flex flex-col lg:flex-row">
+          <div className="max-w-7xl 2xl:max-w-[1200px] mx-auto px-6 w-full">
             {/* Page Header */}
-            <div className="text-center mb-20 pt-12">
-              <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-black font-serif">
+            <div className="text-center mb-12 lg:mb-8 pt-6 lg:pt-0">
+              <h1 className="text-5xl md:text-7xl lg:text-6xl font-thin tracking-tight text-black font-serif">
                 Let's connect
               </h1>
             </div>
 
-            {/* Content Grid - Two Column Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
+            {/* Content Grid - Two Column Layout on Desktop */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
               {/* Left & Center: Contact Details, Social, & Form (2 columns on desktop) */}
-              <div className="lg:col-span-2 space-y-12">
+              <div className="lg:col-span-2 space-y-8 lg:space-y-6">
                 {/* Contact Information */}
-                <div className="space-y-6 text-gray-800">
+                <div className="space-y-4 text-gray-800">
                   <div>
-                    <p className="text-base font-light leading-relaxed">
+                    <p className="text-base lg:text-sm font-light leading-relaxed">
                       <a
                         href="https://www.google.com/maps/search/Beverly+Hills,+CA+90210"
                         target="_blank"
@@ -117,7 +118,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <p className="text-base font-light">
+                    <p className="text-base lg:text-sm font-light">
                       <a href="tel:+18186685776" className="hover:text-black transition-colors">
                         (818) 668-5776
                       </a>
@@ -125,7 +126,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <p className="text-base font-light">
+                    <p className="text-base lg:text-sm font-light">
                       <a href="mailto:adam@yona.studio" className="hover:text-black transition-colors">
                         adam@yona.studio
                       </a>
@@ -134,7 +135,7 @@ export default function Contact() {
                 </div>
 
                 {/* Social Links - Inline Icons & Text */}
-                <div className="pt-4">
+                <div className="pt-2">
                   <div className="flex space-x-6">
                     <a
                       href="https://www.instagram.com/studio.yona/"
@@ -158,12 +159,12 @@ export default function Contact() {
                 </div>
 
                 {/* Contact Form */}
-                <div className="pt-8">
+                <div className="pt-4 lg:pt-0">
                   {!isSubmitted ? (
-                    <form onSubmit={handleSubmit} className="space-y-8">
+                    <form onSubmit={handleSubmit} className="space-y-5 lg:space-y-4">
                       {/* Name Field */}
                       <div>
-                        <label htmlFor="name" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
+                        <label htmlFor="name" className="block text-xs lg:text-xs font-light tracking-[0.1em] text-gray-600 mb-2 uppercase">
                           Name *
                         </label>
                         <input
@@ -173,14 +174,14 @@ export default function Contact() {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
+                          className="w-full bg-white border border-gray-300 rounded-sm px-3 py-2 lg:py-2 text-sm lg:text-xs font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
                           placeholder=""
                         />
                       </div>
 
                       {/* Email Field */}
                       <div>
-                        <label htmlFor="email" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
+                        <label htmlFor="email" className="block text-xs lg:text-xs font-light tracking-[0.1em] text-gray-600 mb-2 uppercase">
                           Email *
                         </label>
                         <input
@@ -190,21 +191,21 @@ export default function Contact() {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
+                          className="w-full bg-white border border-gray-300 rounded-sm px-3 py-2 lg:py-2 text-sm lg:text-xs font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
                           placeholder=""
                         />
                       </div>
 
                       {/* Phone Field with Country Selector */}
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
+                        <label htmlFor="phone" className="block text-xs lg:text-xs font-light tracking-[0.1em] text-gray-600 mb-2 uppercase">
                           Phone *
                         </label>
-                        <div className="flex gap-3">
+                        <div className="flex gap-2">
                           <select
                             value={country}
                             onChange={handleCountryChange}
-                            className="bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black focus:border-gray-400 focus:outline-none transition-colors w-32"
+                            className="bg-white border border-gray-300 rounded-sm px-3 py-2 lg:py-2 text-sm lg:text-xs font-light text-black focus:border-gray-400 focus:outline-none transition-colors w-28 lg:w-24"
                           >
                             <option>United States</option>
                             <option>Canada</option>
@@ -220,7 +221,7 @@ export default function Contact() {
                             value={formData.phone}
                             onChange={handleInputChange}
                             required
-                            className="flex-1 bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
+                            className="flex-1 bg-white border border-gray-300 rounded-sm px-3 py-2 lg:py-2 text-sm lg:text-xs font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
                             placeholder=""
                           />
                         </div>
@@ -228,57 +229,57 @@ export default function Contact() {
 
                       {/* Message Field */}
                       <div>
-                        <label htmlFor="message" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
+                        <label htmlFor="message" className="block text-xs lg:text-xs font-light tracking-[0.1em] text-gray-600 mb-2 uppercase">
                           Message *
                         </label>
                         <textarea
                           name="message"
                           id="message"
-                          rows={5}
+                          rows={3}
                           value={formData.message}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors resize-none"
+                          className="w-full bg-white border border-gray-300 rounded-sm px-3 py-2 lg:py-2 text-sm lg:text-xs font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors resize-none"
                           placeholder=""
                         />
                       </div>
 
                       {/* Privacy Notice */}
-                      <div className="text-xs font-light text-gray-700 leading-relaxed">
+                      <div className="text-xs lg:text-xs font-light text-gray-700 leading-relaxed pt-1">
                         We care about your privacy. Please don't submit sensitive information such as social security numbers, credit card or bank information.
                       </div>
 
                       {/* Consent Checkbox */}
                       <div>
-                        <label className="flex items-start gap-3 cursor-pointer">
+                        <label className="flex items-start gap-2 cursor-pointer">
                           <input
                             type="checkbox"
                             name="consent"
                             checked={formData.consent}
                             onChange={handleCheckboxChange}
                             required
-                            className="mt-1 w-4 h-4 bg-white border border-gray-400 rounded-sm cursor-pointer focus:outline-none"
+                            className="mt-1 w-4 h-4 bg-white border border-gray-400 rounded-sm cursor-pointer focus:outline-none flex-shrink-0"
                           />
-                          <span className="text-xs font-light text-gray-700 leading-relaxed">
+                          <span className="text-xs lg:text-xs font-light text-gray-700 leading-relaxed">
                             I agree that Studio Yona can email and call me in response to my inquiry, as well as with tips and offers for similar services.
                           </span>
                         </label>
                       </div>
 
                       {/* Submit Button */}
-                      <div className="pt-4">
+                      <div className="pt-2 lg:pt-1">
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="px-12 py-4 bg-black border border-black text-white font-light tracking-[0.15em] text-sm hover:bg-gray-900 hover:border-gray-900 transition-all duration-500 rounded-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                          className="px-10 lg:px-8 py-3 lg:py-2 bg-black border border-black text-white font-light tracking-[0.15em] text-xs lg:text-xs hover:bg-gray-900 hover:border-gray-900 transition-all duration-500 rounded-sm disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                           {isSubmitting ? 'SUBMITTING...' : 'Submit'}
                         </button>
                       </div>
                     </form>
                   ) : (
-                    <div className="flex items-center justify-center py-20">
-                      <p className="text-black text-lg font-light text-center">
+                    <div className="flex items-center justify-center py-12 lg:py-8">
+                      <p className="text-black text-lg lg:text-base font-light text-center">
                         Thank you for reaching out. We'll be in touch shortly.
                       </p>
                     </div>
@@ -286,19 +287,52 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Right: Map */}
-              <div className="lg:col-span-1 h-full">
-                <div className="rounded-[14px] overflow-hidden h-96 lg:h-[500px] shadow-sm border border-gray-200 sticky top-32">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    frameBorder="0"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.556937098913!2d-118.41631!3d34.073644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d7f9e7c7c7%3A0x9c8f7f7c7c7c7c7c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1640000000000"
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    style={{ border: 'none' }}
-                  ></iframe>
+              {/* Right: Map (Responsive: desktop always visible, mobile/small heights use toggle) */}
+              <div className="lg:col-span-1 w-full">
+                {/* Desktop Map - Always Visible on Large Screens */}
+                <div className="hidden lg:block">
+                  <div className="rounded-[14px] overflow-hidden h-96 shadow-sm border border-gray-200" style={{
+                    boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 2px rgba(255, 255, 255, 0.5)'
+                  }}>
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      frameBorder="0"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.556937098913!2d-118.41631!3d34.073644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d7f9e7c7c7%3A0x9c8f7f7c7c7c7c7c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1640000000000"
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      style={{ border: 'none' }}
+                    ></iframe>
+                  </div>
+                </div>
+
+                {/* Mobile & Small Height - Map Toggle */}
+                <div className="lg:hidden">
+                  <button
+                    onClick={() => setShowMap(!showMap)}
+                    className="w-full flex items-center justify-between px-4 py-3 bg-gray-50 border border-gray-300 rounded-sm hover:bg-gray-100 transition-colors text-sm font-light text-gray-700"
+                  >
+                    <span>View map</span>
+                    <ChevronDown className={`w-4 h-4 transition-transform ${showMap ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  {showMap && (
+                    <div className="mt-4 rounded-[14px] overflow-hidden h-80 shadow-sm border border-gray-200" style={{
+                      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 2px rgba(255, 255, 255, 0.5)'
+                    }}>
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.556937098913!2d-118.41631!3d34.073644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d7f9e7c7c7%3A0x9c8f7f7c7c7c7c7c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1640000000000"
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        style={{ border: 'none' }}
+                      ></iframe>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
