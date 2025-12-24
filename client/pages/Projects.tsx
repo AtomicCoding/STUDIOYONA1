@@ -68,6 +68,12 @@ export default function Projects() {
       title: 'Contemporary Twin Homes',
       location: 'Venice, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200'
+    },
+    {
+      id: 'altadena-project-1',
+      title: 'Altadena project 1',
+      location: 'Altadena, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1e4c493f101949e789ddc9e75d5f594a?format=webp&width=1200'
     }
   ];
 
