@@ -53,20 +53,20 @@ export default function Projects() {
     },
     {
       id: 'desert-contemporary-residence',
-      title: 'Desert Contemporary Residence',
-      location: 'Palm Springs, CA',
+      title: 'Donna Residence 1',
+      location: 'Tarzana, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc8a9ada427c446d7990b3d28801e1531?format=webp&width=1200'
     },
     {
       id: 'modular-container-retreat',
-      title: 'Modular Container Retreat',
-      location: 'Big Sur, CA',
+      title: 'Tennessee Airbnb',
+      location: 'Tennessee',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe8caa55f02bc40609e1e62e78f6eeac4?format=webp&width=1200'
     },
     {
       id: 'contemporary-twin-homes',
-      title: 'Contemporary Twin Homes',
-      location: 'Venice, CA',
+      title: 'The Ingomar Residence',
+      location: 'Reseda, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200'
     },
     {
