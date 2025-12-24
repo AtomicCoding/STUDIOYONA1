@@ -150,65 +150,68 @@ export default function Contact() {
               </div>
 
               {/* Right: Contact Details, Social, & Form (on right for desktop via order-classes, first on mobile) */}
-              <div className="lg:col-span-2 space-y-8 lg:space-y-6 order-1 lg:order-2">
-                {/* Contact Information */}
-                <div className="space-y-4 text-gray-800">
-                  <div>
-                    <p className="text-base lg:text-sm font-light leading-relaxed">
+              <div className="lg:col-span-2 order-1 lg:order-2">
+                {/* Contact Info Section - Only visible on mobile and tablet, hidden on large desktop during form display */}
+                <div className="space-y-8 lg:space-y-0">
+                  {/* Contact Information */}
+                  <div className="space-y-4 text-gray-800">
+                    <div>
+                      <p className="text-base lg:text-sm font-light leading-relaxed">
+                        <a
+                          href="https://www.google.com/maps/search/Beverly+Hills,+CA+90210"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-black transition-colors"
+                        >
+                          Beverly Hills, CA 90210
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-base lg:text-sm font-light">
+                        <a href="tel:+18186685776" className="hover:text-black transition-colors">
+                          (818) 668-5776
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-base lg:text-sm font-light">
+                        <a href="mailto:adam@yona.studio" className="hover:text-black transition-colors">
+                          adam@yona.studio
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Social Links - Inline Icons & Text */}
+                  <div className="pt-2">
+                    <div className="flex space-x-6">
                       <a
-                        href="https://www.google.com/maps/search/Beverly+Hills,+CA+90210"
+                        href="https://www.instagram.com/studio.yona/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-black transition-colors"
+                        className="flex items-center gap-2 text-gray-500 hover:text-gray-900 opacity-75 hover:opacity-100 transition-all text-sm tracking-[0.05em] font-light"
                       >
-                        Beverly Hills, CA 90210
+                        <Instagram className="w-4 h-4" />
+                        <span>Instagram</span>
                       </a>
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-base lg:text-sm font-light">
-                      <a href="tel:+18186685776" className="hover:text-black transition-colors">
-                        (818) 668-5776
+                      <a
+                        href="https://www.linkedin.com/in/adam-yona-962892156/?trk=people-guest_people_search-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-500 hover:text-gray-900 opacity-75 hover:opacity-100 transition-all text-sm tracking-[0.05em] font-light"
+                      >
+                        <Linkedin className="w-4 h-4" />
+                        <span>LinkedIn</span>
                       </a>
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-base lg:text-sm font-light">
-                      <a href="mailto:adam@yona.studio" className="hover:text-black transition-colors">
-                        adam@yona.studio
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                {/* Social Links - Inline Icons & Text */}
-                <div className="pt-2">
-                  <div className="flex space-x-6">
-                    <a
-                      href="https://www.instagram.com/studio.yona/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-500 hover:text-gray-900 opacity-75 hover:opacity-100 transition-all text-sm tracking-[0.05em] font-light"
-                    >
-                      <Instagram className="w-4 h-4" />
-                      <span>Instagram</span>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/adam-yona-962892156/?trk=people-guest_people_search-card"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-500 hover:text-gray-900 opacity-75 hover:opacity-100 transition-all text-sm tracking-[0.05em] font-light"
-                    >
-                      <Linkedin className="w-4 h-4" />
-                      <span>LinkedIn</span>
-                    </a>
+                    </div>
                   </div>
                 </div>
 
                 {/* Form Heading - Aligned with map on desktop */}
-                <h2 className="hidden lg:block text-2xl lg:text-[28px] font-light text-black font-serif mb-6 -mt-8">
+                <h2 className="text-[26px] lg:text-[22px] font-light text-black font-serif mb-6 lg:mb-4 mt-8 lg:mt-0">
                   Let's Connect!
                 </h2>
 
