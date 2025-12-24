@@ -61,7 +61,6 @@ export default function Contact() {
           email: formData.email,
           phone: formData.phone,
           country: country,
-          zip: formData.zip,
           message: formData.message,
           consent: formData.consent,
         }),
@@ -98,10 +97,10 @@ export default function Contact() {
               </h1>
             </div>
 
-            {/* Content Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-              {/* Left: Contact Details & Social */}
-              <div className="space-y-12">
+            {/* Content Grid - Two Column Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
+              {/* Left & Center: Contact Details, Social, & Form (2 columns on desktop) */}
+              <div className="lg:col-span-2 space-y-12">
                 {/* Contact Information */}
                 <div className="space-y-6 text-gray-800">
                   <div>
@@ -134,14 +133,14 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Social Links */}
-                <div className="pt-8">
+                {/* Social Links - Inline Icons & Text */}
+                <div className="pt-4">
                   <div className="flex space-x-6">
                     <a
                       href="https://www.instagram.com/studio.yona/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-500 hover:text-gray-900 hover:opacity-100 opacity-75 transition-all text-sm tracking-[0.05em] font-light"
+                      className="flex items-center gap-2 text-gray-500 hover:text-gray-900 opacity-75 hover:opacity-100 transition-all text-sm tracking-[0.05em] font-light"
                     >
                       <Instagram className="w-4 h-4" />
                       <span>Instagram</span>
@@ -150,160 +149,158 @@ export default function Contact() {
                       href="https://www.linkedin.com/in/adam-yona-962892156/?trk=people-guest_people_search-card"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-500 hover:text-gray-900 hover:opacity-100 opacity-75 transition-all text-sm tracking-[0.05em] font-light"
+                      className="flex items-center gap-2 text-gray-500 hover:text-gray-900 opacity-75 hover:opacity-100 transition-all text-sm tracking-[0.05em] font-light"
                     >
                       <Linkedin className="w-4 h-4" />
                       <span>LinkedIn</span>
                     </a>
                   </div>
                 </div>
-              </div>
 
-              {/* Right: Contact Form */}
-              <div className="lg:pl-12">
-                {!isSubmitted ? (
-                  <form onSubmit={handleSubmit} className="space-y-8">
-                    {/* Name Field */}
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
-                        Name *
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
-                        placeholder=""
-                      />
-                    </div>
-
-                    {/* Email Field */}
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
-                        Email *
-                      </label>
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
-                        placeholder=""
-                      />
-                    </div>
-
-                    {/* Phone Field with Country Selector */}
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
-                        Phone *
-                      </label>
-                      <div className="flex gap-3">
-                        <select
-                          value={country}
-                          onChange={handleCountryChange}
-                          className="bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black focus:border-gray-400 focus:outline-none transition-colors w-32"
-                        >
-                          <option>United States</option>
-                          <option>Canada</option>
-                          <option>Mexico</option>
-                          <option>United Kingdom</option>
-                          <option>Australia</option>
-                          <option>Other</option>
-                        </select>
+                {/* Contact Form */}
+                <div className="pt-8">
+                  {!isSubmitted ? (
+                    <form onSubmit={handleSubmit} className="space-y-8">
+                      {/* Name Field */}
+                      <div>
+                        <label htmlFor="name" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
+                          Name *
+                        </label>
                         <input
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          value={formData.phone}
+                          type="text"
+                          name="name"
+                          id="name"
+                          value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="flex-1 bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
+                          className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
                           placeholder=""
                         />
                       </div>
-                    </div>
 
-                    {/* Message Field */}
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
-                        Message *
-                      </label>
-                      <textarea
-                        name="message"
-                        id="message"
-                        rows={6}
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors resize-none"
-                        placeholder=""
-                      />
-                    </div>
-
-                    {/* Privacy Notice */}
-                    <div className="text-xs font-light text-gray-700 leading-relaxed">
-                      We care about your privacy. Please don't submit sensitive information such as social security numbers, credit card or bank information.
-                    </div>
-
-                    {/* Consent Checkbox */}
-                    <div>
-                      <label className="flex items-start gap-3 cursor-pointer">
+                      {/* Email Field */}
+                      <div>
+                        <label htmlFor="email" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
+                          Email *
+                        </label>
                         <input
-                          type="checkbox"
-                          name="consent"
-                          checked={formData.consent}
-                          onChange={handleCheckboxChange}
+                          type="email"
+                          name="email"
+                          id="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
                           required
-                          className="mt-1 w-4 h-4 bg-white border border-gray-400 rounded-sm cursor-pointer focus:outline-none"
+                          className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
+                          placeholder=""
                         />
-                        <span className="text-xs font-light text-gray-700 leading-relaxed">
-                          I agree that Studio Yona can email and call me in response to my inquiry, as well as with tips and offers for similar services.
-                        </span>
-                      </label>
-                    </div>
+                      </div>
 
-                    {/* Submit Button */}
-                    <div className="pt-8">
-                      <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className="px-12 py-4 bg-black border border-black text-white font-light tracking-[0.15em] text-sm hover:bg-gray-900 hover:border-gray-900 transition-all duration-500 rounded-sm disabled:opacity-50 disabled:cursor-not-allowed"
-                      >
-                        {isSubmitting ? 'SUBMITTING...' : 'Submit'}
-                      </button>
+                      {/* Phone Field with Country Selector */}
+                      <div>
+                        <label htmlFor="phone" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
+                          Phone *
+                        </label>
+                        <div className="flex gap-3">
+                          <select
+                            value={country}
+                            onChange={handleCountryChange}
+                            className="bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black focus:border-gray-400 focus:outline-none transition-colors w-32"
+                          >
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>Mexico</option>
+                            <option>United Kingdom</option>
+                            <option>Australia</option>
+                            <option>Other</option>
+                          </select>
+                          <input
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            value={formData.phone}
+                            onChange={handleInputChange}
+                            required
+                            className="flex-1 bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors"
+                            placeholder=""
+                          />
+                        </div>
+                      </div>
+
+                      {/* Message Field */}
+                      <div>
+                        <label htmlFor="message" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
+                          Message *
+                        </label>
+                        <textarea
+                          name="message"
+                          id="message"
+                          rows={5}
+                          value={formData.message}
+                          onChange={handleInputChange}
+                          required
+                          className="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-base font-light text-black placeholder-gray-500 focus:border-gray-400 focus:outline-none transition-colors resize-none"
+                          placeholder=""
+                        />
+                      </div>
+
+                      {/* Privacy Notice */}
+                      <div className="text-xs font-light text-gray-700 leading-relaxed">
+                        We care about your privacy. Please don't submit sensitive information such as social security numbers, credit card or bank information.
+                      </div>
+
+                      {/* Consent Checkbox */}
+                      <div>
+                        <label className="flex items-start gap-3 cursor-pointer">
+                          <input
+                            type="checkbox"
+                            name="consent"
+                            checked={formData.consent}
+                            onChange={handleCheckboxChange}
+                            required
+                            className="mt-1 w-4 h-4 bg-white border border-gray-400 rounded-sm cursor-pointer focus:outline-none"
+                          />
+                          <span className="text-xs font-light text-gray-700 leading-relaxed">
+                            I agree that Studio Yona can email and call me in response to my inquiry, as well as with tips and offers for similar services.
+                          </span>
+                        </label>
+                      </div>
+
+                      {/* Submit Button */}
+                      <div className="pt-4">
+                        <button
+                          type="submit"
+                          disabled={isSubmitting}
+                          className="px-12 py-4 bg-black border border-black text-white font-light tracking-[0.15em] text-sm hover:bg-gray-900 hover:border-gray-900 transition-all duration-500 rounded-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                          {isSubmitting ? 'SUBMITTING...' : 'Submit'}
+                        </button>
+                      </div>
+                    </form>
+                  ) : (
+                    <div className="flex items-center justify-center py-20">
+                      <p className="text-black text-lg font-light text-center">
+                        Thank you for reaching out. We'll be in touch shortly.
+                      </p>
                     </div>
-                  </form>
-                ) : (
-                  <div className="flex items-center justify-center min-h-96">
-                    <p className="text-black text-lg font-light text-center">
-                      Thank you for reaching out. We'll be in touch shortly.
-                    </p>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Map Section */}
-        <div className="w-full bg-white border-t border-gray-200">
-          <div className="max-w-7xl mx-auto px-6 py-16">
-            <div className="rounded-[14px] overflow-hidden h-96 md:h-[500px] shadow-sm border border-gray-200">
-              <iframe
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.556937098913!2d-118.41631!3d34.073644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d7f9e7c7c7%3A0x9c8f7f7c7c7c7c7c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1640000000000"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                style={{ border: 'none' }}
-              ></iframe>
+              {/* Right: Map */}
+              <div className="lg:col-span-1 h-full">
+                <div className="rounded-[14px] overflow-hidden h-96 lg:h-[500px] shadow-sm border border-gray-200 sticky top-32">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.556937098913!2d-118.41631!3d34.073644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d7f9e7c7c7%3A0x9c8f7f7c7c7c7c7c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1640000000000"
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    style={{ border: 'none' }}
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
