@@ -7,7 +7,7 @@ export default function ProjectDetail() {
   const projects: { [key: string]: any } = {
     'vista-ridge-residence': {
       title: 'Malibu Residence',
-      location: 'Beverly Hills, CA',
+      location: 'Malibu, CA',
       year: '2024',
       program: 'Single-Family Residence',
       size: '6,800 SF',
@@ -36,8 +36,8 @@ export default function ProjectDetail() {
       ]
     },
     'pacific-modern-residence': {
-      title: 'Pacific Modern Residence',
-      location: 'Manhattan Beach, CA',
+      title: 'Cantara Residence',
+      location: 'Moorpark, CA',
       year: '2024',
       program: 'Single-Family Residence',
       size: '4,200 SF',
@@ -57,8 +57,8 @@ export default function ProjectDetail() {
       ]
     },
     'sculptural-modern-estate': {
-      title: 'Sculptural Modern Estate',
-      location: 'Bel Air, CA',
+      title: 'Westwood condo',
+      location: 'Westwood, CA',
       year: '2024',
       program: 'Single-Family Residence',
       size: '8,500 SF',
@@ -110,8 +110,8 @@ export default function ProjectDetail() {
       ]
     },
     'modern-farmhouse-estate': {
-      title: 'Modern Farmhouse Estate',
-      location: 'Montecito, CA',
+      title: 'Old Agoura Residence',
+      location: 'Old Agoura, CA',
       year: '2024',
       program: 'Single-Family Residence',
       size: '7,200 SF',
@@ -131,8 +131,8 @@ export default function ProjectDetail() {
       ]
     },
     'contemporary-curve-residence': {
-      title: 'Contemporary Curve Residence',
-      location: 'Santa Barbara, CA',
+      title: 'Oak Park Residence',
+      location: 'Oak Park, CA',
       year: '2024',
       program: 'Single-Family Residence',
       size: '5,400 SF',
@@ -152,8 +152,8 @@ export default function ProjectDetail() {
       ]
     },
     'classical-estate-pavilion': {
-      title: 'Classical Estate Pavilion',
-      location: 'Pasadena, CA',
+      title: 'Lake Sherwood Residence',
+      location: 'Lake Sherwood, CA',
       year: '2024',
       program: 'Single-Family Residence',
       size: '9,200 SF',
@@ -174,8 +174,8 @@ export default function ProjectDetail() {
       ]
     },
     'desert-contemporary-residence': {
-      title: 'Desert Contemporary Residence',
-      location: 'Palm Springs, CA',
+      title: 'Donna Residence 1',
+      location: 'Tarzana, CA',
       year: '2024',
       program: 'Single-Family Residence',
       size: '4,800 SF',
@@ -194,8 +194,8 @@ export default function ProjectDetail() {
       ]
     },
     'modular-container-retreat': {
-      title: 'Modular Container Retreat',
-      location: 'Big Sur, CA',
+      title: 'Tennessee Airbnb',
+      location: 'Tennessee',
       year: '2024',
       program: 'Modular Residence',
       size: '3,200 SF',
@@ -221,8 +221,8 @@ export default function ProjectDetail() {
       ]
     },
     'contemporary-twin-homes': {
-      title: 'Contemporary Twin Homes',
-      location: 'Venice, CA',
+      title: 'The Ingomar Residence',
+      location: 'Reseda, CA',
       year: '2024',
       program: 'Duplex Residence',
       size: '2,800 SF each unit',
