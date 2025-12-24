@@ -211,6 +211,11 @@ export default function Contact() {
                 <div className="pt-4 lg:pt-0">
                   {!isSubmitted ? (
                     <form onSubmit={handleSubmit} className="space-y-5 lg:space-y-4">
+                      {/* Form Heading */}
+                      <h2 className="text-2xl lg:text-xl font-light text-black font-serif mb-2">
+                        Let's Connect!
+                      </h2>
+
                       {/* Name Field */}
                       <div>
                         <label htmlFor="name" className="block text-xs lg:text-xs font-light tracking-[0.1em] text-gray-600 mb-2 uppercase">
