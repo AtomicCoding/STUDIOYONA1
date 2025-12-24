@@ -66,7 +66,7 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
             </Link>
 
             {/* Navigation Links */}
-            <div className="flex gap-6 md:gap-7 text-sm md:text-base tracking-[0.02em] font-light">
+            <div className="flex gap-6 md:gap-7 text-sm md:text-base tracking-[0.02em] font-light items-center">
               <Link
                 to="/"
                 className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2`}
@@ -91,6 +91,28 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
               >
                 CONTACT
               </Link>
+
+              {/* Social Icons */}
+              <div className="flex gap-4 md:gap-5 ml-2 md:ml-4">
+                <a
+                  href="https://www.linkedin.com/in/adam-yona-962892156?trk=people-guest_people_search-card"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit LinkedIn"
+                  className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 p-1`}
+                >
+                  <Linkedin className="w-4 h-4 md:w-5 md:h-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/studio.yona/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Instagram"
+                  className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 p-1`}
+                >
+                  <Instagram className="w-4 h-4 md:w-5 md:h-5" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
