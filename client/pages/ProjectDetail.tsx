@@ -6,7 +6,7 @@ export default function ProjectDetail() {
 
   const projects: { [key: string]: any } = {
     'vista-ridge-residence': {
-      title: 'Vista Ridge Residence',
+      title: 'Malibu Residence',
       location: 'Beverly Hills, CA',
       year: '2024',
       program: 'Single-Family Residence',
