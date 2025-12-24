@@ -78,35 +78,8 @@ export default function Projects() {
       <Header bgColor="black" invertLogo={true} />
 
       <div className="min-h-screen bg-black">
-
-        {/* Hero Header Section - Using First Uploaded Image */}
-        <section className="relative h-screen overflow-hidden">
-          {/* Background Image - New Uploaded Image */}
-          <div className="absolute inset-0 z-0">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F9ef4521d25b84eb1bf116b560df731b2?format=webp&width=1920"
-              alt=""
-              className="w-full h-full object-cover object-center"
-              style={{ filter: 'contrast(120%) brightness(110%) saturate(130%)' }}
-            />
-            <div className="absolute inset-0 bg-black/40"></div>
-          </div>
-          
-          {/* Header Content with Blur Background */}
-          <div className="relative z-10 h-full flex items-center justify-start pl-8 md:pl-16 lg:pl-24">
-            <div className="bg-black/40 backdrop-blur-md px-12 py-10 rounded-sm border border-white/10">
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-thin tracking-tight text-white mb-6 font-serif">
-                Projects
-              </h1>
-              <p className="text-base md:text-lg font-light leading-relaxed text-white/90 max-w-2xl font-serif">
-                A curated selection of bespoke residential designs crafted for discerning clients across California and beyond.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Projects Grid - Full Width, No Gaps */}
-        <section className="relative">
+        <section className="relative pt-20 md:pt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {projects.map((project, index) => (
               <Link
