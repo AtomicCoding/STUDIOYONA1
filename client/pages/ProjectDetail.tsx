@@ -240,6 +240,29 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200'
       ]
+    },
+    'altadena-project-1': {
+      title: 'Altadena project 1',
+      location: 'Altadena, CA',
+      year: '2024',
+      program: 'Single-Family Residence',
+      size: '8,000 SF',
+      materials: 'White siding, brick, glass, wood accents',
+      services: 'Architecture, Interior Design, Landscape Design',
+      hero: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1e4c493f101949e789ddc9e75d5f594a?format=webp&width=1920',
+      description: [
+        'Altadena project 1 represents a thoughtful contemporary residence that seamlessly blends traditional architectural elements with modern design principles. This sophisticated home celebrates clean lines, quality materials, and thoughtful spatial organization to create a serene family residence that respects both the local context and contemporary lifestyle needs.',
+        'The architectural approach emphasizes a harmonious relationship between indoor and outdoor spaces, with carefully positioned windows and transitions that create visual connection to the surrounding landscape. The design strategy balances privacy and openness through strategic massing and landscape integration, creating multiple outdoor living zones that extend the home\'s usable space.',
+        'Material selection reflects a commitment to both beauty and durability, with natural materials including white siding, brick elements, and warm wood accents creating a rich and textured aesthetic. The design incorporates flexible spaces that adapt to modern living patterns while maintaining the timeless appeal of traditional residential architecture.',
+        'This project demonstrates how contemporary design can honor architectural traditions while creating spaces perfectly suited for modern life. The result is a residence that feels both welcoming and refined, a true reflection of contemporary California living that balances sophistication with comfortable family living.'
+      ],
+      images: [
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F40620fe760bd4cd2ba923a907546ce2c?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F12cfa5b80ebf4f429ac84d74385bcd30?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93c823ad12a24a3f93188b8f89987072?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F701baca9a21c4862a836499486375105?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1e4c493f101949e789ddc9e75d5f594a?format=webp&width=1200'
+      ]
     }
   };
 
