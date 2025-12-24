@@ -207,14 +207,15 @@ export default function Contact() {
                   </div>
                 </div>
 
+                {/* Form Heading - Aligned with map on desktop */}
+                <h2 className="hidden lg:block text-2xl lg:text-[28px] font-light text-black font-serif mb-6 -mt-8">
+                  Let's Connect!
+                </h2>
+
                 {/* Contact Form */}
                 <div className="pt-4 lg:pt-0">
                   {!isSubmitted ? (
                     <form onSubmit={handleSubmit} className="space-y-5 lg:space-y-4">
-                      {/* Form Heading */}
-                      <h2 className="text-2xl lg:text-xl font-light text-black font-serif mb-2">
-                        Let's Connect!
-                      </h2>
 
                       {/* Name Field */}
                       <div>
