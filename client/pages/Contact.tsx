@@ -101,16 +101,16 @@ export default function Contact() {
             {/* Content Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
               {/* Left: Contact Details & Social */}
-              <div className="space-y-12 text-white">
+              <div className="space-y-12">
                 {/* Contact Information */}
-                <div className="space-y-6 text-zinc-200">
+                <div className="space-y-6 text-gray-800">
                   <div>
                     <p className="text-base font-light leading-relaxed">
-                      <a 
-                        href="https://www.google.com/maps/search/Beverly+Hills,+CA+90210" 
-                        target="_blank" 
+                      <a
+                        href="https://www.google.com/maps/search/Beverly+Hills,+CA+90210"
+                        target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-white transition-colors"
+                        className="hover:text-black transition-colors"
                       >
                         Beverly Hills, CA 90210
                       </a>
@@ -119,7 +119,7 @@ export default function Contact() {
 
                   <div>
                     <p className="text-base font-light">
-                      <a href="tel:+18186685776" className="hover:text-white transition-colors">
+                      <a href="tel:+18186685776" className="hover:text-black transition-colors">
                         (818) 668-5776
                       </a>
                     </p>
@@ -127,7 +127,7 @@ export default function Contact() {
 
                   <div>
                     <p className="text-base font-light">
-                      <a href="mailto:adam@yona.studio" className="hover:text-white transition-colors">
+                      <a href="mailto:adam@yona.studio" className="hover:text-black transition-colors">
                         adam@yona.studio
                       </a>
                     </p>
@@ -141,7 +141,7 @@ export default function Contact() {
                       href="https://www.instagram.com/studio.yona/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-zinc-400 hover:text-white transition-colors text-sm tracking-[0.15em] font-light"
+                      className="text-gray-600 hover:text-black transition-colors text-sm tracking-[0.15em] font-light"
                     >
                       INSTAGRAM
                     </a>
@@ -149,7 +149,7 @@ export default function Contact() {
                       href="https://www.linkedin.com/in/adam-yona-962892156/?trk=people-guest_people_search-card"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-zinc-400 hover:text-white transition-colors text-sm tracking-[0.15em] font-light"
+                      className="text-gray-600 hover:text-black transition-colors text-sm tracking-[0.15em] font-light"
                     >
                       LINKEDIN
                     </a>
