@@ -93,7 +93,7 @@ export default function Contact() {
           <div className="max-w-7xl mx-auto px-6">
             {/* Page Header */}
             <div className="text-center mb-20 pt-12">
-              <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-white font-serif">
+              <h1 className="text-6xl md:text-8xl font-thin tracking-tight text-black font-serif">
                 Let's connect
               </h1>
             </div>
