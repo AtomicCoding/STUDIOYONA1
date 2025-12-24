@@ -197,7 +197,7 @@ export default function Contact() {
 
                     {/* Phone Field with Country Selector */}
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-light tracking-[0.1em] text-zinc-400 mb-3 uppercase">
+                      <label htmlFor="phone" className="block text-sm font-light tracking-[0.1em] text-gray-600 mb-3 uppercase">
                         Phone *
                       </label>
                       <div className="flex gap-3">
