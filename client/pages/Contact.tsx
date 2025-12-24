@@ -210,11 +210,6 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Form Heading - Aligned with map on desktop */}
-                <h2 className="text-[26px] lg:text-[22px] font-light text-black font-serif mb-6 lg:mb-4 mt-8 lg:mt-0">
-                  Let's Connect!
-                </h2>
-
                 {/* Contact Form */}
                 <div className="pt-4 lg:pt-0">
                   {!isSubmitted ? (
