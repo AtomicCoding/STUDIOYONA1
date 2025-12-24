@@ -105,11 +105,6 @@ export default function Projects() {
                   {/* Dark Overlay */}
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all duration-500"></div>
 
-                  {/* Subtle Border Opacity Change on Hover */}
-                  <div className="absolute inset-0 border-4 border-white/90 group-hover:border-white/70 transition-all duration-500 rounded-[14px] pointer-events-none" style={{
-                    boxShadow: 'inset 0 1px 2px rgba(255, 255, 255, 0.1), inset 0 -1px 2px rgba(0, 0, 0, 0.3)'
-                  }}></div>
-
                   {/* Project Info with Blur Background */}
                   <div className="absolute inset-0 flex items-end p-8 md:p-12">
                     <div className="bg-black/40 backdrop-blur-md px-8 py-6 rounded-sm border border-white/10 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
