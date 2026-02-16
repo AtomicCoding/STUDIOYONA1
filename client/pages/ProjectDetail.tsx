@@ -51,8 +51,6 @@ export default function ProjectDetail() {
         'The result is a residence that feels both timeless and thoroughly modern, offering a serene retreat that celebrates the beauty of simplified living and the California indoor-outdoor lifestyle.'
       ],
       images: [
-        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200',
-        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200'
       ]
     },
@@ -146,8 +144,6 @@ export default function ProjectDetail() {
         'This residence demonstrates how contemporary design can achieve both sophistication and warmth, creating spaces that feel both monumental and intimate. The result is a home that celebrates California\'s year-round outdoor lifestyle while providing a serene retreat from urban intensity.'
       ],
       images: [
-        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200',
-        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200'
       ]
     },
@@ -236,8 +232,6 @@ export default function ProjectDetail() {
         'This project demonstrates how urban infill housing can achieve both architectural distinction and neighborhood compatibility, offering a sustainable model for housing density that maintains human scale and quality of life. The result is a development that feels both contemporary and timeless, contributing positively to the evolving character of Venice.'
       ],
       images: [
-        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200',
-        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200'
       ]
     },
