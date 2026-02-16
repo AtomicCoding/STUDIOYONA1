@@ -151,7 +151,7 @@ export default function Projects() {
         {/* Footer */}
         <footer className="bg-black border-t border-zinc-800 py-16">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-8">
               {/* Left: Logo */}
               <div>
                 <Link to="/" className="hover:opacity-80 transition-opacity inline-block">
@@ -162,7 +162,7 @@ export default function Projects() {
                   />
                 </Link>
               </div>
-              
+
               {/* Center: Navigation */}
               <div className="flex justify-center space-x-8 text-xs tracking-[0.15em] font-light">
                 <Link to="/" className="text-zinc-400 hover:text-white transition-colors">HOME</Link>
@@ -170,7 +170,7 @@ export default function Projects() {
                 <Link to="/about" className="text-zinc-400 hover:text-white transition-colors">ABOUT</Link>
                 <Link to="/contact" className="text-zinc-400 hover:text-white transition-colors">CONTACT</Link>
               </div>
-              
+
               {/* Right: Social */}
               <div className="flex justify-end space-x-6 text-xs tracking-[0.15em] font-light">
                 <a
@@ -191,9 +191,24 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-            
+
+            {/* Legal Links */}
+            <div className="border-t border-zinc-800 pt-8">
+              <div className="flex flex-wrap justify-center gap-4 text-xs font-light text-zinc-500 mb-6">
+                <Link to="/privacy" className="hover:text-zinc-300 transition-colors">Privacy</Link>
+                <span className="text-zinc-700">·</span>
+                <Link to="/terms" className="hover:text-zinc-300 transition-colors">Terms</Link>
+                <span className="text-zinc-700">·</span>
+                <Link to="/cookies" className="hover:text-zinc-300 transition-colors">Cookies</Link>
+                <span className="text-zinc-700">·</span>
+                <Link to="/accessibility" className="hover:text-zinc-300 transition-colors">Accessibility</Link>
+                <span className="text-zinc-700">·</span>
+                <Link to="/disclaimer" className="hover:text-zinc-300 transition-colors">Disclaimer</Link>
+              </div>
+            </div>
+
             {/* Copyright */}
-            <div className="text-center pt-8 mt-8 border-t border-zinc-800">
+            <div className="text-center pt-4 border-t border-zinc-800">
               <p className="text-xs text-zinc-500 font-light tracking-wide">
                 © Studio Yona. All rights reserved.
               </p>

@@ -116,7 +116,7 @@ export default function Index() {
         {/* Section 7 - Footer */}
         <footer className="bg-white border-t border-gray-200 py-12">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-8">
               {/* Left: Logo */}
               <div>
                 <Link to="/" className="hover:opacity-80 transition-opacity inline-block">
@@ -127,14 +127,14 @@ export default function Index() {
                   />
                 </Link>
               </div>
-              
+
               {/* Center: Navigation */}
               <div className="flex justify-center space-x-8 text-sm font-medium">
                 <Link to="/projects" className="text-black hover:text-gray-600 transition-colors">Projects</Link>
                 <Link to="/about" className="text-black hover:text-gray-600 transition-colors">About</Link>
                 <Link to="/contact" className="text-black hover:text-gray-600 transition-colors">Contact</Link>
               </div>
-              
+
               {/* Right: Social */}
               <div className="flex justify-end space-x-6 text-sm font-medium">
                 <a
@@ -153,6 +153,26 @@ export default function Index() {
                 >
                   LinkedIn
                 </a>
+              </div>
+            </div>
+
+            {/* Legal Links */}
+            <div className="border-t border-gray-200 pt-8">
+              <div className="flex flex-wrap justify-center gap-6 text-xs font-light text-gray-600">
+                <Link to="/privacy" className="hover:text-black transition-colors">Privacy Policy</Link>
+                <span className="text-gray-300">·</span>
+                <Link to="/terms" className="hover:text-black transition-colors">Terms of Use</Link>
+                <span className="text-gray-300">·</span>
+                <Link to="/cookies" className="hover:text-black transition-colors">Cookies</Link>
+                <span className="text-gray-300">·</span>
+                <Link to="/accessibility" className="hover:text-black transition-colors">Accessibility</Link>
+                <span className="text-gray-300">·</span>
+                <Link to="/disclaimer" className="hover:text-black transition-colors">Disclaimer</Link>
+              </div>
+
+              {/* Copyright */}
+              <div className="text-center mt-6 text-xs font-light text-gray-600">
+                <p>© Studio Yona. All rights reserved.</p>
               </div>
             </div>
           </div>
