@@ -257,6 +257,29 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F701baca9a21c4862a836499486375105?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1e4c493f101949e789ddc9e75d5f594a?format=webp&width=1200'
       ]
+    },
+    'stafford-road-residence': {
+      title: 'Stafford Road Residence',
+      location: 'Thousand Oaks, CA',
+      year: '2024',
+      program: 'Single-Family Residence',
+      size: '7,500 SF',
+      materials: 'Stone, steel, glass, wood',
+      services: 'Architecture, Interior Design, Landscape Design',
+      hero: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffecc4596708c45f38a593ff0ccf9eb68?format=webp&width=1920',
+      description: [
+        'Stafford Road Residence stands as a masterwork of contemporary design set in the serene Thousand Oaks landscape. This sophisticated residence seamlessly integrates luxury living spaces with extensive outdoor entertainment areas, creating a residence that truly celebrates the California indoor-outdoor lifestyle.',
+        'The architectural vision emphasizes clean lines, premium material selection, and sophisticated proportions. The design features expansive covered patio spaces that serve as outdoor rooms, complemented by a dedicated fitness pavilion that extends the home\'s functional offerings. Each space is thoughtfully positioned to capture optimal views and natural light.',
+        'The material palette reflects a commitment to quality and durability, with natural stone, precision steelwork, and expansive glazing creating a cohesive design language. The multi-level outdoor living areas accommodate both intimate gatherings and larger entertaining, while the integrated fitness facility adds contemporary amenities to the classic residence typology.',
+        'This project demonstrates how modern architecture can elevate the residential experience through careful spatial planning and premium material execution. The result is a residence that transcends conventional living to create a comprehensive lifestyle environment.'
+      ],
+      images: [
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffecc4596708c45f38a593ff0ccf9eb68?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff788bd2d9b77425eace5ab366a9532f0?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F50e13dc355374439a2102555a2442927?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F5c7dfae0c9374593bbbc1bb4f6c7b0a3?format=webp&width=1200',
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2eede87db79a4f9b84eca96908b90b3a?format=webp&width=1200'
+      ]
     }
   };
 
