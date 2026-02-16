@@ -16,16 +16,10 @@ export default function Projects() {
 
   const projects = [
     {
-      id: 'vista-ridge-residence',
-      title: 'Malibu Residence',
-      location: 'Malibu, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6075aa98e58e4e8ab515b72283788bc6?format=webp&width=1200'
-    },
-    {
-      id: 'pacific-modern-residence',
-      title: 'Cantara Residence',
-      location: 'Moorpark, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200'
+      id: 'dumaine-ave-residence',
+      title: 'Dumaine Ave Residence',
+      location: 'Oak Park, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0de45d8040df45ea9b3cc57eb27d41eb?format=webp&width=1200'
     },
     {
       id: 'sculptural-modern-estate',
@@ -34,28 +28,10 @@ export default function Projects() {
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fdad90f77fff549209726ceaffd0070dc?format=webp&width=1200'
     },
     {
-      id: 'modern-farmhouse-estate',
-      title: 'Old Agoura Residence',
-      location: 'Old Agoura, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0ab0e4828dab4ed98d07468046290137?format=webp&width=1200'
-    },
-    {
-      id: 'contemporary-curve-residence',
-      title: 'Oak Park Residence',
-      location: 'Oak Park, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200'
-    },
-    {
-      id: 'classical-estate-pavilion',
-      title: 'Lake Sherwood Residence',
-      location: 'Lake Sherwood, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F61a87c373e2b40e19a476563cd2b425d?format=webp&width=1200'
-    },
-    {
-      id: 'desert-contemporary-residence',
-      title: 'Donna Residence 1',
-      location: 'Tarzana, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc8a9ada427c446d7990b3d28801e1531?format=webp&width=1200'
+      id: 'vista-ridge-residence',
+      title: 'Malibu Residence',
+      location: 'Malibu, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6075aa98e58e4e8ab515b72283788bc6?format=webp&width=1200'
     },
     {
       id: 'modular-container-retreat',
@@ -64,10 +40,10 @@ export default function Projects() {
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe8caa55f02bc40609e1e62e78f6eeac4?format=webp&width=1200'
     },
     {
-      id: 'contemporary-twin-homes',
-      title: 'The Ingomar Residence',
-      location: 'Reseda, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200'
+      id: 'stafford-road-residence',
+      title: 'Stafford Road Residence',
+      location: 'Thousand Oaks, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffecc4596708c45f38a593ff0ccf9eb68?format=webp&width=1200'
     },
     {
       id: 'altadena-project-1',
@@ -76,16 +52,40 @@ export default function Projects() {
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1e4c493f101949e789ddc9e75d5f594a?format=webp&width=1200'
     },
     {
-      id: 'stafford-road-residence',
-      title: 'Stafford Road Residence',
-      location: 'Thousand Oaks, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffecc4596708c45f38a593ff0ccf9eb68?format=webp&width=1200'
+      id: 'classical-estate-pavilion',
+      title: 'Lake Sherwood Residence',
+      location: 'Lake Sherwood, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F61a87c373e2b40e19a476563cd2b425d?format=webp&width=1200'
     },
     {
-      id: 'dumaine-ave-residence',
-      title: 'Dumaine Ave Residence',
+      id: 'modern-farmhouse-estate',
+      title: 'Old Agoura Residence',
+      location: 'Old Agoura, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0ab0e4828dab4ed98d07468046290137?format=webp&width=1200'
+    },
+    {
+      id: 'desert-contemporary-residence',
+      title: 'Donna Residence 1',
+      location: 'Tarzana, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc8a9ada427c446d7990b3d28801e1531?format=webp&width=1200'
+    },
+    {
+      id: 'pacific-modern-residence',
+      title: 'Cantara Residence',
+      location: 'Moorpark, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200'
+    },
+    {
+      id: 'contemporary-curve-residence',
+      title: 'Oak Park Residence',
       location: 'Oak Park, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0de45d8040df45ea9b3cc57eb27d41eb?format=webp&width=1200'
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200'
+    },
+    {
+      id: 'contemporary-twin-homes',
+      title: 'The Ingomar Residence',
+      location: 'Reseda, CA',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8235235c11594480b4e40970683ee6bd?format=webp&width=1200'
     }
   ];
 
