@@ -11,6 +11,11 @@ import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Cookies from "./pages/Cookies";
+import Accessibility from "./pages/Accessibility";
+import Disclaimer from "./pages/Disclaimer";
 import NotFound from "./pages/NotFound";
 import ContactWidget from "./components/ContactWidget";
 
@@ -29,6 +34,11 @@ const App = () => (
           <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/cookies" element={<Cookies />} />
+          <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
