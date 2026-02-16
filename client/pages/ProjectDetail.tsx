@@ -287,87 +287,12 @@ export default function ProjectDetail() {
 
       <div className="min-h-screen bg-white">
 
-        {/* Hero Image Section */}
-        <section className="relative" style={{ height: '75vh', width: '100vw' }}>
-          <img
-            src={project.hero}
-            alt={project.title}
-            className="w-full h-full object-cover object-center"
-          />
-
-          {/* Hero Overlay Text */}
-          <div className="absolute bottom-12 left-16 text-white">
-            <h1 className="text-5xl font-bold mb-2 text-white">
-              {project.title}
-            </h1>
-            <p className="text-lg font-normal text-white">
-              {project.location} · {project.year}
-            </p>
-          </div>
-        </section>
-
-        {/* Project Intro Paragraph */}
-        <section className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-8 text-center">
-            <p className="text-xl font-light leading-relaxed" style={{
-              color: '#222222',
-              lineHeight: '34px',
-              maxWidth: '880px',
-              margin: '0 auto'
-            }}>
-              {project.description[0]}
-            </p>
-          </div>
-        </section>
-
-        {/* Alternating Image + Text Sections */}
-        {project.description.slice(1).map((paragraph: string, index: number) => (
-          <section key={index} className="py-16 bg-white">
-            <div className="project-container mx-auto px-8">
-              <div className={`flex project-split ${index % 2 === 0 ? '' : 'flex-row-reverse'}`} style={{ gap: '36px' }}>
-                {/* Image Column */}
-                <div className="image-col">
-                  <img
-                    src={project.images[Math.min(index + 1, project.images.length - 1)]}
-                    alt={`${project.title} - Image ${index + 2}`}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-
-                {/* Text Column */}
-                <div className="text-col flex flex-col justify-center">
-                  <p className="text-lg font-light leading-8" style={{
-                    color: '#222222',
-                    lineHeight: '32px'
-                  }}>
-                    {paragraph}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        ))}
-
-        {/* Full-Width Image Section */}
-        <section className="py-16 bg-white">
-          <div className="w-full">
-            <img
-              src={project.images[project.images.length - 1]}
-              alt={`${project.title} - Full Width`}
-              className="w-full object-cover"
-              style={{ width: '100vw', height: '60vh' }}
-              loading="lazy"
-            />
-          </div>
-        </section>
-
         {/* Image Gallery Grid */}
         <section className="py-16 bg-white">
-          <div className="project-container mx-auto px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {project.images.slice(0, 6).map((image: string, index: number) => (
-                <div key={index} className="w-full" style={{ height: '50vh' }}>
+          <div className="w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+              {project.images.map((image: string, index: number) => (
+                <div key={index} className="w-full" style={{ height: '60vh' }}>
                   <img
                     src={image}
                     alt={`${project.title} - Gallery ${index + 1}`}
