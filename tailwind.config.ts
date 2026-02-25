@@ -15,11 +15,10 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          "Erbaum",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "sans-serif",
+          "Playfair Display",
+          "Georgia",
+          "Times New Roman",
+          "serif",
         ],
         gotham: [
           "GothamMedium",
