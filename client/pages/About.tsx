@@ -20,18 +20,6 @@ export default function About() {
           
         </section>
 
-        {/* Section 2 - Studio Mission (Centered Text) */}
-        <section className="py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="text-lg font-normal leading-relaxed" style={{
-              maxWidth: '800px',
-              margin: '0 auto'
-            }}>
-              We believe architecture is a reflection of how we live, feel, and interact with our world. Our work is rooted in human experience, cultural curiosity, and refined simplicity.
-            </p>
-          </div>
-        </section>
-
         {/* Section 3 - Adam Yona Profile (Image Left 50%, Text Right 50%) */}
         <section className="bg-white" style={{ padding: '60px 0' }}>
           <div className="mx-auto px-6" style={{ maxWidth: '1300px' }}>
