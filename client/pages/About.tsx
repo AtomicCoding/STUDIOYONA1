@@ -32,28 +32,30 @@ export default function About() {
           </div>
         </section>
 
-        {/* Section 3 - Adam Yona Profile (Image Left, Text Right) */}
-        <section className="py-16 bg-white">
-          <div className="project-container mx-auto px-6">
-            <div className="flex about-split" style={{ gap: '36px' }}>
-              {/* Image Column */}
-              <div className="image-col" style={{ maxWidth: '280px' }}>
+        {/* Section 3 - Adam Yona Profile (Image Left 50%, Text Right 50%) */}
+        <section className="bg-white" style={{ padding: '100px 0' }}>
+          <div className="mx-auto px-6" style={{ maxWidth: '1300px' }}>
+            <div className="flex" style={{ gap: '72px' }}>
+              {/* Image Column - 50% */}
+              <div style={{ flexBasis: '50%', minWidth: 0 }}>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F537e22baf1774b05bc8fe75677f1da7b?format=webp&width=600"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F537e22baf1774b05bc8fe75677f1da7b?format=webp&width=800"
                   alt="Adam Yona, Founder and Principal"
-                  className="w-full object-cover"
-                  style={{ maxHeight: '400px' }}
+                  className="object-cover"
+                  style={{ width: '100%', maxWidth: '700px', height: 'auto' }}
                   loading="lazy"
                 />
               </div>
 
-              {/* Text Column */}
-              <div className="text-col flex flex-col justify-center">
-                <h3 className="text-2xl font-bold mb-4">
-                  ADAM YONA<br />
-                  <span className="text-lg font-normal">Founder | Principal</span>
+              {/* Text Column - 50% */}
+              <div className="flex flex-col justify-center" style={{ flexBasis: '50%', minWidth: 0 }}>
+                <h3 className="font-bold mb-3" style={{ fontSize: '52px', lineHeight: '1.15' }}>
+                  ADAM YONA
                 </h3>
-                <p className="text-base font-normal leading-relaxed">
+                <p className="font-normal mb-6" style={{ fontSize: '19px', lineHeight: '1.65', color: '#666' }}>
+                  Founder | Principal
+                </p>
+                <p className="font-normal" style={{ fontSize: '19px', lineHeight: '1.7' }}>
                   Adam Yona, founder and principal of Studio Yona, is a Los Angeles native, who brings a distinctive design philosophy to every project. Before delving into his architectural studies at USC, Adam cultivated a profound appreciation for building through hands-on experience around construction sites. His architectural exploration extended across Asia—Japan, China, Vietnam, Singapore, and South Korea—shaping a global perspective. Fueled by a passion for luxury home and automotive design, Adam's design philosophy at Studio Yona is rooted in creating spaces that seamlessly blend creativity and precision. Inspired by the dynamic architecture of Los Angeles, Adam welcomes you to join this international architectural adventure, where each space crafted by Studio Yona tells a distinctive and culturally influenced story.
                 </p>
               </div>
