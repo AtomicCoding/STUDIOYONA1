@@ -90,21 +90,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Philosophy Section - Additional Content */}
-        <section className="py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-2xl font-bold mb-8">
-              Design Philosophy
-            </h2>
-            <p className="text-base font-normal leading-relaxed mb-8">
-              Our practice is guided by the belief that exceptional architecture emerges from the careful balance of form, function, and human experience. We draw inspiration from diverse cultural contexts while remaining rooted in the unique qualities of each site and client vision.
-            </p>
-            <p className="text-base font-normal leading-relaxed">
-              Every project represents an opportunity to explore new possibilities while honoring the timeless principles of good design: proportion, material honesty, and spatial clarity.
-            </p>
-          </div>
-        </section>
-
         {/* Section 5 - Footer */}
         <footer className="bg-white border-t border-gray-200 py-12">
           <div className="max-w-7xl mx-auto px-6">
