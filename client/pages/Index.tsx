@@ -34,8 +34,8 @@ export default function Index() {
               {/* Image Column */}
               <div className="image-col">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6075aa98e58e4e8ab515b72283788bc6?format=webp&width=1200"
-                  alt="Vista Ridge Residence"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fad18e266c83d4a40897bdaf762258d68?format=webp&width=800"
+                  alt="Complete Design Experience"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -44,10 +44,10 @@ export default function Index() {
               {/* Text Column */}
               <div className="text-col flex flex-col justify-center">
                 <h3 className="text-4xl font-bold mb-6">
-                  Vista Ridge Residence
+                  Complete Design Experience
                 </h3>
                 <p className="text-lg font-normal leading-relaxed">
-                  A hillside retreat where natural materials meet contemporary design, emphasizing Studio Yona's minimal yet grounded aesthetic.
+                  Studio Yona delivers a complete design experience from concept through completion. We manage design development, permitting, consultant coordination, and execution under one roof. Every phase is carefully aligned to ensure clarity, precision, and seamless delivery. From the first sketch to the final detail, we guide your project with confidence and intention, creating a refined and efficient path from vision to reality.
                 </p>
               </div>
             </div>
@@ -61,8 +61,8 @@ export default function Index() {
               {/* Image Column */}
               <div className="image-col">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fdad90f77fff549209726ceaffd0070dc?format=webp&width=1200"
-                  alt="Sculptural Modern Estate"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F18514ca0230044459aed5fc93d32e1a5?format=webp&width=800"
+                  alt="3D Visualization"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -71,10 +71,10 @@ export default function Index() {
               {/* Text Column */}
               <div className="text-col flex flex-col justify-center">
                 <h3 className="text-4xl font-bold mb-6">
-                  Sculptural Modern Estate
+                  3D Visualization
                 </h3>
                 <p className="text-lg font-normal leading-relaxed">
-                  Where architecture becomes art through fluid, sculptural geometries that create a truly immersive living experience.
+                  Unlock the potential of your project through our cutting-edge 3D visualization services, enhanced by immersive Virtual Reality (VR) experiences. We bring blueprints to life, providing a realistic and interactive preview of your design. Our state-of-the-art technology allows you to explore every detail in a virtual space, ensuring a clear understanding of the final outcome. Visualization isn't just a service — it's a transformative tool that bridges the gap between imagination and reality, giving you confidence in the direction your project is taking.
                 </p>
               </div>
             </div>
