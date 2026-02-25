@@ -25,7 +25,7 @@ export default function Projects() {
       id: 'sculptural-modern-estate',
       title: 'Westwood condo',
       location: 'Westwood, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fdad90f77fff549209726ceaffd0070dc?format=webp&width=1200'
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F11d98d4ab5284280a958c26427d37439?format=webp&width=1920'
     },
     {
       id: 'vista-ridge-residence',
