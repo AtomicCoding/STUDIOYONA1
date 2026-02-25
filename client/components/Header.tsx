@@ -74,7 +74,7 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
             </Link>
 
             {/* Navigation Links */}
-            <div className="flex gap-6 md:gap-7 text-sm md:text-base tracking-[0.02em] items-center">
+            <div className="flex gap-6 md:gap-7 text-sm md:text-base tracking-[0.02em] font-bold items-center">
               <Link
                 to="/"
                 className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2 ${
