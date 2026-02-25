@@ -18,12 +18,6 @@ export default function About() {
             className="w-full h-full object-cover object-center"
           />
           
-          {/* Title Overlay - Top Left */}
-          <div className="absolute top-40 md:top-48 left-16 z-10">
-            <h1 className="text-5xl font-bold text-black">
-              About Studio Yona
-            </h1>
-          </div>
         </section>
 
         {/* Section 2 - Studio Mission (Centered Text) */}
