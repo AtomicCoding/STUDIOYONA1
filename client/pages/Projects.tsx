@@ -19,7 +19,7 @@ export default function Projects() {
       id: 'dumaine-ave-residence',
       title: 'Dumaine Ave Residence',
       location: 'Oak Park, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0de45d8040df45ea9b3cc57eb27d41eb?format=webp&width=1200'
+      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7e27c4f74fd64147a86651ae0e50bf17?format=webp&width=1920'
     },
     {
       id: 'sculptural-modern-estate',
