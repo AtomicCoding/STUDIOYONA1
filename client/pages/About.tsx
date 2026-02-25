@@ -13,7 +13,7 @@ export default function About() {
         {/* Section 1 - Banner Image with Title Overlay */}
         <section className="relative h-screen overflow-hidden header-offset">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F13d11e39a2a94afebd4cc26dd45035ed?format=webp&width=800"
+            src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F13d11e39a2a94afebd4cc26dd45035ed?format=webp&width=1920"
             alt="Studio Yona About"
             className="w-full h-full object-cover object-center"
           />
