@@ -44,7 +44,7 @@ export default function Index() {
               {/* Image Column - 55% */}
               <div style={{ flexBasis: '55%', minWidth: 0 }}>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fad18e266c83d4a40897bdaf762258d68?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fef691a71a7264d01840c84432ea562f1?format=webp&width=1920"
                   alt="Complete Design Experience"
                   className="object-cover"
                   style={{ width: '100%', maxWidth: '700px', maxHeight: '500px', height: 'auto' }}
