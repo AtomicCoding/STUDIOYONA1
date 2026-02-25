@@ -56,7 +56,7 @@ export default function About() {
           <div className="project-container mx-auto px-6">
             <div className="flex about-split" style={{ gap: '48px', flexDirection: 'row-reverse' }}>
               {/* Image Column */}
-              <div className="image-col" style={{ flexBasis: '42%', minWidth: 0 }}>
+              <div className="image-col" style={{ flexBasis: '45%', minWidth: 0 }}>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff248db7445a04801b6864b9922f57fbb?format=webp&width=1920"
                   alt="Studio Yona About"
@@ -66,7 +66,7 @@ export default function About() {
               </div>
 
               {/* Text Column */}
-              <div className="text-col flex flex-col justify-center" style={{ flexBasis: '58%', minWidth: 0 }}>
+              <div className="text-col flex flex-col justify-center" style={{ flexBasis: '55%', minWidth: 0 }}>
                 <h3 className="font-bold mb-3" style={{ fontSize: '55px', lineHeight: '1.15' }}>
                   About Us
                 </h3>
