@@ -8,6 +8,10 @@ interface Slide {
 
 const slides: Slide[] = [
   {
+    src: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F46ea207e9dde48509e5f053aee4d7c84?format=webp&width=1920',
+    alt: 'Studio Yona Luxury Home - Modern Architecture with Pool and Landscape'
+  },
+  {
     src: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fbf94ab26c7844f828d801d72e56d3d51?format=webp&width=1920',
     alt: 'Studio Yona Architecture - Modern Residential Design'
   },
@@ -26,10 +30,6 @@ const slides: Slide[] = [
   {
     src: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6367b4170f4549859501cf9d4ba5859f?format=webp&width=1920',
     alt: 'Studio Yona Creation - Contemporary Residence with Pool'
-  },
-  {
-    src: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F46ea207e9dde48509e5f053aee4d7c84?format=webp&width=1920',
-    alt: 'Studio Yona Luxury Home - Modern Architecture with Pool and Landscape'
   }
 ];
 
