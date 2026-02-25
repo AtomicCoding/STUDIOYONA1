@@ -63,7 +63,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Section 4 - Tools + Approach (Inverted - Text Left, Image Right) */}
+        {/* Section 4 - About Us (Inverted - Text Left, Image Right) */}
         <section className="py-16 bg-white">
           <div className="project-container mx-auto px-6">
             <div className="flex about-split" style={{ gap: '36px', flexDirection: 'row-reverse' }}>
@@ -71,7 +71,7 @@ export default function About() {
               <div className="image-col">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa08097e1fa8240b7b2af98cad9021467?format=webp&width=1920"
-                  alt="Studio Yona Technology"
+                  alt="Studio Yona About"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -79,8 +79,11 @@ export default function About() {
 
               {/* Text Column */}
               <div className="text-col flex flex-col justify-center">
+                <h3 className="text-2xl font-bold mb-6">
+                  About Us
+                </h3>
                 <p className="text-base font-normal leading-relaxed">
-                  We use cutting-edge 3D and VR visualization to ensure clients can see every detail before it's built. This technology-forward approach reduces uncertainty and empowers informed decision-making throughout the design process.
+                  Welcome to Studio Yona, where innovation and design excellence come together seamlessly. Studio Yona is a boutique design atelier with a passionate team dedicated to crafting bespoke environments influenced by a spectrum of styles. With an emphasis on creativity and precision, the studio takes pride in creating spaces that captivate the eye and stand the test of time. To enrich the client experience, Studio Yona utilizes cutting-edge 3D visualization techniques, providing a vivid preview of the end result before construction begins. The studio doesn't just design spaces; it crafts immersive experiences that align with clients' visions and values, shaping a distinctive narrative for each project.
                 </p>
               </div>
             </div>
