@@ -89,7 +89,7 @@ export default function Contact() {
       <div className="bg-white">
 
         {/* Main Content */}
-        <div className="pt-12 pb-16 lg:pt-16 lg:pb-8 relative min-h-screen lg:min-h-[unset] flex flex-col lg:flex-row">
+        <div className="pt-40 pb-16 lg:pt-48 lg:pb-8 relative min-h-screen lg:min-h-[unset] flex flex-col lg:flex-row">
           <div className="max-w-7xl 2xl:max-w-[1200px] mx-auto px-6 w-full">
             {/* Page Header */}
             <div className="text-center mb-12 lg:mb-8 pt-6 lg:pt-0">

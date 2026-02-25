@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 interface HeaderProps {
@@ -8,6 +8,7 @@ interface HeaderProps {
 
 export default function Header({ bgColor = 'white', invertLogo = false }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,6 +51,14 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
   const hoverTextColor = bgColor === 'white' ? 'hover:text-black' : 'hover:text-white';
   const transitionClass = 'transition-colors duration-200';
 
+  // Helper function to determine if a path is active
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return location.pathname === '/';
+    }
+    return location.pathname.startsWith(path);
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${getHeaderClass()}`}>
       <div className="w-full flex justify-center px-6">
@@ -68,25 +77,33 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
             <div className="flex gap-6 md:gap-7 text-sm md:text-base tracking-[0.02em] font-light items-center">
               <Link
                 to="/"
-                className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2`}
+                className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2 ${
+                  isActive('/') ? 'border-b border-current' : ''
+                }`}
               >
                 HOME
               </Link>
               <Link
                 to="/projects"
-                className={`${activeTextColor} font-medium border-b border-current ${transitionClass} hover:opacity-70 py-2`}
+                className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2 ${
+                  isActive('/projects') ? 'border-b border-current' : ''
+                }`}
               >
                 WORK
               </Link>
               <Link
                 to="/about"
-                className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2`}
+                className={`${isActive('/about') ? activeTextColor : getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2 ${
+                  isActive('/about') ? 'border-b border-current' : ''
+                }`}
               >
                 STUDIO
               </Link>
               <Link
                 to="/contact"
-                className={`${getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2`}
+                className={`${isActive('/contact') ? activeTextColor : getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2 ${
+                  isActive('/contact') ? 'border-b border-current' : ''
+                }`}
               >
                 CONTACT
               </Link>
