@@ -85,7 +85,6 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F813809e0d8a44383814dc5f6426c41e3?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffa73e0b1371f446fbb24275759c3df5b?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F06f3674678c1411c97f4900afcd2c85f?format=webp&width=1200',
-        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1fc548a7ef2644f982f008bcdad74efd?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F3e8ae2bd011a416b8f055dcfe9039408?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F839d58cc04994a579ebd2a4b6ca8c7a0?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F615b8b59fdc249239b5f5bbbba7bb116?format=webp&width=1200',
