@@ -63,7 +63,7 @@ export default function About() {
               {/* Image Column */}
               <div className="image-col">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F99f991dd02d34f72b0bf052abc9a3709?format=webp&width=1200"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa08097e1fa8240b7b2af98cad9021467?format=webp&width=1920"
                   alt="Studio Yona Technology"
                   className="w-full h-full object-cover"
                   loading="lazy"
