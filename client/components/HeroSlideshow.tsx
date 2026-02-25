@@ -93,7 +93,7 @@ export default function HeroSlideshow() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-screen overflow-hidden bg-black"
+      className="relative w-full h-screen overflow-hidden bg-black header-offset"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >

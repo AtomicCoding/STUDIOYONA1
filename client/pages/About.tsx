@@ -11,7 +11,7 @@ export default function About() {
       <div className="min-h-screen bg-white">
 
         {/* Section 1 - Banner Image with Title Overlay */}
-        <section className="relative h-screen overflow-hidden">
+        <section className="relative h-screen overflow-hidden header-offset">
           <img 
             src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2b91e6f4172947d8ab7a9049ac9bc684?format=webp&width=1920"
             alt="Studio Yona About"

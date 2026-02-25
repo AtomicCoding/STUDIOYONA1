@@ -97,7 +97,7 @@ export default function Projects() {
 
       <div className="min-h-screen bg-black">
         {/* Projects Grid - Full Width, No Gaps */}
-        <section className="relative pt-40 md:pt-48">
+        <section className="relative header-offset">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {projects.map((project, index) => (
               <div key={project.id} className="p-3 md:p-4">

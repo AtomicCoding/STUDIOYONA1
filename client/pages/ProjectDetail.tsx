@@ -375,7 +375,7 @@ export default function ProjectDetail() {
       <div className="min-h-screen bg-white">
 
         {/* Image Gallery Grid */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-white header-offset">
           <div className="w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
               {project.images.map((image: string, index: number) => (

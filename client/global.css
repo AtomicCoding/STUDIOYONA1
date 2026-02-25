@@ -383,4 +383,15 @@
   .project-container {
     max-width: 1500px;
   }
+
+  /* Global header offset - accounts for fixed header height */
+  .header-offset {
+    padding-top: 112px; /* Mobile header ~96-112px */
+  }
+
+  @media (min-width: 768px) {
+    .header-offset {
+      padding-top: 144px; /* Desktop header ~128-144px */
+    }
+  }
 }

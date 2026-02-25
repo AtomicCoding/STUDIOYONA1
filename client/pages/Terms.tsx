@@ -9,7 +9,7 @@ export default function Terms() {
       <Header bgColor="white" invertLogo={false} />
 
       <div className="min-h-screen bg-white">
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-white header-offset">
           <div className="max-w-4xl mx-auto px-8">
             <h1 className="text-5xl font-bold mb-4">Terms of Use</h1>
             <p className="text-gray-600">Last Updated: January 2025</p>
