@@ -76,12 +76,6 @@ export default function Projects() {
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F71742fbf1a724df5a170aecf06ae2123?format=webp&width=1200'
     },
     {
-      id: 'contemporary-curve-residence',
-      title: 'Oak Park Residence',
-      location: 'Oak Park, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feea17289b522401f95edeedca8073c9a?format=webp&width=1200'
-    },
-    {
       id: 'contemporary-twin-homes',
       title: 'The Ingomar Residence',
       location: 'Reseda, CA',
