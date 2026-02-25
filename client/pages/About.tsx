@@ -67,10 +67,10 @@ export default function About() {
 
               {/* Text Column */}
               <div className="text-col flex flex-col justify-center">
-                <h3 className="text-2xl font-bold mb-6">
+                <h3 className="font-bold mb-3" style={{ fontSize: '52px', lineHeight: '1.15' }}>
                   About Us
                 </h3>
-                <p className="text-base font-normal leading-relaxed">
+                <p className="font-normal" style={{ fontSize: '19px', lineHeight: '1.7' }}>
                   Welcome to Studio Yona, where innovation and design excellence come together seamlessly. Studio Yona is a boutique design atelier with a passionate team dedicated to crafting bespoke environments influenced by a spectrum of styles. With an emphasis on creativity and precision, the studio takes pride in creating spaces that captivate the eye and stand the test of time. To enrich the client experience, Studio Yona utilizes cutting-edge 3D visualization techniques, providing a vivid preview of the end result before construction begins. The studio doesn't just design spaces; it crafts immersive experiences that align with clients' visions and values, shaping a distinctive narrative for each project.
                 </p>
               </div>
