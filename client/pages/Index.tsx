@@ -14,19 +14,6 @@ export default function Index() {
         {/* Section 1 - Hero Slideshow */}
         <HeroSlideshow />
 
-        {/* Section 2 - Studio Intro Text */}
-        <section className="py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="text-xl font-normal leading-relaxed" style={{
-              lineHeight: '150%',
-              maxWidth: '800px',
-              margin: '0 auto'
-            }}>
-              Studio Yona is a Los Angeles–based design practice crafting immersive environments inspired by global exploration and California minimalism.
-            </p>
-          </div>
-        </section>
-
         {/* Section 3 - Project Feature Block #1 (Text Left 45%, Image Right 55%) */}
         <section className="py-24 bg-white">
           <div className="project-container mx-auto px-6">
@@ -80,38 +67,6 @@ export default function Index() {
                 </p>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Section 5 - Quote Section */}
-        <section className="py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <blockquote className="text-3xl lg:text-4xl font-normal italic leading-relaxed mb-8">
-              "We don't just create spaces — we guide people through the design journey with intention and precision."
-            </blockquote>
-            <p className="text-lg font-normal">
-              – Studio Yona
-            </p>
-          </div>
-        </section>
-
-        {/* Section 6 - CTA Image with Button */}
-        <section className="relative h-96 overflow-hidden">
-          <img 
-            src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0ab0e4828dab4ed98d07468046290137?format=webp&width=1920"
-            alt="Studio Yona Contact"
-            className="w-full h-full object-cover object-center"
-          />
-          
-          {/* Centered Button */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <Link 
-              to="/contact"
-              className="bg-black text-white font-bold text-lg tracking-wide px-9 py-5 hover:bg-gray-800 transition-colors"
-              style={{ fontFamily: '"Work Sans", sans-serif' }}
-            >
-              GET IN TOUCH
-            </Link>
           </div>
         </section>
 
