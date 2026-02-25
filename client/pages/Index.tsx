@@ -27,53 +27,55 @@ export default function Index() {
           </div>
         </section>
 
-        {/* Section 3 - Project Feature Block #1 (Image Left, Text Right) */}
-        <section className="py-16 bg-white">
+        {/* Section 3 - Project Feature Block #1 (Text Left 45%, Image Right 55%) */}
+        <section className="py-24 bg-white">
           <div className="project-container mx-auto px-6">
-            <div className="flex project-split" style={{ gap: '36px' }}>
-              {/* Image Column */}
-              <div className="image-col">
+            <div className="flex" style={{ gap: '64px' }}>
+              {/* Text Column - 45% */}
+              <div className="flex flex-col justify-center" style={{ flexBasis: '45%', minWidth: 0 }}>
+                <h3 className="font-bold mb-4" style={{ fontSize: '50px', lineHeight: '1.15' }}>
+                  Complete Design Experience
+                </h3>
+                <p className="font-normal" style={{ fontSize: '19px', lineHeight: '1.6', maxWidth: '750px' }}>
+                  Studio Yona delivers a complete design experience from concept through completion. We manage design development, permitting, consultant coordination, and execution under one roof. Every phase is carefully aligned to ensure clarity, precision, and seamless delivery. From the first sketch to the final detail, we guide your project with confidence and intention, creating a refined and efficient path from vision to reality.
+                </p>
+              </div>
+
+              {/* Image Column - 55% */}
+              <div style={{ flexBasis: '55%', minWidth: 0 }}>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fad18e266c83d4a40897bdaf762258d68?format=webp&width=800"
                   alt="Complete Design Experience"
-                  className="w-full h-full object-cover"
+                  className="object-cover"
+                  style={{ width: '100%', maxWidth: '700px', maxHeight: '500px', height: 'auto' }}
                   loading="lazy"
                 />
-              </div>
-
-              {/* Text Column */}
-              <div className="text-col flex flex-col justify-center">
-                <h3 className="text-4xl font-bold mb-6">
-                  Complete Design Experience
-                </h3>
-                <p className="text-lg font-normal leading-relaxed">
-                  Studio Yona delivers a complete design experience from concept through completion. We manage design development, permitting, consultant coordination, and execution under one roof. Every phase is carefully aligned to ensure clarity, precision, and seamless delivery. From the first sketch to the final detail, we guide your project with confidence and intention, creating a refined and efficient path from vision to reality.
-                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Section 4 - Project Feature Block #2 (Image Right, Text Left) */}
-        <section className="py-16 bg-white">
+        {/* Section 4 - Project Feature Block #2 (Image Left 55%, Text Right 45%) */}
+        <section className="py-24 bg-white">
           <div className="project-container mx-auto px-6">
-            <div className="flex project-split" style={{ gap: '36px', flexDirection: 'row-reverse' }}>
-              {/* Image Column */}
-              <div className="image-col">
+            <div className="flex" style={{ gap: '64px' }}>
+              {/* Image Column - 55% */}
+              <div style={{ flexBasis: '55%', minWidth: 0 }}>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F18514ca0230044459aed5fc93d32e1a5?format=webp&width=800"
                   alt="3D Visualization"
-                  className="w-full h-full object-cover"
+                  className="object-cover"
+                  style={{ width: '100%', maxWidth: '700px', maxHeight: '500px', height: 'auto' }}
                   loading="lazy"
                 />
               </div>
 
-              {/* Text Column */}
-              <div className="text-col flex flex-col justify-center">
-                <h3 className="text-4xl font-bold mb-6">
+              {/* Text Column - 45% */}
+              <div className="flex flex-col justify-center" style={{ flexBasis: '45%', minWidth: 0 }}>
+                <h3 className="font-bold mb-4" style={{ fontSize: '50px', lineHeight: '1.15' }}>
                   3D Visualization
                 </h3>
-                <p className="text-lg font-normal leading-relaxed">
+                <p className="font-normal" style={{ fontSize: '19px', lineHeight: '1.6', maxWidth: '750px' }}>
                   Unlock the potential of your project through our cutting-edge 3D visualization services, enhanced by immersive Virtual Reality (VR) experiences. We bring blueprints to life, providing a realistic and interactive preview of your design. Our state-of-the-art technology allows you to explore every detail in a virtual space, ensuring a clear understanding of the final outcome. Visualization isn't just a service — it's a transformative tool that bridges the gap between imagination and reality, giving you confidence in the direction your project is taking.
                 </p>
               </div>
