@@ -105,41 +105,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Awards & Recognition Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-2xl font-bold text-center mb-16">
-              Recognition
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div className="p-8">
-                <h3 className="text-lg font-bold mb-4">
-                  AIA Los Angeles
-                </h3>
-                <p className="text-gray-600">
-                  Design Excellence Award 2024
-                </p>
-              </div>
-              <div className="p-8">
-                <h3 className="text-lg font-bold mb-4">
-                  Architectural Digest
-                </h3>
-                <p className="text-gray-600">
-                  Featured Project 2024
-                </p>
-              </div>
-              <div className="p-8">
-                <h3 className="text-lg font-bold mb-4">
-                  California Home + Design
-                </h3>
-                <p className="text-gray-600">
-                  Rising Talent Award 2023
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Section 5 - Footer */}
         <footer className="bg-white border-t border-gray-200 py-12">
           <div className="max-w-7xl mx-auto px-6">
