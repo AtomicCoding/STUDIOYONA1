@@ -62,7 +62,7 @@ export default function Index() {
               {/* Image Column - 55% */}
               <div style={{ flexBasis: '55%', minWidth: 0 }}>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F18514ca0230044459aed5fc93d32e1a5?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff248db7445a04801b6864b9922f57fbb?format=webp&width=1920"
                   alt="3D Visualization"
                   className="object-cover"
                   style={{ width: '100%', maxWidth: '700px', maxHeight: '500px', height: 'auto' }}
