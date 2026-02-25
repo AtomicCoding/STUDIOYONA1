@@ -32,15 +32,15 @@ export default function About() {
           </div>
         </section>
 
-        {/* Section 3 - Values Block (Image Left, Text Right) */}
+        {/* Section 3 - Adam Yona Profile (Image Left, Text Right) */}
         <section className="py-16 bg-white">
           <div className="project-container mx-auto px-6">
             <div className="flex about-split" style={{ gap: '36px' }}>
               {/* Image Column */}
               <div className="image-col">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffdd4f368186c4d9b93d66e9d782da6f8?format=webp&width=1200"
-                  alt="Studio Yona Process"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F537e22baf1774b05bc8fe75677f1da7b?format=webp&width=1200"
+                  alt="Adam Yona, Founder and Principal"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -48,8 +48,12 @@ export default function About() {
 
               {/* Text Column */}
               <div className="text-col flex flex-col justify-center">
+                <h3 className="text-2xl font-bold mb-4">
+                  ADAM YONA<br />
+                  <span className="text-lg font-normal">Founder | Principal</span>
+                </h3>
                 <p className="text-base font-normal leading-relaxed">
-                  From schematic concept to construction, Studio Yona approaches each project with precision, creativity, and technological innovation. Our collaborative process ensures every detail serves both aesthetic vision and functional purpose.
+                  Adam Yona, founder and principal of Studio Yona, is a Los Angeles native, who brings a distinctive design philosophy to every project. Before delving into his architectural studies at USC, Adam cultivated a profound appreciation for building through hands-on experience around construction sites. His architectural exploration extended across Asia—Japan, China, Vietnam, Singapore, and South Korea—shaping a global perspective. Fueled by a passion for luxury home and automotive design, Adam's design philosophy at Studio Yona is rooted in creating spaces that seamlessly blend creativity and precision. Inspired by the dynamic architecture of Los Angeles, Adam welcomes you to join this international architectural adventure, where each space crafted by Studio Yona tells a distinctive and culturally influenced story.
                 </p>
               </div>
             </div>
