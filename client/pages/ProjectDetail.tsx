@@ -366,16 +366,18 @@ export default function ProjectDetail() {
       <div className="min-h-screen bg-white">
 
         {/* Hero Section */}
-        <section className="w-full header-offset">
-          <div className="w-full" style={{ height: '80vh' }}>
-            <img
-              src={project.hero}
-              alt={project.title}
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-        </section>
+        {id !== 'sculptural-modern-estate' && (
+          <section className="w-full header-offset">
+            <div className="w-full" style={{ height: '80vh' }}>
+              <img
+                src={project.hero}
+                alt={project.title}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </section>
+        )}
 
         {/* Image Gallery Grid */}
         <section className="py-16 bg-white header-offset">
