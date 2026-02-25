@@ -37,11 +37,12 @@ export default function About() {
           <div className="project-container mx-auto px-6">
             <div className="flex about-split" style={{ gap: '36px' }}>
               {/* Image Column */}
-              <div className="image-col">
+              <div className="image-col" style={{ maxWidth: '280px' }}>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F537e22baf1774b05bc8fe75677f1da7b?format=webp&width=1200"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F537e22baf1774b05bc8fe75677f1da7b?format=webp&width=600"
                   alt="Adam Yona, Founder and Principal"
-                  className="w-full h-full object-cover"
+                  className="w-full object-cover"
+                  style={{ maxHeight: '400px' }}
                   loading="lazy"
                 />
               </div>
