@@ -42,7 +42,7 @@ export default function About() {
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F537e22baf1774b05bc8fe75677f1da7b?format=webp&width=800"
                   alt="Adam Yona, Founder and Principal"
                   className="object-cover"
-                  style={{ width: '100%', maxWidth: '700px', height: 'auto', maxHeight: '85vh' }}
+                  style={{ width: '100%', maxWidth: '700px', height: 'auto', maxHeight: '80vh' }}
                   loading="lazy"
                 />
               </div>
