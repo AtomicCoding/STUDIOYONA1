@@ -33,16 +33,16 @@ export default function About() {
         </section>
 
         {/* Section 3 - Adam Yona Profile (Image Left 50%, Text Right 50%) */}
-        <section className="bg-white" style={{ padding: '100px 0' }}>
+        <section className="bg-white" style={{ padding: '60px 0' }}>
           <div className="mx-auto px-6" style={{ maxWidth: '1300px' }}>
-            <div className="flex" style={{ gap: '72px' }}>
+            <div className="flex items-center" style={{ gap: '72px' }}>
               {/* Image Column - 50% */}
               <div style={{ flexBasis: '50%', minWidth: 0 }}>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F537e22baf1774b05bc8fe75677f1da7b?format=webp&width=800"
                   alt="Adam Yona, Founder and Principal"
                   className="object-cover"
-                  style={{ width: '100%', maxWidth: '700px', height: 'auto' }}
+                  style={{ width: '100%', maxWidth: '700px', height: 'auto', maxHeight: '85vh' }}
                   loading="lazy"
                 />
               </div>
