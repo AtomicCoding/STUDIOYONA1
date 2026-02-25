@@ -93,7 +93,7 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
               </Link>
               <Link
                 to="/about"
-                className={`${isActive('/about') ? activeTextColor : getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2 ${
+                className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2 ${
                   isActive('/about') ? 'border-b border-current' : ''
                 }`}
               >
@@ -101,7 +101,7 @@ export default function Header({ bgColor = 'white', invertLogo = false }: Header
               </Link>
               <Link
                 to="/contact"
-                className={`${isActive('/contact') ? activeTextColor : getTextColor()} ${hoverTextColor} ${transitionClass} hover:opacity-70 py-2 ${
+                className={`${activeTextColor} ${transitionClass} hover:opacity-70 py-2 ${
                   isActive('/contact') ? 'border-b border-current' : ''
                 }`}
               >
