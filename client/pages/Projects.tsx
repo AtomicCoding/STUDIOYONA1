@@ -40,12 +40,6 @@ export default function Projects() {
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe8caa55f02bc40609e1e62e78f6eeac4?format=webp&width=1200'
     },
     {
-      id: 'stafford-road-residence',
-      title: 'Stafford Road Residence',
-      location: 'Thousand Oaks, CA',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffecc4596708c45f38a593ff0ccf9eb68?format=webp&width=1200'
-    },
-    {
       id: 'altadena-project-1',
       title: 'Altadena project 1',
       location: 'Altadena, CA',
