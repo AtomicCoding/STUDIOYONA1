@@ -315,8 +315,7 @@ export default function ProjectDetail() {
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Faa6e9b8e3ead4301b3a73b7fa7bd8dd4?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fd268ab2a11964100a8a8f32915ee0592?format=webp&width=1200',
         'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb8178ef99e124a18b80fa04be13c5652?format=webp&width=1200',
-        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2dda71c9865849199dc50db188d8b017?format=webp&width=1200',
-        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7611fb7703e746e69622f987b9beb171?format=webp&width=1200'
+        'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2dda71c9865849199dc50db188d8b017?format=webp&width=1200'
       ]
     }
   };
