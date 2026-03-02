@@ -377,6 +377,19 @@
     }
   }
 
+  /* Mobile spacing fixes for About page */
+  @media (max-width: 767px) {
+    .about-hero-mobile {
+      height: auto !important;
+      min-height: unset !important;
+    }
+
+    .about-us-mobile {
+      padding-top: 24px !important;
+      padding-bottom: 32px !important;
+    }
+  }
+
   /* Utility for images inside these columns */
   .image-col img,
   .image-col picture,

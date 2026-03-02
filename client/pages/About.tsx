@@ -11,7 +11,7 @@ export default function About() {
       <div className="min-h-screen bg-white">
 
         {/* Section 1 - Banner Image with Title Overlay */}
-        <section className="relative overflow-hidden header-offset" style={{ height: 'clamp(60vh, 100vh, 100vh)' }}>
+        <section className="relative overflow-hidden header-offset about-hero-mobile" style={{ height: 'clamp(60vh, 100vh, 100vh)' }}>
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fae500d6233b842e6bec50ab6f14c115d?format=webp&width=1920"
             alt="Studio Yona About"
@@ -52,7 +52,7 @@ export default function About() {
         </section>
 
         {/* Section 4 - About Us (Inverted - Text Left, Image Right) */}
-        <section className="py-8 md:py-16 bg-white">
+        <section className="bg-white about-us-mobile" style={{ paddingTop: 'clamp(24px, 5vw, 64px)', paddingBottom: 'clamp(32px, 8vw, 64px)' }}>
           <div className="project-container mx-auto px-6">
             <div className="flex flex-col-reverse md:flex-row about-split" style={{ gap: 'clamp(24px, 6vw, 48px)' }}>
               {/* Image Column - 45% on desktop, full on mobile */}
