@@ -15,26 +15,26 @@ export default function Index() {
         <HeroSlideshow />
 
         {/* Section 3 - Project Feature Block #1 (Text Left 45%, Image Right 55%) */}
-        <section className="py-24 bg-white">
+        <section className="py-12 md:py-24 bg-white">
           <div className="project-container mx-auto px-6">
-            <div className="flex" style={{ gap: '64px' }}>
-              {/* Text Column - 45% */}
-              <div className="flex flex-col justify-center" style={{ flexBasis: '45%', minWidth: 0 }}>
-                <h3 className="font-bold mb-4" style={{ fontSize: '50px', lineHeight: '1.15' }}>
+            <div className="flex flex-col md:flex-row" style={{ gap: 'clamp(16px, 5vw, 64px)' }}>
+              {/* Text Column - 45% on desktop, full on mobile */}
+              <div className="flex flex-col justify-center md:order-1 mb-6 md:mb-0" style={{ flexBasis: '100%' }}>
+                <h3 className="font-bold mb-3 md:mb-4" style={{ fontSize: 'clamp(28px, 6vw, 50px)', lineHeight: '1.15' }}>
                   Complete Design Experience
                 </h3>
-                <p className="font-normal" style={{ fontSize: '19px', lineHeight: '1.6', maxWidth: '750px' }}>
+                <p className="font-normal" style={{ fontSize: 'clamp(16px, 4vw, 19px)', lineHeight: '1.6', maxWidth: '750px' }}>
                   Studio Yona delivers a complete design experience from concept through completion. We manage design development, permitting, consultant coordination, and execution under one roof. Every phase is carefully aligned to ensure clarity, precision, and seamless delivery. From the first sketch to the final detail, we guide your project with confidence and intention, creating a refined and efficient path from vision to reality.
                 </p>
               </div>
 
-              {/* Image Column - 55% */}
-              <div style={{ flexBasis: '55%', minWidth: 0 }}>
+              {/* Image Column - 55% on desktop, full on mobile */}
+              <div className="md:order-2" style={{ flexBasis: '100%', minWidth: 0 }}>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fef691a71a7264d01840c84432ea562f1?format=webp&width=1920"
                   alt="Complete Design Experience"
-                  className="object-cover"
-                  style={{ width: '100%', maxWidth: '700px', maxHeight: '500px', height: 'auto' }}
+                  className="object-cover w-full"
+                  style={{ maxWidth: '700px', maxHeight: '500px', height: 'auto' }}
                   loading="lazy"
                 />
               </div>
@@ -43,26 +43,26 @@ export default function Index() {
         </section>
 
         {/* Section 4 - Project Feature Block #2 (Image Left 55%, Text Right 45%) */}
-        <section className="py-24 bg-white">
+        <section className="py-12 md:py-24 bg-white">
           <div className="project-container mx-auto px-6">
-            <div className="flex" style={{ gap: '64px' }}>
-              {/* Image Column - 55% */}
-              <div style={{ flexBasis: '55%', minWidth: 0 }}>
+            <div className="flex flex-col md:flex-row" style={{ gap: 'clamp(16px, 5vw, 64px)' }}>
+              {/* Image Column - 55% on desktop, full on mobile */}
+              <div className="md:order-1 mb-6 md:mb-0" style={{ flexBasis: '100%', minWidth: 0 }}>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb7bac460cd874f13ab9c983a00b1dfd6?format=webp&width=1920"
                   alt="3D Visualization"
-                  className="object-cover"
-                  style={{ width: '100%', maxWidth: '700px', maxHeight: '500px', height: 'auto' }}
+                  className="object-cover w-full"
+                  style={{ maxWidth: '700px', maxHeight: '500px', height: 'auto' }}
                   loading="lazy"
                 />
               </div>
 
-              {/* Text Column - 45% */}
-              <div className="flex flex-col justify-center" style={{ flexBasis: '45%', minWidth: 0 }}>
-                <h3 className="font-bold mb-4" style={{ fontSize: '50px', lineHeight: '1.15' }}>
+              {/* Text Column - 45% on desktop, full on mobile */}
+              <div className="flex flex-col justify-center md:order-2" style={{ flexBasis: '100%', minWidth: 0 }}>
+                <h3 className="font-bold mb-3 md:mb-4" style={{ fontSize: 'clamp(28px, 6vw, 50px)', lineHeight: '1.15' }}>
                   3D Visualization
                 </h3>
-                <p className="font-normal" style={{ fontSize: '19px', lineHeight: '1.6', maxWidth: '750px' }}>
+                <p className="font-normal" style={{ fontSize: 'clamp(16px, 4vw, 19px)', lineHeight: '1.6', maxWidth: '750px' }}>
                   Unlock the potential of your project through our cutting-edge 3D visualization services, enhanced by immersive Virtual Reality (VR) experiences. We bring blueprints to life, providing a realistic and interactive preview of your design. Our state-of-the-art technology allows you to explore every detail in a virtual space, ensuring a clear understanding of the final outcome. Visualization isn't just a service — it's a transformative tool that bridges the gap between imagination and reality, giving you confidence in the direction your project is taking.
                 </p>
               </div>

@@ -95,7 +95,7 @@ export default function Projects() {
                     isScrolled ? 'opacity-100 translate-y-0' : 'opacity-90 translate-y-4'
                   }`}
                   style={{
-                    height: '70vh',
+                    height: 'clamp(50vh, 60vw, 70vh)',
                     transitionDelay: `${index * 100}ms`
                   }}
                 >

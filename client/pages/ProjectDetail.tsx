@@ -347,7 +347,7 @@ export default function ProjectDetail() {
           <div className="w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
               {project.images.map((image: string, index: number) => (
-                <div key={index} className="w-full" style={{ height: '60vh' }}>
+                <div key={index} className="w-full" style={{ height: 'clamp(40vh, 50vw, 60vh)' }}>
                   <img
                     src={image}
                     alt={`${project.title} - Gallery ${index + 1}`}
