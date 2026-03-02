@@ -43,7 +43,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.consent) {
       alert('Please agree to the consent statement before submitting.');
       return;
@@ -52,7 +52,7 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/.netlify/functions/send-email', {
+      const response = await fetch('https://formspree.io/f/xgoljywb', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
