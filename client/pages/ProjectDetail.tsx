@@ -250,7 +250,7 @@ export default function ProjectDetail() {
       ]
     },
     'dumaine-ave-residence': {
-      title: 'Dumaine Ave Residence',
+      title: 'Oak Park Residence',
       location: 'Oak Park, CA',
       year: '2024',
       program: 'Single-Family Residence',

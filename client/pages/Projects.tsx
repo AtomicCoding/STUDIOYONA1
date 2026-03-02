@@ -17,7 +17,7 @@ export default function Projects() {
   const projects = [
     {
       id: 'dumaine-ave-residence',
-      title: 'Dumaine Ave Residence',
+      title: 'Oak Park Residence',
       location: 'Oak Park, CA',
       image: 'https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7e27c4f74fd64147a86651ae0e50bf17?format=webp&width=1920'
     },
