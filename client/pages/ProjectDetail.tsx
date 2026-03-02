@@ -361,43 +361,44 @@ export default function ProjectDetail() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-white border-t border-gray-200 py-12">
+        <footer className="bg-white border-t border-gray-200 py-8 md:py-12">
           <div className="max-w-7xl mx-auto px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+
+            {/* Mobile Footer */}
+            <div className="flex md:hidden flex-col items-center gap-3 text-center">
+              <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs font-medium" style={{ color: '#222222' }}>
+                <Link to="/projects" className="hover:text-gray-500 transition-colors">Projects</Link>
+                <Link to="/about" className="hover:text-gray-500 transition-colors">About</Link>
+                <Link to="/contact" className="hover:text-gray-500 transition-colors">Contact</Link>
+                <a href="https://www.instagram.com/studio.yona/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">Instagram</a>
+                <a href="https://www.linkedin.com/in/adam-yona-962892156?trk=people-guest_people_search-card" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">LinkedIn</a>
+              </div>
+              <p className="text-xs text-gray-400">© Studio Yona. All rights reserved.</p>
+            </div>
+
+            {/* Desktop Footer - unchanged, hidden on mobile */}
+            <div className="hidden md:grid md:grid-cols-3 gap-8 items-center">
               {/* Left: Navigation */}
               <div className="flex space-x-8 text-sm font-medium" style={{ color: '#222222' }}>
                 <Link to="/projects" className="hover:text-gray-600 transition-colors">Projects</Link>
                 <Link to="/about" className="hover:text-gray-600 transition-colors">About</Link>
                 <Link to="/contact" className="hover:text-gray-600 transition-colors">Contact</Link>
               </div>
-              
+
               {/* Center: Copyright */}
               <div className="text-center">
                 <p className="text-sm font-medium" style={{ color: '#222222' }}>
                   © Studio Yona. All rights reserved.
                 </p>
               </div>
-              
+
               {/* Right: Social */}
               <div className="flex justify-end space-x-8 text-sm font-medium" style={{ color: '#222222' }}>
-                <a
-                  href="https://www.instagram.com/studio.yona/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-600 transition-colors"
-                >
-                  Instagram
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/adam-yona-962892156?trk=people-guest_people_search-card"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-600 transition-colors"
-                >
-                  LinkedIn
-                </a>
+                <a href="https://www.instagram.com/studio.yona/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">Instagram</a>
+                <a href="https://www.linkedin.com/in/adam-yona-962892156?trk=people-guest_people_search-card" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">LinkedIn</a>
               </div>
             </div>
+
           </div>
         </footer>
       </div>

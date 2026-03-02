@@ -344,55 +344,64 @@ export default function Contact() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-black border-t border-zinc-800 py-12">
+        <footer className="bg-black border-t border-zinc-800 py-8 md:py-12">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-              {/* Left: Logo */}
-              <div>
-                <Link to="/" className="hover:opacity-80 transition-opacity inline-block">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
-                    alt="Studio Yona"
-                    className="h-14 md:h-16 w-auto invert"
-                  />
-                </Link>
+
+            {/* Mobile Footer */}
+            <div className="flex md:hidden flex-col items-center gap-4 text-center">
+              <Link to="/" className="hover:opacity-80 transition-opacity inline-block">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=400"
+                  alt="Studio Yona"
+                  className="h-10 w-auto invert"
+                />
+              </Link>
+              <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs tracking-[0.1em] text-zinc-400">
+                <Link to="/" className="hover:text-white transition-colors">HOME</Link>
+                <Link to="/projects" className="hover:text-white transition-colors">WORK</Link>
+                <Link to="/about" className="hover:text-white transition-colors">STUDIO</Link>
+                <Link to="/contact" className="hover:text-white transition-colors">CONTACT</Link>
+                <a href="https://www.instagram.com/studio.yona/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">IG</a>
+                <a href="https://www.linkedin.com/in/adam-yona-962892156?trk=people-guest_people_search-card" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LI</a>
               </div>
-              
-              {/* Center: Navigation */}
-              <div className="flex justify-center space-x-8 text-xs tracking-[0.15em] font-light">
-                <Link to="/" className="text-zinc-400 hover:text-white transition-colors">HOME</Link>
-                <Link to="/projects" className="text-zinc-400 hover:text-white transition-colors">PROJECTS</Link>
-                <Link to="/about" className="text-zinc-400 hover:text-white transition-colors">ABOUT</Link>
-                <Link to="/contact" className="text-zinc-400 hover:text-white transition-colors">CONTACT</Link>
+              <p className="text-xs text-zinc-600">© Studio Yona. All rights reserved.</p>
+            </div>
+
+            {/* Desktop Footer - unchanged, hidden on mobile */}
+            <div className="hidden md:block">
+              <div className="grid md:grid-cols-3 gap-8 items-center">
+                {/* Left: Logo */}
+                <div>
+                  <Link to="/" className="hover:opacity-80 transition-opacity inline-block">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=800"
+                      alt="Studio Yona"
+                      className="h-14 md:h-16 w-auto invert"
+                    />
+                  </Link>
+                </div>
+
+                {/* Center: Navigation */}
+                <div className="flex justify-center space-x-8 text-xs tracking-[0.15em] font-light">
+                  <Link to="/" className="text-zinc-400 hover:text-white transition-colors">HOME</Link>
+                  <Link to="/projects" className="text-zinc-400 hover:text-white transition-colors">PROJECTS</Link>
+                  <Link to="/about" className="text-zinc-400 hover:text-white transition-colors">ABOUT</Link>
+                  <Link to="/contact" className="text-zinc-400 hover:text-white transition-colors">CONTACT</Link>
+                </div>
+
+                {/* Right: Social */}
+                <div className="flex justify-end space-x-6 text-xs tracking-[0.15em] font-light">
+                  <a href="https://www.instagram.com/studio.yona/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">INSTAGRAM</a>
+                  <a href="https://www.linkedin.com/in/adam-yona-962892156?trk=people-guest_people_search-card" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">LINKEDIN</a>
+                </div>
               </div>
-              
-              {/* Right: Social */}
-              <div className="flex justify-end space-x-6 text-xs tracking-[0.15em] font-light">
-                <a
-                  href="https://www.instagram.com/studio.yona/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-zinc-400 hover:text-white transition-colors"
-                >
-                  INSTAGRAM
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/adam-yona-962892156?trk=people-guest_people_search-card"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-zinc-400 hover:text-white transition-colors"
-                >
-                  LINKEDIN
-                </a>
+
+              {/* Copyright */}
+              <div className="text-center pt-8 mt-8 border-t border-zinc-800">
+                <p className="text-xs text-zinc-500 font-light tracking-wide">© Studio Yona. All rights reserved.</p>
               </div>
             </div>
-            
-            {/* Copyright */}
-            <div className="text-center pt-8 mt-8 border-t border-zinc-800">
-              <p className="text-xs text-zinc-500 font-light tracking-wide">
-                © Studio Yona. All rights reserved.
-              </p>
-            </div>
+
           </div>
         </footer>
       </div>

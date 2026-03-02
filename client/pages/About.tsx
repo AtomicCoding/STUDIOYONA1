@@ -79,9 +79,30 @@ export default function About() {
         </section>
 
         {/* Section 5 - Footer */}
-        <footer className="bg-white border-t border-gray-200 py-12">
+        <footer className="bg-white border-t border-gray-200 py-8 md:py-12">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+
+            {/* Mobile Footer */}
+            <div className="flex md:hidden flex-col items-center gap-4 text-center">
+              <Link to="/" className="hover:opacity-80 transition-opacity inline-block">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F93f0681227f84f838c19b8d437489630?format=webp&width=400"
+                  alt="Studio Yona"
+                  className="h-10 w-auto"
+                />
+              </Link>
+              <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs font-medium text-black">
+                <Link to="/projects" className="hover:text-gray-500 transition-colors">Projects</Link>
+                <Link to="/about" className="hover:text-gray-500 transition-colors">About</Link>
+                <Link to="/contact" className="hover:text-gray-500 transition-colors">Contact</Link>
+                <a href="https://www.instagram.com/studio.yona/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">Instagram</a>
+                <a href="https://www.linkedin.com/in/adam-yona-962892156?trk=people-guest_people_search-card" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">LinkedIn</a>
+              </div>
+              <p className="text-xs text-gray-400">© Studio Yona. All rights reserved.</p>
+            </div>
+
+            {/* Desktop Footer - unchanged, hidden on mobile */}
+            <div className="hidden md:grid md:grid-cols-3 gap-8 items-center">
               {/* Left: Logo */}
               <div>
                 <Link to="/" className="hover:opacity-80 transition-opacity inline-block">
@@ -92,14 +113,14 @@ export default function About() {
                   />
                 </Link>
               </div>
-              
+
               {/* Center: Navigation */}
               <div className="flex justify-center space-x-8 text-sm font-medium">
                 <Link to="/projects" className="text-black hover:text-gray-600 transition-colors">Projects</Link>
                 <Link to="/about" className="text-black hover:text-gray-600 transition-colors">About</Link>
                 <Link to="/contact" className="text-black hover:text-gray-600 transition-colors">Contact</Link>
               </div>
-              
+
               {/* Right: Social */}
               <div className="flex justify-end space-x-6 text-sm font-medium">
                 <a
@@ -120,6 +141,7 @@ export default function About() {
                 </a>
               </div>
             </div>
+
           </div>
         </footer>
       </div>
