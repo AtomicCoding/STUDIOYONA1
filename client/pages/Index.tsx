@@ -5,7 +5,7 @@ import HeroSlideshow from '../components/HeroSlideshow';
 export default function Index() {
   return (
     <>
-      <title>Studio Yona</title>
+      <title>Studio Yona Design</title>
 
       <Header bgColor="white" invertLogo={false} />
 
